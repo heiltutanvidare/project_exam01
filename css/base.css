@@ -1,0 +1,34 @@
+:root {
+    --clr-cream: #f8f7ec;
+    --clr-space-grey: #afafaf;
+    --clr-black: #000;
+    --clr-white: #fff;
+    --fs-mobile: 14px;
+    --fs-desktop: 16px;
+}
+
+html {
+    font-size: var(--fs-mobile);
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--clr-cream);
+    background-color: var(--clr-black);
+}
+
+p {
+    color: var(--clr-space-grey);
+}
+
+/************** 
+Utility classes
+***************/
+
+.max-width {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
