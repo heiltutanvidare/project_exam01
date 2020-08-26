@@ -1,6 +1,8 @@
 :root {
     --clr-cream: #f8f7ec;
     --clr-space-grey: #afafaf;
+    --clr-green: #0c574e;
+    --clr-green-semi: #0c574e40;
     --clr-black: #000;
     --clr-white: #fff;
     --fs-mobile: 14px;
@@ -31,4 +33,21 @@ Utility classes
     margin-right: auto;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    border: 2px solid var(--clr-green);
+    background-color: var(--clr-green-semi);
+    padding: 1rem 2rem;
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+    transition: all 0.25s ease-out;
+}
+
+.btn:hover {
+    background-color: var(--clr-green);
 }
