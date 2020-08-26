@@ -24,6 +24,10 @@ p {
     color: var(--clr-space-grey);
 }
 
+.logo {
+    margin: 5rem auto;
+}
+
 /************** 
 Utility classes
 ***************/
