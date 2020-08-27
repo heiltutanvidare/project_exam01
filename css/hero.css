@@ -1,9 +1,13 @@
 .hero {
     min-height: 100vh;
-    padding: 7rem 1rem;
+    padding: 3rem 1rem;
     background: url(../img/photos/hero.jpg) bottom center / cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+}
+
+.hero h1 {
+    margin-bottom: 2rem;
 }

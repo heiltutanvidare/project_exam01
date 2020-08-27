@@ -1,8 +1,6 @@
 const header = document.querySelector("header");
 const headerHeight = header.clientHeight;
 
-console.log(headerHeight);
-
 window.onscroll = function () {
     if (
         document.body.scrollTop > headerHeight ||

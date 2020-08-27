@@ -1,0 +1,58 @@
+/*
+Next launch
+*/
+.nextLaunch {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.nextLaunch-container {
+    font-size: 0.78rem;
+    display: inline-block;
+    text-align: center;
+    color: #f0efe0;
+    border-radius: 8px;
+    border: 1px solid #f0efe0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nextLaunch-container h3 {
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+
+#counter {
+    border-top: 1px solid #f0efe0;
+}
+
+.loading {
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 1.2rem;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.countdown__entity {
+    padding: 0.5rem 1rem;
+    border-right: 1px solid #f0efe0;
+}
+
+.countdown__entity:last-of-type {
+    border-right: none;
+}
+
+.nextLaunch-container * {
+    margin: 0;
+    line-height: 1.125;
+}
+
+.countdown__entity p:first-of-type {
+    font-size: 1.42rem;
+    font-weight: 900;
+}
