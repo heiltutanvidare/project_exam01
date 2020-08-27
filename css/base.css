@@ -78,3 +78,7 @@ h1 {
     font-weight: 900;
     text-transform: uppercase;
 }
+
+h1 span {
+    display: block;
+}
