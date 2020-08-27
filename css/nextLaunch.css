@@ -23,12 +23,6 @@ Next launch
     text-transform: uppercase;
 }
 
-.nextLaunch-container h3 span {
-    display: block;
-    font-weight: normal;
-    text-transform: none;
-}
-
 #counter {
     border-top: 1px solid #f0efe0;
 }

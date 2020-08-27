@@ -56,12 +56,6 @@ function displayNextLaunch(nextLaunch) {
             </div>
         </div>`;
 
-        // Set the name of the launch in the heading
-        const nextLaunchName = document.querySelector(
-            ".nextLaunch-container h3 span"
-        );
-        nextLaunchName.innerText = nextLaunch.name;
-
         // Fade in the counter
         document.querySelector(".nextLaunch").style.opacity = "1";
 
