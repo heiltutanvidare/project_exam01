@@ -19,8 +19,14 @@ Next launch
 }
 
 .nextLaunch-container h3 {
-    padding: 0.5em;
+    padding: 0.5em 1em;
     text-transform: uppercase;
+}
+
+.nextLaunch-container h3 span {
+    display: block;
+    font-weight: normal;
+    text-transform: none;
 }
 
 #counter {

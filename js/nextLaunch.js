@@ -16,7 +16,7 @@ fetchNextLaunch();
 
 function displayNextLaunch(nextLaunch) {
     // Set the date we're counting down to
-    console.log(nextLaunch.date_local);
+    console.log(nextLaunch.name);
     var countDownDate = new Date(nextLaunch.date_local).getTime();
 
     // Update the count down every 1 second
@@ -56,6 +56,13 @@ function displayNextLaunch(nextLaunch) {
             </div>
         </div>`;
 
+        // Set the name of the launch in the heading
+        const nextLaunchName = document.querySelector(
+            ".nextLaunch-container h3 span"
+        );
+        nextLaunchName.innerText = nextLaunch.name;
+
+        // Fade in the counter
         document.querySelector(".nextLaunch").style.opacity = "1";
 
         // If the count down is finished, write some text
