@@ -3,14 +3,33 @@ Header
 */
 header {
     position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     right: 0;
 }
-.header__inner nav {
-    display: none;
+
+.header__inner {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-.logo {
-    margin: 2rem auto;
+.header__inner__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.burger-line {
+    width: 1.25rem;
+    height: 2px;
+    margin-bottom: 4px;
+    background-color: var(--clr-white);
+}
+
+.header__inner nav {
+    display: none;
 }
