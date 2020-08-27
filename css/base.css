@@ -1,5 +1,6 @@
 @import url("variables.css");
 @import url("header.css");
+@import url("hero.css");
 
 html {
     font-size: var(--fs-mobile);
@@ -13,10 +14,6 @@ body {
 
 p {
     color: var(--clr-space-grey);
-}
-
-.logo {
-    margin: 5rem auto;
 }
 
 /************** 

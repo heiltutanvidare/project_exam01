@@ -1,7 +1,16 @@
 /*
 Header
 */
-
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 .header__inner nav {
     display: none;
+}
+
+.logo {
+    margin: 2rem auto;
 }
