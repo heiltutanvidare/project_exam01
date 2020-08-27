@@ -1,14 +1,5 @@
-:root {
-    --clr-cream: #f8f7ec;
-    --clr-space-grey: #afafaf;
-    --clr-green: #0c574e;
-    --clr-green-semi: #0c574e40;
-    --clr-sand: #d0a270;
-    --clr-black: #000;
-    --clr-white: #fff;
-    --fs-mobile: 14px;
-    --fs-desktop: 16px;
-}
+@import url("variables.css");
+@import url("header.css");
 
 html {
     font-size: var(--fs-mobile);
@@ -73,4 +64,16 @@ Utility classes
 
 .btn + .btn {
     margin-left: 1rem;
+}
+
+/************** 
+Typography
+***************/
+
+h1 {
+    text-align: center;
+    font-size: 1.42rem;
+    letter-spacing: 0.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
 }
