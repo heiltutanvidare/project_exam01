@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/base.css" />
     </head>
     <body>
+        <!-- Header section is fixed and will follow the user when scrolling -->
         <header>
             <div class="header__inner">
                 <img
@@ -51,17 +52,35 @@
             </div>
         </header>
 
+        <!-- Hero section with countdown to next launch -->
         <div class="hero">
             <h1><span>To infinity</span> <span>and beyond</span></h1>
-            <section class="nextLaunch">
+            <div class="nextLaunch">
                 <div class="nextLaunch-container">
                     <h3>Next launch <span></span></h3>
                     <div id="counter">
                         <p class="loading">Loading…</p>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
+
+        <!-- Quote from Elon Musk -->
+        <div class="spacer-line"></div>
+        <section class="quote__elon">
+            <blockquote>
+                <p>
+                    You want to wake up in the morning and think the future is
+                    going to be great - and that’s what being a spacefaring
+                    civilization is all about. It’s about believing in the
+                    future and thinking that the future will be better than the
+                    past. And I can’t think of anything more exciting than going
+                    out there and being among the stars.
+                </p>
+                <cite>Elon Musk</cite>
+            </blockquote>
+        </section>
+        <div class="spacer-line--end"></div>
 
         <section class="temp">
             <a href="#" class="btn btn--primary">Learn more</a>
