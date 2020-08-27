@@ -16,6 +16,10 @@ p {
     color: var(--clr-space-grey);
 }
 
+.temp {
+    margin-top: 20rem;
+}
+
 /************** 
 Utility classes
 ***************/
