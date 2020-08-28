@@ -6,6 +6,7 @@
     --clr-sand: #d0a270;
     --clr-black: #000;
     --clr-white: #fff;
+    --maxWidth: 960px;
     --fs-mobile: 14px;
     --fs-desktop: 16px;
 }
