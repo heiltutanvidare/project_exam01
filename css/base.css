@@ -145,6 +145,11 @@ h2 {
     margin-bottom: 1rem;
 }
 
+h3 {
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
+
 /************** 
 About section
 ***************/
@@ -196,6 +201,19 @@ About section
 
 .about a {
     margin-top: 1rem;
+}
+
+/************** 
+Launches
+***************/
+
+.launches {
+    margin-top: 5rem;
+}
+
+.launch h3 {
+    font-weight: 400;
+    max-width: 19ch;
 }
 
 /************** 
