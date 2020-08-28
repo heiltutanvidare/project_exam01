@@ -141,7 +141,7 @@ h1 span {
 h2 {
     font-size: 1.5rem;
     font-weight: 900;
-    line-height: 1.2;
+    line-height: 1.5;
     margin-bottom: 1rem;
 }
 
@@ -211,9 +211,43 @@ Launches
     margin-top: 5rem;
 }
 
+.error__message {
+    color: var(--clr-danger);
+    font-weight: 700;
+    animation: blink 1s infinite;
+    opacity: 0;
+}
+
+@keyframes blink {
+    to {
+        opacity: 1;
+    }
+}
+
+.launch {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--clr-space-grey);
+}
+
 .launch h3 {
     font-weight: 400;
     max-width: 19ch;
+}
+
+.launch__description {
+    margin-bottom: 0;
+}
+
+.launch__link {
+    display: block;
+    margin-top: 1rem;
+    color: var(--clr-white);
+    transition: 0.25s ease-out;
+}
+
+.launch__link:hover {
+    color: var(--clr-white);
+    opacity: 0.5;
 }
 
 /************** 
