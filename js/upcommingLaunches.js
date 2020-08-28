@@ -32,7 +32,7 @@ function displayLaunches(launches) {
 
     for (let i = 0; i < launches.length; i++) {
         const flightNo = launches[i].flight_number;
-        const date = launches[i].date_utc;
+        const date = new Date(launches[i].date_utc).toDateString();
         const launchName = launches[i].name;
         let description = launches[i].details;
         let redditLink = launches[i].links.reddit.campaign;
