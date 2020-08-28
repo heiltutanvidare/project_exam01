@@ -126,3 +126,17 @@ h1 {
 h1 span {
     display: block;
 }
+
+/************** 
+About section
+***************/
+
+.about {
+    margin-top: 5rem;
+}
+
+@media screen and (min-width: 640px) {
+    html {
+        font-size: var(--fs-desktop);
+    }
+}

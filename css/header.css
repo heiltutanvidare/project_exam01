@@ -20,6 +20,10 @@ header.scrolled {
     justify-content: space-between;
 }
 
+.logo {
+    max-width: 150px;
+}
+
 .header__inner__burger {
     display: flex;
     flex-direction: column;
