@@ -2,8 +2,8 @@
 // and display as HTML on homepage
 
 const url = "https://api.spacexdata.com/v4/launches/upcoming";
-const errorContainer = document.querySelector(".error-container");
-const loader = document.querySelector(".loader");
+const errorContainer = document.querySelector(".launches-error-container");
+const loader = document.querySelector(".launches-loader");
 
 // Fetch upcomming SpaceX launches
 async function fetchLaunches() {
@@ -25,8 +25,6 @@ async function fetchLaunches() {
 fetchLaunches();
 
 function displayLaunches(launches) {
-    console.log(launches);
-
     const container = document.querySelector(".launches-container");
     let html = "";
 
