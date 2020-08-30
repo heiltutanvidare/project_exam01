@@ -1,10 +1,14 @@
 .apod {
-    margin: 4rem 0;
+    margin: 6rem 0;
     overflow: hidden;
 }
 
 .apod h2 {
-    line-height: 1.1;
+    line-height: 1.2;
+}
+
+.apod h2 span {
+    display: block;
 }
 
 .apod__img-container {
@@ -28,7 +32,7 @@
 
 .apod__title {
     line-height: 1.2;
-    margin: 0;
+    margin: 0 0 0.5rem 0;
 }
 
 .apod__details {
