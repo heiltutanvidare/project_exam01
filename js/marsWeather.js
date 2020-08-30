@@ -60,13 +60,18 @@ function displayWeather(json) {
             }
         );
 
+        // Function to round down the numbers
+        function roundValues(value) {
+            return Math.round(value);
+        }
+
         // Get the air temperatures
-        const maxTemp = weather.AT.mx;
-        const minTemp = weather.AT.mn;
+        const maxTemp = roundValues(weather.AT.mx);
+        const minTemp = roundValues(weather.AT.mn);
 
         // Get the wind speed
-        const maxWind = weather.HWS.mx;
-        const minWind = weather.HWS.mn;
+        const maxWind = roundValues(weather.HWS.mx);
+        const minWind = roundValues(weather.HWS.mn);
 
         // Create the html for displaying the weather data
         html += `
