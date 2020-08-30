@@ -4,6 +4,7 @@
 @import url("nextLaunch.css");
 @import url("contact.css");
 @import url("apod.css");
+@import url("footer.css");
 
 html {
     font-size: var(--fs-mobile);
@@ -63,9 +64,16 @@ Utility classes
 
 .spacer-line--end {
     height: 1px;
-    width: 1rem;
     background-color: var(--clr-white);
+    width: 1rem;
     margin: 0 auto;
+}
+
+.decorativeLine {
+    height: 1px;
+    background-color: var(--clr-white);
+    width: 100%;
+    margin: 3rem auto;
 }
 
 .btn {

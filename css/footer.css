@@ -1,0 +1,40 @@
+footer {
+    margin-top: 7rem;
+}
+
+.footer__logo {
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.footer__links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.footer__links li {
+    cursor: pointer;
+}
+
+.footer__links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__newsletter {
+    margin: 2rem 0;
+}
+
+.footer__newsletter label {
+    font-weight: 700;
+}
+
+.footer__newsletter input {
+    margin-bottom: 0.5rem;
+}
+
+.footer__acknowledge {
+    font-size: 0.75rem;
+    color: var(--clr-dark-grey);
+}
