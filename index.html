@@ -212,6 +212,76 @@
                 </div>
             </section>
 
+            <!-- Contatct us form -->
+            <section class="contact-us max-width">
+                <h2>Contact us</h2>
+                <p class="contact__blurb">
+                    Please do no hesitate to contact us
+                </p>
+
+                <form action="post" class="contact__form">
+                    <div class="form__field">
+                        <label for="firstName">First name</label>
+                        <input
+                            type="text"
+                            name="firstName"
+                            id="firstName"
+                            placeholder="Enter your first name"
+                            required
+                        />
+                    </div>
+                    <div class="form__field">
+                        <label for="lastName">Last name</label>
+                        <input
+                            type="text"
+                            name="lastName"
+                            id="lastName"
+                            placeholder="Enter your last name"
+                            required
+                        />
+                    </div>
+                    <div class="form__field">
+                        <label for="email">Email address</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Enter your email address"
+                            required
+                        />
+                    </div>
+                    <div class="form__field">
+                        <label for="email">Phone number</label>
+                        <input
+                            type="tel"
+                            name="phone"
+                            id="phone"
+                            placeholder="Enter your phone number"
+                            required
+                        />
+                    </div>
+                    <div class="form__field">
+                        <label for="msg">Message</label>
+                        <textarea
+                            name="msg"
+                            id="msg"
+                            cols="30"
+                            rows="10"
+                            placeholder="Enter your message"
+                            required
+                        ></textarea>
+                    </div>
+                    <div class="form__field">
+                        <input
+                            type="submit"
+                            value="Send message"
+                            class="btn btn--primary"
+                            id="scrollToContact"
+                        />
+                    </div>
+                </form>
+            </section>
+
             <!-- Temporary section with elements needed later -->
             <section class="temp">
                 <a href="#" class="btn btn--primary">Learn more</a>

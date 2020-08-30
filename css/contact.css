@@ -1,0 +1,27 @@
+.contact-us {
+    margin-top: 7rem;
+}
+
+.form__field {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5em;
+    background-color: var(--clr-dark-grey);
+    color: inherit;
+}
+
+input::placeholder {
+    font-size: 0.85rem;
+}
