@@ -52,166 +52,172 @@
             </div>
         </header>
 
-        <!-- Hero section with countdown to next launch -->
-        <div class="hero">
-            <h1><span>To infinity</span> <span>and beyond</span></h1>
-            <div class="nextLaunch">
-                <div class="nextLaunch-container">
-                    <h3>Next launch</h3>
-                    <div id="counter">
-                        <p class="loading">Loading…</p>
+        <main>
+            <!-- Hero section with countdown to next launch -->
+            <div class="hero">
+                <h1><span>To infinity</span> <span>and beyond</span></h1>
+                <div class="nextLaunch">
+                    <div class="nextLaunch-container">
+                        <h3>Next launch</h3>
+                        <div id="counter">
+                            <p class="loading">Loading…</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Quote from Elon Musk -->
-        <div class="spacer-line"></div>
-        <section class="quote__elon max-width">
-            <blockquote>
-                <p>
-                    You want to wake up in the morning and think the future is
-                    going to be great – and that’s what being a spacefaring
-                    civilization is all about. It’s about believing in the
-                    future and thinking that the future will be better than the
-                    past. And I can’t think of anything more exciting than going
-                    out there and being among the stars.
-                </p>
-                <cite>Elon Musk</cite>
-            </blockquote>
-        </section>
-        <div class="spacer-line--end"></div>
-
-        <!-- SpaceX – Who we are & what we do-->
-        <section class="about">
-            <img
-                class="about__img"
-                src="img/photos/starship.png"
-                alt="SpaceX’s Starship spacecraft and Super Heavy rocket (collectively referred to as Starship) represent a fully reusable transportation system designed to carry both crew and cargo to Earth orbit, the Moon, Mars and beyond."
-            />
-            <div class="max-width">
-                <h2>Making humanity multiplanitary</h2>
-                <div class="about__numbers">
-                    <div class="about__number-container">
-                        <p class="about__number">95</p>
-                        <p class="about__number__description">
-                            <span>Total</span> <span>launches</span>
-                        </p>
-                    </div>
-                    <div class="about__number-container">
-                        <p class="about__number">58</p>
-                        <p class="about__number__description">
-                            <span>Total</span> <span>landings</span>
-                        </p>
-                    </div>
-                    <div class="about__number-container">
-                        <p class="about__number">40</p>
-                        <p class="about__number__description">
-                            <span>Reflown</span> <span>rockets</span>
-                        </p>
-                    </div>
-                </div>
-                <p>
-                    SpaceX designs, manufactures and launches advanced rockets
-                    and spacecraft. The company was founded in 2002 to
-                    revolutionize space technology, with the ultimate goal of
-                    enabling people to live on other planets.
-                </p>
-                <p>
-                    Building on the achievements of Falcon 9 and Falcon Heavy,
-                    SpaceX is working on a next generation of fully reusable
-                    launch vehicles that will be the most powerful ever built,
-                    capable of carrying humans to Mars and other destinations in
-                    the solar system.
-                </p>
-                <p>
-                    SpaceX has gained worldwide attention for a series of
-                    historic milestones. It is the only private company capable
-                    of returning a spacecraft from low-Earth orbit, and in 2012
-                    our Dragon spacecraft became the first commercial spacecraft
-                    to deliver cargo to and from the International Space
-                    Station. Soon we will be the first private company to take
-                    humans there as well. Click through the timeline above to
-                    see some of our milestone accomplishments.
-                </p>
-            </div>
-            <img
-                class="extra-bleed pulsing"
-                src="img/photos/solar_system/other_worlds.jpg"
-                alt="A asrtistic interpetation render of what a star might look like in a different solar system"
-            />
-            <div class="max-width">
-                <h2>Making history</h2>
-                <p>
-                    SpaceX believes a fully and rapidly reusable rocket is the
-                    pivotal breakthrough needed to substantially reduce the cost
-                    of space access. The majority of the launch cost comes from
-                    building the rocket, which historically has flown only once.
-                </p>
-                <p>
-                    Compare that to a commercial airliner – each new plane costs
-                    about the same as Falcon 9 but can fly multiple times per
-                    day and conduct tens of thousands of flights over its
-                    lifetime. Following the commercial model, a rapidly reusable
-                    space launch vehicle could reduce the cost of traveling to
-                    space by a hundredfold.
-                </p>
-                <p>
-                    While most rockets are designed to burn up on reentry,
-                    SpaceX rockets can not only withstand reentry but can also
-                    successfully land back on Earth and refly again.
-                </p>
-                <a href="#" class="btn btn--primary">Learn more</a>
-            </div>
-        </section>
-
-        <!-- Upcomming launches from API -->
-        <section class="launches max-width">
-            <h2>Upcomming launches</h2>
-            <div class="launches-loader">Loading upcomming launches…</div>
-            <div class="launches-error-container"></div>
-            <div class="launches-container"></div>
-        </section>
-
-        <!-- The red planet -->
-        <section class="red-planet">
-            <img
-                class="extra-bleed"
-                src="img/photos/solar_system/mars.jpg"
-                alt="Mars, the red planet"
-            />
-            <div class="max-width">
-                <h2>The red planet</h2>
-                <p>
-                    The fourth planet from the Sun, Mars is a dusty, cold,
-                    desert world with a very thin atmosphere.
-                </p>
-                <p>
-                    InSight is taking daily weather measurements (temperature,
-                    wind, pressure) on the surface of Mars at Elysium Planitia,
-                    a flat, smooth plain near Mars’ equator.
-                </p>
-                <h3>Latest weather report</h3>
-                <div class="weather-loader">Loading weather report…</div>
-                <div class="weather-error-container"></div>
-                <div class="weather-container">
-                    <!-- <p class="weather__date">Sol 610 | August 14</p>
-                    <p class="weather__heading">Air Temperature</p>
-                    <p class="weather__details">
-                        Low: -94&deg; C | High: -16&deg; C
+            <!-- Quote from Elon Musk -->
+            <div class="spacer-line"></div>
+            <section class="quote__elon max-width">
+                <blockquote>
+                    <p>
+                        You want to wake up in the morning and think the future
+                        is going to be great – and that’s what being a
+                        spacefaring civilization is all about. It’s about
+                        believing in the future and thinking that the future
+                        will be better than the past. And I can’t think of
+                        anything more exciting than going out there and being
+                        among the stars.
                     </p>
-                    <p class="weather__heading">Wind speed</p>
-                    <p class="weather__details">Min: 0.3 m/s | Max: 17 m/s</p>
-                    <a href="#" class="btn btn--primary">Mars weather</a> -->
-                </div>
-            </div>
-        </section>
+                    <cite>Elon Musk</cite>
+                </blockquote>
+            </section>
+            <div class="spacer-line--end"></div>
 
-        <!-- Temporary section with elements needed later -->
-        <section class="temp">
-            <a href="#" class="btn btn--primary">Learn more</a>
-            <a href="#" class="btn btn--secondary">Learn less</a>
-        </section>
+            <!-- SpaceX – Who we are & what we do-->
+            <section class="about">
+                <img
+                    class="about__img"
+                    src="img/photos/starship.png"
+                    alt="SpaceX’s Starship spacecraft and Super Heavy rocket (collectively referred to as Starship) represent a fully reusable transportation system designed to carry both crew and cargo to Earth orbit, the Moon, Mars and beyond."
+                />
+                <div class="max-width">
+                    <h2>Making humanity multiplanitary</h2>
+                    <div class="about__numbers">
+                        <div class="about__number-container">
+                            <p class="about__number">95</p>
+                            <p class="about__number__description">
+                                <span>Total</span> <span>launches</span>
+                            </p>
+                        </div>
+                        <div class="about__number-container">
+                            <p class="about__number">58</p>
+                            <p class="about__number__description">
+                                <span>Total</span> <span>landings</span>
+                            </p>
+                        </div>
+                        <div class="about__number-container">
+                            <p class="about__number">40</p>
+                            <p class="about__number__description">
+                                <span>Reflown</span> <span>rockets</span>
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        SpaceX designs, manufactures and launches advanced
+                        rockets and spacecraft. The company was founded in 2002
+                        to revolutionize space technology, with the ultimate
+                        goal of enabling people to live on other planets.
+                    </p>
+                    <p>
+                        Building on the achievements of Falcon 9 and Falcon
+                        Heavy, SpaceX is working on a next generation of fully
+                        reusable launch vehicles that will be the most powerful
+                        ever built, capable of carrying humans to Mars and other
+                        destinations in the solar system.
+                    </p>
+                    <p>
+                        SpaceX has gained worldwide attention for a series of
+                        historic milestones. It is the only private company
+                        capable of returning a spacecraft from low-Earth orbit,
+                        and in 2012 our Dragon spacecraft became the first
+                        commercial spacecraft to deliver cargo to and from the
+                        International Space Station. Soon we will be the first
+                        private company to take humans there as well. Click
+                        through the timeline above to see some of our milestone
+                        accomplishments.
+                    </p>
+                </div>
+                <img
+                    class="extra-bleed pulsing"
+                    src="img/photos/solar_system/other_worlds.jpg"
+                    alt="A asrtistic interpetation render of what a star might look like in a different solar system"
+                />
+                <div class="max-width">
+                    <h2>Making history</h2>
+                    <p>
+                        SpaceX believes a fully and rapidly reusable rocket is
+                        the pivotal breakthrough needed to substantially reduce
+                        the cost of space access. The majority of the launch
+                        cost comes from building the rocket, which historically
+                        has flown only once.
+                    </p>
+                    <p>
+                        Compare that to a commercial airliner – each new plane
+                        costs about the same as Falcon 9 but can fly multiple
+                        times per day and conduct tens of thousands of flights
+                        over its lifetime. Following the commercial model, a
+                        rapidly reusable space launch vehicle could reduce the
+                        cost of traveling to space by a hundredfold.
+                    </p>
+                    <p>
+                        While most rockets are designed to burn up on reentry,
+                        SpaceX rockets can not only withstand reentry but can
+                        also successfully land back on Earth and refly again.
+                    </p>
+                    <a href="#" class="btn btn--primary">Learn more</a>
+                </div>
+            </section>
+
+            <!-- Upcomming launches from API -->
+            <section class="launches max-width">
+                <h2>Upcomming launches</h2>
+                <div class="launches-loader">Loading upcomming launches…</div>
+                <div class="launches-error-container"></div>
+                <div class="launches-container"></div>
+            </section>
+
+            <!-- The red planet -->
+            <section class="red-planet">
+                <img
+                    class="extra-bleed"
+                    src="img/photos/solar_system/mars.jpg"
+                    alt="Mars, the red planet"
+                />
+                <div class="max-width">
+                    <h2>The red planet</h2>
+                    <p>
+                        The fourth planet from the Sun, Mars is a dusty, cold,
+                        desert world with a very thin atmosphere.
+                    </p>
+                    <p>
+                        InSight is taking daily weather measurements
+                        (temperature, wind, pressure) on the surface of Mars at
+                        Elysium Planitia, a flat, smooth plain near Mars’
+                        equator.
+                    </p>
+                    <h3>Latest weather report</h3>
+                    <div class="weather-loader">Loading weather report…</div>
+                    <div class="weather-error-container"></div>
+                    <div class="weather-container">
+                        <!-- <p class="weather__date">Sol 610 | August 14</p>
+                        <p class="weather__heading">Air Temperature</p>
+                        <p class="weather__details">
+                            Low: -94&deg; C | High: -16&deg; C
+                        </p>
+                        <p class="weather__heading">Wind speed</p>
+                        <p class="weather__details">Min: 0.3 m/s | Max: 17 m/s</p>
+                        <a href="#" class="btn btn--primary">Mars weather</a> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Temporary section with elements needed later -->
+            <section class="temp">
+                <a href="#" class="btn btn--primary">Learn more</a>
+                <a href="#" class="btn btn--secondary">Learn less</a>
+            </section>
+        </main>
 
         <!-- Javascript below this line -->
         <script src="js/headerScroll.js"></script>
