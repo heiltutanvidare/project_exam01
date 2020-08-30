@@ -3,6 +3,7 @@
 @import url("hero.css");
 @import url("nextLaunch.css");
 @import url("contact.css");
+@import url("apod.css");
 
 html {
     font-size: var(--fs-mobile);
@@ -36,7 +37,7 @@ Utility classes
 }
 
 .extra-bleed {
-    width: calc(100% + 12rem);
+    width: calc(100vw + 12rem);
     margin-left: -6rem;
     margin-right: -6rem;
 }

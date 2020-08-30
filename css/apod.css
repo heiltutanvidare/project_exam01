@@ -1,0 +1,37 @@
+.apod {
+    margin: 4rem 0;
+    overflow: hidden;
+}
+
+.apod h2 {
+    line-height: 1.1;
+}
+
+.apod__img-container {
+    position: relative;
+}
+
+.apod__bg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 60%;
+    z-index: -1;
+    transform: rotate(-7deg) translateY(-50%);
+}
+
+.apod__img {
+    border: 2px solid white;
+    border-radius: 0.7em;
+    margin-bottom: 1rem;
+}
+
+.apod__title {
+    line-height: 1.2;
+    margin: 0;
+}
+
+.apod__details {
+    display: flex;
+    justify-content: space-between;
+}
