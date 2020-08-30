@@ -16,7 +16,7 @@ fetchNextLaunch();
 
 function displayNextLaunch(nextLaunch) {
     // Set the date we're counting down to
-    console.log(nextLaunch.name);
+
     var countDownDate = new Date(nextLaunch.date_local).getTime();
 
     // Update the count down every 1 second

@@ -100,6 +100,22 @@ Utility classes
     margin-left: 1rem;
 }
 
+.pulsing {
+    animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /************** 
 Quotes
 ***************/
@@ -229,6 +245,10 @@ Launches
     border-bottom: 1px solid var(--clr-space-grey);
 }
 
+.launch:first-of-type {
+    padding-top: 0;
+}
+
 .launch h3 {
     font-weight: 400;
 }
@@ -247,6 +267,29 @@ Launches
 .launch__link:hover {
     color: var(--clr-white);
     opacity: 0.5;
+}
+
+/************** 
+Mars weather feature
+***************/
+.red-planet {
+    overflow-x: hidden;
+}
+
+.weather__date {
+    margin-top: 1rem;
+}
+
+.weather__heading {
+    margin: 0 0 0.125rem 0;
+    line-height: 1;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--clr-white);
+}
+
+.weather-container a {
+    margin-top: 1rem;
 }
 
 /************** 
