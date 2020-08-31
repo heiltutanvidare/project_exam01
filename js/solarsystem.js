@@ -63,7 +63,7 @@ function displayPlanets(planets) {
         `;
     }
 
-    const container = document.querySelector(".planets--test");
+    const container = document.querySelector(".planets");
     container.innerHTML = html;
 }
 
