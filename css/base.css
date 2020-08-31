@@ -67,6 +67,10 @@ Utility classes
     padding-right: 2rem;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .extra-bleed {
     width: calc(100vw + 12rem);
     margin-left: -6rem;

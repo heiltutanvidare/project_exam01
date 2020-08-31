@@ -124,6 +124,11 @@ Planets
     font-weight: 700;
 }
 
+/* Other worlds */
+.other-worlds {
+    text-align: center;
+}
+
 @media screen and (min-width: 640px) {
     .planets {
         display: grid;
