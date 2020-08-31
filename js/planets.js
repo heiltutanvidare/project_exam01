@@ -1,3 +1,17 @@
+const sun = {
+    number: "00",
+    tagline: "Our Star",
+    name: "The Sun",
+    description:
+        "The Sun is a yellow dwarf star, a hot ball of glowing gases at the heart of our solar system. Its gravity holds the solar system together, keeping everything – from the biggest planets to the smallest particles of debris – in its orbit. The connection and interactions between the Sun and Earth drive the seasons, ocean currents, weather, climate, radiation belts and auroras.",
+    img: "sun.jpg",
+    type: "Yellow Dwarf",
+    planets: "8",
+    radius: "695,508",
+    distance: "26,000 light years",
+    age: "~ 4.5 billion years",
+};
+
 const planets = [
     {
         number: "01",
