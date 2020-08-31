@@ -18,7 +18,7 @@ Planets
     margin-top: 2rem;
     height: 100vh;
     overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: y mandatory;
     display: flex;
     align-items: flex-end;
     position: relative;

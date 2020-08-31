@@ -16,6 +16,7 @@
     background-size: cover;
     background-position-x: center;
     justify-content: flex-end;
+    padding-bottom: 7rem;
 }
 
 .hero h1 {
