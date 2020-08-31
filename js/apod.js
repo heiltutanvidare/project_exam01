@@ -36,11 +36,12 @@ function displayAPOD(apod) {
     // Define the HTML for the APOD
     const html = `
             <div class="apod__img-container">
-                <img
+                <iframe
                     src="${img}"
                     alt="${title}"
                     class="apod__img"
-                />
+                    allow="autoplay; encrypted-media" allowfullscreen
+                /></iframe>
                 <div class="apod__bg btn--primary extra-bleed"></div>
             </div>
             <p class="apod__date">${date}</p>
