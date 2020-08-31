@@ -30,7 +30,6 @@
 .apod__img {
     border: 2px solid white;
     border-radius: 0.7em;
-    margin-bottom: 1rem;
 }
 
 .apod iframe {
@@ -48,7 +47,6 @@
     margin: 0 0 0.5rem 0;
 }
 
-.apod__details {
-    display: flex;
-    justify-content: space-between;
+.apod__date {
+    margin-top: 1rem;
 }
