@@ -15,7 +15,7 @@ function displayPlanets(planets) {
         const yearLength = planets[i].year_length;
 
         html += `
-                <div class="planet max-width">
+                <div class="planet">
                     <div class="planet__top">
                         <div class="planet__heading">
                             <p class="planet__number">${number}</p>
