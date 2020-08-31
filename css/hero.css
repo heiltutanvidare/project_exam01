@@ -1,11 +1,21 @@
 .hero {
     min-height: 100vh;
     padding: 11rem 1rem 5rem 1rem;
-    background: url(../img/photos/hero.jpg) bottom center / cover no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+}
+
+.hero--homepage {
+    background: url(../img/photos/hero.jpg) bottom center / cover no-repeat;
+    justify-content: space-between;
+}
+
+.hero--solarsystem {
+    background: url(../img/photos/solar_system/sun_hero.png) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    justify-content: flex-end;
 }
 
 .hero h1 {

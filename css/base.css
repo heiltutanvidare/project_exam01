@@ -5,6 +5,7 @@
 @import url("contact.css");
 @import url("apod.css");
 @import url("footer.css");
+@import url("solarsystem.css");
 
 html {
     font-size: var(--fs-mobile);
@@ -53,6 +54,10 @@ p {
 /************** 
 Utility classes
 ***************/
+
+.chevron {
+    max-width: 1rem;
+}
 
 .max-width {
     max-width: var(--maxWidth);
