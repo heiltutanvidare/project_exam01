@@ -26,19 +26,20 @@ Planets
 }
 
 .planet {
-    min-height: 100vh;
-    max-width: 100vw;
-    scroll-snap-align: start;
+    /* min-height: 100vh; */
+    margin-bottom: 4rem;
+    /* max-width: 100vw; */
+    /* scroll-snap-align: start; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    border-bottom: 1px solid white;
-    margin-bottom: 15vh;
+    border-bottom: 1px solid var(--clr-dark-grey);
 }
 
 .planet__top {
     padding-top: 2rem;
+    margin-bottom: 10rem;
 }
 
 .planet__bottom {
