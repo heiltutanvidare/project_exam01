@@ -1,0 +1,61 @@
+.peopleInSpace-container {
+    margin-top: 2rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.peopleInSpace__blurb {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.numberOfPeople {
+    font-size: 4.7rem;
+    font-weight: 900;
+    color: var(--clr-green-light);
+    margin: 0;
+    line-height: 1;
+}
+
+@supports (-webkit-text-stroke: 1px var(--clr-green-light)) {
+    .numberOfPeople {
+        -webkit-text-stroke: 1px var(--clr-green-light);
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.hero__overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+}
+
+.astronauts {
+    padding-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.astronaut {
+    margin: 1rem;
+}
+
+.astronaut i {
+    font-size: 2rem;
+}
+
+.astronaut p {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.astronaut__name {
+    font-size: 1rem;
+    font-weight: 900;
+}

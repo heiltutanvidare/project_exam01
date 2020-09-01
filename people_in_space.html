@@ -3,13 +3,19 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SpaceX | Explore the solar system</title>
+        <title>SpaceX | People in space right now</title>
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700;900&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/base.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+            integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+            crossorigin="anonymous"
+        />
     </head>
     <body>
         <!-- Header section is fixed and will follow the user when scrolling -->
@@ -55,109 +61,56 @@
         </header>
 
         <main>
-            <!-- Hero section for solar systen -->
-            <div class="hero hero--solarsystem">
-                <h1><span>Meet the</span> <span>neighbors</span></h1>
-                <p class="solarsystem__blurb max-width">
-                    Our solar system consists of our star, the Sun, and
-                    everything bound to it by gravity — the planets Mercury,
-                    Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune,
-                    dwarf planets such as Pluto, dozens of moons and millions of
-                    asteroids, comets and meteoroids.
-                    <span>Let’s explore our solar system</span>
-                </p>
-                <img
-                    src="img/graphics/chevron_down_white.svg"
-                    alt="Arrow pointing down"
-                    class="chevron"
-                />
-            </div>
+            <!-- Hero section with countdown to next launch -->
+            <div class="hero hero--peopleInSpace">
+                <div class="hero__overlay"></div>
+                <h1><span>People</span> <span>in space</span></h1>
+                <div class="peopleInSpace-container">
+                    <p class="peopleInSpace__blurb">Right now, there are</p>
+                    <p class="numberOfPeople">–</p>
+                    <p class="peopleInSpace__blurb">humans in space</p>
+                    <div class="loader"><p>Loading…</p></div>
+                    <div class="peopleInSpace__error__container"></div>
+                    <div class="astronauts">
+                        <!-- <div class="astronaut">
+                            <i class="fas fa-user-astronaut"></i>
+                            <p class="astronaut__heading">Astronaut:</p>
+                            <p class="astronaut__name">Chris Cassidy</p>
+                            <p class="astronaut__craft">On board the ISS</p>
+                        </div>
 
-            <!-- <section class="sun">
-                <div class="planet max-width">
-                    <div class="planet__top">
-                        <div class="planet__heading">
-                            <p class="planet__number">00</p>
-                            <p class="planet__tagline">Our Star</p>
-                            <h2 class="planet__name">The Sun</h2>
+                        <div class="astronaut">
+                            <i class="fas fa-user-astronaut"></i>
+                            <p class="astronaut__heading">Astronaut:</p>
+                            <p class="astronaut__name">Chris Cassidy</p>
+                            <p class="astronaut__craft">On board the ISS</p>
                         </div>
-                        <p class="planet__description">
-                            The Sun is a yellow dwarf star, a hot ball of
-                            glowing gases at the heart of our solar system. Its
-                            gravity holds the solar system together, keeping
-                            everything – from the biggest planets to the
-                            smallest particles of debris – in its orbit. The
-                            connection and interactions between the Sun and
-                            Earth drive the seasons, ocean currents, weather,
-                            climate, radiation belts and auroras.
-                        </p>
-                    </div>
-                    <img
-                        src="img/photos/solar_system/sun.jpg"
-                        alt="The Sun – Our own star"
-                        class="planet__img"
-                    />
-                    <div class="planet__bottom">
-                        <div class="planet__facts">
-                            <div class="planet__fact">
-                                <p class="planet__fact__type">Star type</p>
-                                <p class="planet__fact__text">Yellow dwarf</p>
-                            </div>
-                            <div class="planet__fact">
-                                <p class="planet__fact__type">Planets</p>
-                                <p class="planet__fact__text">8</p>
-                            </div>
-                            <div class="planet__fact">
-                                <p class="planet__fact__type">
-                                    Equatorial radius
-                                </p>
-                                <p class="planet__fact__text">695,508 km</p>
-                            </div>
-                            <div class="planet__fact">
-                                <p class="planet__fact__type">
-                                    Distance from galactic center
-                                </p>
-                                <p class="planet__fact__text">
-                                    26,000 light years
-                                </p>
-                            </div>
-                            <div class="planet__fact">
-                                <p class="planet__fact__type">Age</p>
-                                <p class="planet__fact__text">
-                                    ~ 4.5 billion years
-                                </p>
-                            </div>
-                        </div>
+
+                        <div class="astronaut">
+                            <i class="fas fa-user-astronaut"></i>
+                            <p class="astronaut__heading">Astronaut:</p>
+                            <p class="astronaut__name">Chris Cassidy</p>
+                            <p class="astronaut__craft">On board the ISS</p>
+                        </div> -->
                     </div>
                 </div>
-            </section> -->
+            </div>
 
-            <section class="planets max-width"></section>
-
-            <section class="other-worlds max-width">
-                <h2>
-                    <span>What else might</span>
-                    <span>be out there?</span>
-                </h2>
-                <img
-                    src="img/photos/solar_system/other_worlds.jpg"
-                    alt="Render of what a distant star might look like up close"
-                />
+            <!-- We are sending more-->
+            <section class="about max-width">
+                <h2>…and we are sending even more</h2>
                 <p>
-                    We continue to aim for the stars in the hope of one day
-                    reaching unknown worlds, and to discover all its hidden
-                    secrets.
+                    We are working on a next generation of fully reusable launch
+                    vehicles that will be the most powerful ever built, capable
+                    of carrying humans to Mars and other destinations in the
+                    solar system.
                 </p>
-                <a href="#" class="btn btn--primary">Join us</a>
+                <a href="#" class="btn btn--primary">Learn more</a>
             </section>
         </main>
 
         <footer>
             <div class="pre-footer">
-                <img
-                    src="img/photos/footer_grey.jpg"
-                    alt="Our Falcon 9 rocket during launch"
-                />
                 <div class="spacer-line"></div>
                 <div class="spacer-line--end"></div>
                 <section class="quote__neil max-width">
@@ -220,7 +173,6 @@
 
         <!-- Javascript below this line -->
         <script src="js/headerScroll.js"></script>
-        <script src="js/planets.js"></script>
-        <script src="js/solarsystem.js"></script>
+        <script src="js/peopleInSpace.js"></script>
     </body>
 </html>

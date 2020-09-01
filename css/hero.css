@@ -19,6 +19,15 @@
     padding-bottom: 7rem;
 }
 
+.hero--peopleInSpace {
+    background: url(../img/photos/people_in_space/outer_atmos.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom -20rem center;
+    /* justify-content: flex-end; */
+    position: relative;
+    padding-top: 8rem;
+}
+
 .hero h1 {
     opacity: 0;
     transform: translateY(75px);

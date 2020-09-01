@@ -6,6 +6,7 @@
 @import url("apod.css");
 @import url("footer.css");
 @import url("solarsystem.css");
+@import url("peopleInSpace.css");
 
 html {
     font-size: var(--fs-mobile);
