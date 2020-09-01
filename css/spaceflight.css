@@ -1,0 +1,87 @@
+/* Spaceflight hero */
+
+.hero--spaceflight__inner {
+    z-index: 1;
+}
+
+.spaceflight__title-container {
+    min-height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/photos/spaceflight/astronaut_push.png) center /
+        contain no-repeat;
+}
+
+.spaceflight__title-container h1 {
+    margin-top: -0.5rem;
+    border: 2px solid var(--clr-green);
+    background-color: var(--clr-green-semi);
+    padding: 1rem 2rem;
+}
+
+.spaceflight__blurb {
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--clr-white);
+}
+
+.spaceflight__blurb span {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* About spaceflight */
+
+.about {
+    display: grid;
+    grid-gap: 2rem;
+}
+
+.about__topic i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+/* Spaceflight numbers */
+.about__numbers {
+    padding: 7rem 0;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    background: url(../img/photos/spaceflight/rocket_launch.jpg) center / cover
+        no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.number__container {
+    display: grid;
+    grid-gap: 2rem;
+    margin-left: 10%;
+}
+
+.number__item .number {
+    font-weight: 900;
+    font-size: 4.45rem;
+    line-height: 1;
+    margin: 0;
+    color: var(--clr-white);
+}
+
+.number__description {
+    margin: 0;
+}
+
+@media screen and (min-width: 640px) {
+    .about__numbers {
+        height: 100vh;
+        background-position: bottom;
+    }
+
+    .number__container {
+        align-items: center;
+        margin-left: 40%;
+    }
+}

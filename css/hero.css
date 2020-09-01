@@ -23,7 +23,14 @@
     background: url(../img/photos/people_in_space/outer_atmos.jpg) no-repeat;
     background-size: cover;
     background-position: bottom -20rem center;
-    /* justify-content: flex-end; */
+    position: relative;
+    padding-top: 8rem;
+}
+
+.hero--spaceflight {
+    background: url(../img/photos/people_in_space/outer_atmos.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom -20rem center;
     position: relative;
     padding-top: 8rem;
 }
