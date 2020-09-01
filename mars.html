@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SpaceX | Weather on Mars</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/base.css" />
+    </head>
+    <body>
+        <!-- Header section is fixed and will follow the user when scrolling -->
+        <header>
+            <div class="header__inner">
+                <a href="index.html">
+                    <img
+                        class="logo"
+                        src="img/graphics/logo_white.svg"
+                        alt="SpaceX logo"
+                    />
+                </a>
+                <div class="header__inner__burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+                <nav class="">
+                    <ul class="header__nav">
+                        <li>
+                            <a class="header__nav__link" href="#">Launches</a>
+                        </li>
+                        <li>
+                            <a class="header__nav__link" href="spaceflight.html"
+                                >Spaceflight</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="header__nav__link"
+                                href="people_in_space.html"
+                                >People in space</a
+                            >
+                        </li>
+                        <li>
+                            <a class="header__nav__link" href="mars.html"
+                                >Weather on Mars</a
+                            >
+                        </li>
+                        <li>
+                            <a class="header__nav__link" href="solarsystem.html"
+                                >Our solar system</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero section -->
+            <div class="hero hero--mars">
+                <!-- <div class="hero__overlay"></div> -->
+                <h1>
+                    <span>Whats the</span> <span>weather like</span>
+                    <span>on mars?</span>
+                </h1>
+                <div class="mars__intro">
+                    <img
+                        src="img/photos/weather_on_mars/insight_top.jpg"
+                        alt="The Mars insigth rover seen from the top"
+                    />
+                    <p class="mars__intro__blurb">
+                        InSight is taking daily weather measurements
+                        (temperature, wind, pressure) on the surface of Mars at
+                        Elysium Planitia, a flat, smooth plain near Mars’
+                        equator.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Explanatory intro
+            <section class="mars__intro max-width">
+                <img
+                    src="img/photos/weather_on_mars/insight_top.jpg"
+                    alt="The Mars insigth rover seen from the top"
+                />
+                <p class="mars__intro__blurb">
+                    InSight is taking daily weather measurements (temperature,
+                    wind, pressure) on the surface of Mars at Elysium Planitia,
+                    a flat, smooth plain near Mars’ equator.
+                </p>
+            </section> -->
+
+            <!-- Mars weather -->
+            <section class="mars__weather max-width">
+                <div class="mars__weather--latest">
+                    <h2>Latest Weather at Elysium Planitia</h2>
+                    <p class="mars__weather__date">Sol 611 | August 15</p>
+                    <div class="mars__weather__field">
+                        <p class="mars__weather__details">
+                            <span>Air Temperature</span>
+                        </p>
+                        <p class="mars__weather__details">
+                            Low: -94° C | High: -16° C
+                        </p>
+                    </div>
+                    <div class="mars__weather__field">
+                        <p class="mars__weather__details">
+                            <span>Wind speed</span>
+                        </p>
+                        <p class="mars__weather__details">
+                            Max: 17 m/s | Min: 0.3 m/s
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mars__weather--rest">
+                    <div class="mars__weather__entry">
+                        <p class="mars__weather__date">Sol 610 | August 14</p>
+                        <p class="mars__weather__details">
+                            <span>Air Temperature</span>
+                        </p>
+                        <p class="mars__weather__details">
+                            Low: -94° C | High: -16° C
+                        </p>
+                        <p class="mars__weather__details">
+                            <span>Wind speed</span>
+                        </p>
+                        <p class="mars__weather__details">
+                            Max: 17 m/s | Min: 0.3 m/s
+                        </p>
+                    </div>
+
+                    <div class="mars__weather__entry">
+                        <p class="mars__weather__date">Sol 610 | August 14</p>
+                        <p class="mars__weather__details">
+                            <span>Air Temperature</span>
+                        </p>
+                        <p class="mars__weather__details">
+                            Low: -94° C | High: -16° C
+                        </p>
+                        <p class="mars__weather__details">
+                            <span>Wind speed</span>
+                        </p>
+                        <p class="mars__weather__details">
+                            Max: 17 m/s | Min: 0.3 m/s
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mission overview -->
+            <section class="mission">
+                <img
+                    src="img/photos/weather_on_mars/insight_front.jpg"
+                    alt="The Mars Insigth rover seen from the side"
+                />
+                <div class="max-width">
+                    <h2>Insight Mission Overview</h2>
+                    <h3>Studying the ‘Inner Space’ of Mars</h3>
+                    <p>
+                        InSight, short for Interior Exploration using Seismic
+                        Investigations, Geodesy and Heat Transport, is a Mars
+                        lander designed to give the Red Planet its first
+                        thorough checkup since it formed 4.5 billion years ago.
+                        It is the first outer space robotic explorer to study
+                        in-depth the “inner space” of Mars: its crust, mantle,
+                        and core.
+                    </p>
+                    <p>
+                        Studying Mars’ interior structure answers key questions
+                        about the early formation of rocky planets in our inner
+                        solar system - Mercury, Venus, Earth, and Mars - more
+                        than 4 billion years ago, as well as rocky exoplanets.
+                        InSight also measures tectonic activity and meteorite
+                        impacts on Mars today.
+                    </p>
+                    <p>
+                        The lander uses cutting edge instruments, to delve deep
+                        beneath the surface and seek the fingerprints of the
+                        processes that formed the terrestrial planets. It does
+                        so by measuring the planet’s “vital signs”: its “pulse”
+                        (seismology), “temperature” (heat flow), and “reflexes”
+                        (precision tracking). This mission is part of NASA’s
+                        Discovery Program for highly focused science missions
+                        that ask critical questions in solar system science.
+                    </p>
+                    <h3>First CubeSats to Deep Space</h3>
+                    <p>
+                        The rocket that launched InSight also launched a
+                        separate NASA technology experiment: two mini-spacecraft
+                        called Mars Cube One, or MarCO. These briefcase-sized
+                        CubeSats flew on their own path to Mars behind InSight.
+                    </p>
+                    <p>
+                        Their goal was to test new miniaturized deep space
+                        communication equipment. Upon their arrival at Mars, the
+                        twin MarCOs successfully relayed back InSight data as it
+                        entered the Martian atmosphere and landed. This was the
+                        first test of miniaturized CubeSat technology at another
+                        planet, which researchers hope can offer new
+                        capabilities to future missions.
+                    </p>
+
+                    <h3>Why Mars?</h3>
+                    <p>
+                        Previous missions to Mars have investigated the surface
+                        history of the Red Planet by examining features like
+                        canyons, volcanoes, rocks and soil. However, signatures
+                        of the planet’s formation can only be found by sensing
+                        and studying its “vital signs” far below the surface.
+                    </p>
+                    <p>
+                        In comparison to the other terrestrial planets, Mars is
+                        neither too big nor too small. This means that it
+                        preserves the record of its formation and can give us
+                        insight into how the terrestrial planets formed. It is
+                        the perfect laboratory from which to study the formation
+                        and evolution of rocky planets. Scientists know that
+                        Mars has low levels of geological activity. But a lander
+                        like InSight can also reveal just how active Mars really
+                        is.
+                    </p>
+                </div>
+                <img
+                    src="img/photos/weather_on_mars/mars_surface.jpg"
+                    alt="An artistic render of what the surface on mars could look like"
+                />
+            </section>
+
+            <!-- We are going there  -->
+            <section class="about max-width">
+                <h2>We are going to Mars to see for ourselves</h2>
+                <p>
+                    We are working on a next generation of fully reusable launch
+                    vehicles that will be the most powerful ever built, capable
+                    of carrying humans to Mars and other destinations in the
+                    solar system.
+                </p>
+                <a href="spaceflight.html" class="btn btn--primary"
+                    >Learn more</a
+                >
+            </section>
+        </main>
+
+        <footer>
+            <div class="pre-footer">
+                <img
+                    src="img/photos/footer_grey.jpg"
+                    alt="Our Falcon 9 rocket during launch"
+                />
+                <div class="spacer-line"></div>
+                <div class="spacer-line--end"></div>
+                <section class="quote__neil max-width">
+                    <blockquote>
+                        <p>
+                            I didn't feel like a giant. I felt very, very small.
+                        </p>
+                        <cite>Neil Armstrong</cite>
+                    </blockquote>
+                </section>
+                <div class="spacer-line--end"></div>
+            </div>
+            <div class="decorativeLine"></div>
+            <div class="main-footer max-width">
+                <img
+                    src="img/graphics/logo_white.svg"
+                    alt="SpaceX logo"
+                    class="footer__logo"
+                />
+                <ul class="footer__links">
+                    <a href="#"><li>No fear act</li></a>
+                    <a href="#"><li>Office of inspector</li></a>
+                    <a href="#"><li>FOIA</li></a>
+                    <a href="#"><li>Agcency reports</li></a>
+                    <a href="#"><li>Privacy</li></a>
+                    <a href="#"><li>FAQ</li></a>
+                    <a href="#"><li>Articles</li></a>
+                    <a href="#"><li>Twitter</li></a>
+                    <a href="#"><li>Photos & Videos</li></a>
+                    <a href="#"><li>Instagram</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="#"><li>Facebook</li></a>
+                </ul>
+
+                <form action="post" class="footer__newsletter">
+                    <label for="newsletter">Newsletter</label>
+                    <input
+                        type="email"
+                        name="newsletterEmail"
+                        id="newsletterEmail"
+                        placeholder="Enter your email address"
+                    />
+                    <input
+                        class="btn btn--primary"
+                        type="submit"
+                        value="Sign up"
+                    />
+                </form>
+
+                <div class="decorativeLine"></div>
+                <p class="footer__acknowledge">
+                    This site has been designed and developed by student Vidar
+                    Håland as the submission for his first year exam. Images and
+                    content have been collect from different sources such as
+                    SpaceX.com, Nasa.gov, Unsplash.com and Pixabay.com. Dynamic
+                    content from several APIs.
+                </p>
+            </div>
+        </footer>
+
+        <!-- Javascript below this line -->
+        <script src="js/headerScroll.js"></script>
+        <script src="js/hamburger.js"></script>
+    </body>
+</html>

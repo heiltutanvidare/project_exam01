@@ -8,6 +8,7 @@
 @import url("solarsystem.css");
 @import url("peopleInSpace.css");
 @import url("spaceflight.css");
+@import url("mars.css");
 
 html {
     font-size: var(--fs-mobile);
@@ -51,6 +52,16 @@ p {
 
 .temp {
     margin-top: 20rem;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /************** 

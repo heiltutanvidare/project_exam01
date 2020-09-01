@@ -1,0 +1,86 @@
+/* Mars */
+
+.mars__intro {
+    width: 80%;
+    text-align: center;
+    max-width: 50rem;
+}
+
+.mars__intro img {
+    border: 2px solid var(--clr-white);
+    margin: 2rem auto;
+}
+
+/* Mars Weather */
+.mars__weather {
+    text-align: center;
+}
+
+.mars__weather h2 {
+    max-width: 20ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mars__weather p {
+    color: var(--clr-cream);
+}
+
+.mars__weather--latest {
+    border-bottom: 1px solid var(--clr-white);
+    margin-bottom: 2rem;
+    padding: 4rem 0;
+}
+
+.mars__weather--latest .mars__weather__date,
+.mars__weather--latest .mars__weather__details {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.mars__weather--latest .mars__weather__details span {
+    font-size: 1.15rem;
+}
+
+.mars__weather__details span {
+    font-weight: 700;
+}
+
+.mars__weather--latest .mars__weather__details {
+    margin: 0;
+}
+
+.mars__weather__field {
+    margin-bottom: 2rem;
+}
+
+/* Rest of days */
+
+.mars__weather--rest {
+    padding: 2rem 0;
+}
+
+.mars__weather__entry {
+    margin-bottom: 2rem;
+}
+
+.mars__weather__entry .mars__weather__date {
+    font-size: 1.15rem;
+}
+
+.mars__weather__entry p {
+    margin: 0;
+}
+
+/* Mission overview */
+.mission {
+    position: relative;
+}
+
+.mission img {
+    margin-bottom: 2rem;
+}
+
+.mission h3 {
+    margin: 1.5rem 0 0.5rem 0;
+}
