@@ -77,6 +77,17 @@ select {
     font: inherit;
 }
 
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
 /* Blur images when they have no alt attribute */
 img:not([alt]) {
     filter: blur(10px);

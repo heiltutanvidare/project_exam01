@@ -1,5 +1,44 @@
 .contact-us {
-    margin-top: 7rem;
+    margin-top: 15rem;
+    margin-bottom: 7rem;
+}
+
+.contact-us__inner {
+    background-color: var(--clr-cream);
+    color: var(--clr-dark-grey);
+    padding: 10rem 0 2rem 0;
+    position: relative;
+}
+
+.contact-us__inner img {
+    position: absolute;
+    left: -5rem;
+    top: -10rem;
+    max-width: 400px;
+}
+
+.contact-us__inner h2,
+.contact__blurb {
+    text-align: right;
+    max-width: 70%;
+    margin-left: auto;
+}
+
+.contact-us__inner h2 {
+    font-size: 3rem;
+}
+
+.contact__blurb {
+    color: var(--clr-dark-grey);
+    font-size: 1rem;
+}
+
+.contact__blurb span {
+    display: block;
+}
+
+.contact-us form {
+    margin-top: 2rem;
 }
 
 .form__field {
@@ -22,6 +61,11 @@ textarea {
     color: inherit;
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
     font-size: 0.85rem;
+}
+
+.contact--submit {
+    color: var(--clr-white);
 }

@@ -28,7 +28,7 @@ function displayLaunches(launches) {
     const container = document.querySelector(".launches-container");
     let html = "";
 
-    for (let i = 0; i < launches.length; i++) {
+    for (let i = 0; i < 1; i++) {
         const flightNo = launches[i].flight_number;
         const date = new Date(launches[i].date_utc).toDateString();
         const launchName = launches[i].name;

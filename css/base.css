@@ -82,18 +82,6 @@ Utility classes
     background-color: var(--clr-white);
     width: 1px;
     margin: 0 auto;
-    position: relative;
-}
-
-.spacer-line::after {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    content: "";
-    height: 1px;
-    width: 1rem;
-    background-color: var(--clr-white);
 }
 
 .spacer-line--end {
@@ -101,6 +89,12 @@ Utility classes
     background-color: var(--clr-white);
     width: 1rem;
     margin: 0 auto;
+}
+
+.spacer-line--end--long {
+    height: 1px;
+    width: 100vw;
+    background-color: var(--clr-white);
 }
 
 .decorativeLine {
@@ -112,7 +106,7 @@ Utility classes
 
 .btn {
     display: inline-block;
-    color: inherit;
+    color: var(--clr-white);
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 700;
@@ -165,13 +159,18 @@ Quotes
 ***************/
 
 blockquote {
-    padding: 1.75rem 0;
+    padding: 1.5rem 0;
     text-align: center;
+}
+
+blockquote p {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
 }
 
 cite {
     display: block;
-    margin-top: 1rem;
     text-transform: uppercase;
     font-weight: 900;
     font-style: normal;
@@ -218,6 +217,7 @@ About section
     margin-top: 5rem;
     width: 100%;
     overflow-x: hidden;
+    text-align: center;
 }
 
 .about img {
@@ -261,6 +261,7 @@ About section
 
 .about a {
     margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 /************** 
@@ -269,6 +270,8 @@ Launches
 
 .launches {
     margin-top: 5rem;
+    border-bottom: 1px solid var(--clr-space-grey);
+    padding-bottom: 4rem;
 }
 
 .error__message {
@@ -286,7 +289,6 @@ Launches
 
 .launch {
     padding: 2rem 0;
-    border-bottom: 1px solid var(--clr-space-grey);
 }
 
 .launch:first-of-type {
@@ -317,6 +319,7 @@ Launches
 Mars weather feature
 ***************/
 .red-planet {
+    margin: 2rem 0 15rem 0;
     overflow-x: hidden;
 }
 
