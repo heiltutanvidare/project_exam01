@@ -4,6 +4,10 @@
     z-index: 1;
 }
 
+.peopleInSpace-container h1 {
+    margin-bottom: 3rem;
+}
+
 .peopleInSpace__blurb {
     text-transform: uppercase;
     margin: 0;
@@ -47,12 +51,14 @@
 
 .astronaut i {
     font-size: 2rem;
+    color: var(--clr-white);
 }
 
 .astronaut p {
     margin: 0;
     font-size: 0.85rem;
     line-height: 1.4;
+    color: var(--clr-white);
 }
 
 .astronaut__name {
