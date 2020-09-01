@@ -8,11 +8,8 @@ const errorContainer = document.querySelector(
 
 async function fetchAstronauts() {
     try {
-        // use await when calling fetch
         const response = await fetch(url);
-        // use await when resolving the returned value, which is a promise
         const json = await response.json();
-        // pass the array of astronauts to the displayAstronauts function
         displayAstronauts(json);
         loader.style.display = "none";
     } catch (error) {
@@ -25,7 +22,7 @@ async function fetchAstronauts() {
     }
 }
 
-// call the fetchAstronaus function
+// call the Astronaus
 fetchAstronauts();
 
 function displayAstronauts(json) {
