@@ -14,6 +14,10 @@ Launches
     padding-bottom: 4rem;
 }
 
+.launches a {
+    margin-top: 2rem;
+}
+
 .error__message {
     color: var(--clr-danger);
     font-weight: 700;
