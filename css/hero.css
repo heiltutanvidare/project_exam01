@@ -6,13 +6,18 @@
     align-items: center;
 }
 
-.hero__overlay {
+.hero__overlay,
+.hero__overlay--short {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+.hero__overlay--short {
+    top: 50%;
 }
 
 .hero__underlay {
@@ -62,6 +67,15 @@
     justify-content: center;
     padding-top: 8rem;
     padding-bottom: 0;
+}
+
+.hero--launches {
+    background: url(../img/photos/launches/liftoff.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    justify-content: flex-end;
+    padding-bottom: 8rem;
 }
 
 .hero h1 {

@@ -3,19 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SpaceX | People in space right now</title>
+        <title>SpaceX | Upcomming launches</title>
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700;900&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/base.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-            integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-            crossorigin="anonymous"
-        />
     </head>
     <body>
         <!-- Header section is fixed and will follow the user when scrolling -->
@@ -33,26 +27,31 @@
                     <span class="burger-line"></span>
                     <span class="burger-line"></span>
                 </div>
-                <nav>
+                <nav class="">
                     <ul class="header__nav">
                         <li>
-                            <a class="header__nav__link" href="#"
-                                >Navigation 01</a
+                            <a class="header__nav__link" href="#">Launches</a>
+                        </li>
+                        <li>
+                            <a class="header__nav__link" href="spaceflight.html"
+                                >Spaceflight</a
                             >
                         </li>
                         <li>
-                            <a class="header__nav__link" href="#"
-                                >Navigation 02</a
+                            <a
+                                class="header__nav__link"
+                                href="people_in_space.html"
+                                >People in space</a
                             >
                         </li>
                         <li>
-                            <a class="header__nav__link" href="#"
-                                >Navigation 03</a
+                            <a class="header__nav__link" href="mars.html"
+                                >Weather on Mars</a
                             >
                         </li>
                         <li>
-                            <a class="header__nav__link" href="#"
-                                >Navigation 04</a
+                            <a class="header__nav__link" href="solarsystem.html"
+                                >Our solar system</a
                             >
                         </li>
                     </ul>
@@ -62,43 +61,21 @@
 
         <main>
             <!-- Hero section with countdown to next launch -->
-            <div class="hero hero--peopleInSpace">
-                <div class="hero__overlay"></div>
-                <div class="peopleInSpace-container">
-                    <h1><span>People</span> <span>in space</span></h1>
-                    <p class="peopleInSpace__blurb">Right now, there are</p>
-                    <div class="loader"></div>
-                    <p class="numberOfPeople"></p>
-                    <p class="peopleInSpace__blurb">humans in space</p>
-                    <div class="peopleInSpace__error__container"></div>
-                    <div class="astronauts">
-                        <!-- <div class="astronaut">
-                            <i class="fas fa-user-astronaut"></i>
-                            <p class="astronaut__heading">Astronaut:</p>
-                            <p class="astronaut__name">Chris Cassidy</p>
-                            <p class="astronaut__craft">On board the ISS</p>
-                        </div>
-
-                        <div class="astronaut">
-                            <i class="fas fa-user-astronaut"></i>
-                            <p class="astronaut__heading">Astronaut:</p>
-                            <p class="astronaut__name">Chris Cassidy</p>
-                            <p class="astronaut__craft">On board the ISS</p>
-                        </div>
-
-                        <div class="astronaut">
-                            <i class="fas fa-user-astronaut"></i>
-                            <p class="astronaut__heading">Astronaut:</p>
-                            <p class="astronaut__name">Chris Cassidy</p>
-                            <p class="astronaut__craft">On board the ISS</p>
-                        </div> -->
-                    </div>
-                </div>
+            <div class="hero hero--launches">
+                <div class="hero__overlay--short"></div>
+                <h1><span>Liftoff!</span></h1>
             </div>
+            <!-- Upcomming launches from API -->
+            <section class="launches max-width">
+                <h2>Upcomming launches</h2>
+                <div class="loader"></div>
+                <div class="launches-error-container"></div>
+                <div class="launches-container"></div>
+            </section>
 
             <!-- We are sending more-->
             <section class="about max-width">
-                <h2>…and we are sending even more</h2>
+                <h2>…and we will not stop</h2>
                 <p>
                     We are working on a next generation of fully reusable launch
                     vehicles that will be the most powerful ever built, capable
@@ -111,8 +88,13 @@
             </section>
         </main>
 
+        <!-- Footer -->
         <footer>
             <div class="pre-footer">
+                <img
+                    src="img/photos/footer_grey.jpg"
+                    alt="Our Falcon 9 rocket during launch"
+                />
                 <div class="spacer-line"></div>
                 <div class="spacer-line--end"></div>
                 <section class="quote__neil max-width">
@@ -175,6 +157,7 @@
 
         <!-- Javascript below this line -->
         <script src="js/headerScroll.js"></script>
-        <script src="js/peopleInSpace.js"></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/launches.js"></script>
     </body>
 </html>

@@ -1,9 +1,26 @@
 // Fetch the upcomming launches
-// and display as HTML on homepage
+// and display as HTML on next launches page
 
 const url = "https://api.spacexdata.com/v4/launches/upcoming";
 const errorContainer = document.querySelector(".launches-error-container");
-const loader = document.querySelector(".launches-loader");
+const loader = document.querySelector(".loader");
+const title = document.querySelector("h1");
+
+// Count down to liftoff in title
+
+title.innerText = "3…";
+
+setTimeout(() => {
+    title.innerText = "2…";
+}, 1000);
+
+setTimeout(() => {
+    title.innerText = "1…";
+}, 2000);
+
+setTimeout(() => {
+    title.innerText = "Liftoff!";
+}, 3000);
 
 // Fetch upcomming SpaceX launches
 async function fetchLaunches() {
@@ -28,7 +45,7 @@ function displayLaunches(launches) {
     const container = document.querySelector(".launches-container");
     let html = "";
 
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < launches.length; i++) {
         const flightNo = launches[i].flight_number;
         const date = new Date(launches[i].date_utc).toDateString();
         const launchName = launches[i].name;

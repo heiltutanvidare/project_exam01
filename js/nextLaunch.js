@@ -1,11 +1,10 @@
-// Countdown
-
 // Fetch next SpaceX launch
 async function fetchNextLaunch() {
     try {
         const url = "https://api.spacexdata.com/v4/launches/next";
         const response = await fetch(url);
         const nextLaunch = await response.json();
+        displayCountdown(nextLaunch);
         displayNextLaunch(nextLaunch);
     } catch (error) {
         console.error(error);
@@ -14,7 +13,8 @@ async function fetchNextLaunch() {
 
 fetchNextLaunch();
 
-function displayNextLaunch(nextLaunch) {
+// Display a count down in the hero section
+function displayCountdown(nextLaunch) {
     // Set the date we're counting down to
 
     var countDownDate = new Date(nextLaunch.date_local).getTime();
@@ -65,4 +65,50 @@ function displayNextLaunch(nextLaunch) {
             document.getElementById("counter").innerHTML = "LIFT OFF!";
         }
     }, 1000);
+}
+
+// Display the next upcomming launch
+// in the feature section on the homepage
+
+function displayNextLaunch(nextLaunch) {
+    const container = document.querySelector(".launches-container");
+    let html = "";
+
+    const flightNo = nextLaunch.flight_number;
+    const date = new Date(nextLaunch.date_utc).toDateString();
+    const launchName = nextLaunch.name;
+    let description = nextLaunch.details;
+    let redditLink = nextLaunch.links.reddit.campaign;
+
+    function checkLink(link) {
+        if (link) {
+            return `<a href="${redditLink}" class="launch__link">Reddit thread</a>`;
+        } else {
+            return "";
+        }
+    }
+
+    function checkDescription(link) {
+        if (link) {
+            return description;
+        } else {
+            return "Details to be announced at a later date.";
+        }
+    }
+
+    html += `
+        <div class="launch">
+            <p class="launch__details">#${flightNo} | ${date}</p>
+            <h3 class="launch__name">${launchName}</h3>
+            <p class="launch__description">${checkDescription(description)}</p>
+            
+            ${checkLink(redditLink)}
+        </div>
+    `;
+
+    // Remove the loader
+    const loader = document.querySelector(".loader");
+    loader.style.display = "none";
+
+    container.innerHTML = html;
 }

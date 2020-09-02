@@ -1,0 +1,51 @@
+/************** 
+Launches
+***************/
+
+.launches {
+    margin-top: 5rem;
+    /* border-bottom: 1px solid var(--clr-dark-grey); */
+    padding-bottom: 4rem;
+}
+
+.error__message {
+    color: var(--clr-danger);
+    font-weight: 700;
+    animation: blink 1s infinite;
+    opacity: 0;
+}
+
+@keyframes blink {
+    to {
+        opacity: 1;
+    }
+}
+
+.launch {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--clr-dark-grey);
+}
+
+.launch:first-of-type {
+    padding-top: 0;
+}
+
+.launch h3 {
+    font-weight: 400;
+}
+
+.launch__description {
+    margin-bottom: 0;
+}
+
+.launch__link {
+    display: block;
+    margin-top: 1rem;
+    color: var(--clr-white);
+    transition: 0.25s ease-out;
+}
+
+.launch__link:hover {
+    color: var(--clr-white);
+    opacity: 0.5;
+}
