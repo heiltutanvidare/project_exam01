@@ -36,7 +36,7 @@
     width: 3rem;
     height: 3rem;
     transform-origin: center;
-    animation: pulse 1s linear infinite;
+    animation: pulse_large 1s linear infinite;
 }
 
 .spaceflight__title-container h1::before {
@@ -48,7 +48,14 @@
 
 @keyframes pulse {
     100% {
-        transform: scale(2);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse_large {
+    100% {
+        transform: scale(3);
         opacity: 0;
     }
 }
