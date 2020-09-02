@@ -1,7 +1,13 @@
 /************** 
 Launches
 ***************/
-
+.hero--launches p {
+    margin-top: 1rem;
+    position: relative;
+    text-align: center;
+    color: var(--clr-white);
+    z-index: 2;
+}
 .launches {
     margin-top: 5rem;
     /* border-bottom: 1px solid var(--clr-dark-grey); */
