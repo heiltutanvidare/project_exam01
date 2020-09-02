@@ -55,3 +55,22 @@
     font-size: 1rem;
     font-weight: 900;
 }
+
+.loader {
+    height: 4rem;
+    width: 4rem;
+    border: 0.75rem solid var(--clr-green-light);
+    border-top: 0.75rem solid var(--clr-green);
+    border-radius: 50%;
+    margin: 1rem auto;
+    animation: rotateLoader 2s linear infinite;
+}
+
+@keyframes rotateLoader {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
