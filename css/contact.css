@@ -26,6 +26,7 @@
 
 .contact-us__inner h2 {
     font-size: 3rem;
+    color: var(--clr-green);
 }
 
 .contact__blurb {
