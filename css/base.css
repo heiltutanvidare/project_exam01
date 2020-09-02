@@ -72,6 +72,10 @@ Utility classes
     max-width: 1rem;
 }
 
+section {
+    margin-bottom: 4rem;
+}
+
 .max-width {
     max-width: var(--maxWidth);
     margin-left: auto;
