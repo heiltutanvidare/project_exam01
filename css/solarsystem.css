@@ -144,7 +144,7 @@ Planets
     margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 45em) {
     .planets {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

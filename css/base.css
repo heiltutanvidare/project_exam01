@@ -271,7 +271,7 @@ Solar system homepage feature
 Media queries
 ***************/
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 45em) {
     html {
         font-size: var(--fs-desktop);
     }
