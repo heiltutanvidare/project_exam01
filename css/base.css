@@ -232,7 +232,7 @@ Launches
 
 .launches {
     margin-top: 5rem;
-    border-bottom: 1px solid var(--clr-space-grey);
+    /* border-bottom: 1px solid var(--clr-dark-grey); */
     padding-bottom: 4rem;
 }
 
@@ -281,8 +281,12 @@ Launches
 Mars weather feature
 ***************/
 .red-planet {
-    margin: 2rem 0 15rem 0;
+    margin: 8rem 0 25rem 0;
     overflow-x: hidden;
+}
+
+.red-planet img {
+    margin-bottom: -7rem;
 }
 
 .weather__date {
