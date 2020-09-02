@@ -118,6 +118,7 @@ Utility classes
 }
 
 .btn {
+    font-size: 90%;
     display: inline-block;
     color: var(--clr-white);
     text-transform: uppercase;
@@ -130,7 +131,7 @@ Utility classes
 .btn--primary {
     border: 2px solid var(--clr-green);
     background-color: var(--clr-green-semi);
-    padding: 1rem 2rem;
+    padding: 1em 2em;
 }
 
 .btn--primary:hover {
@@ -281,7 +282,7 @@ Launches
 Mars weather feature
 ***************/
 .red-planet {
-    margin: 8rem 0 25rem 0;
+    margin: 8rem 0 8rem 0;
     overflow-x: hidden;
 }
 
@@ -303,6 +304,13 @@ Mars weather feature
 
 .weather-container a {
     margin-top: 1rem;
+}
+
+/************** 
+Solar system homepage feature
+***************/
+.meet-neighbors {
+    overflow: hidden;
 }
 
 /************** 
