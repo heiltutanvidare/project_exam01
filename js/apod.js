@@ -28,21 +28,37 @@ function displayAPOD(apod) {
     console.log(apod);
 
     // Get the image elements from the API result
-    const img = apod.url;
+    const mediaUrl = apod.url;
     const title = apod.title;
     const date = new Date(apod.date).toDateString();
     const caption = apod.explanation;
+    const media = apod.media_type;
+
+    // This functions sets the propper HTML type depending
+    // on if the mediatype for the day is an image or a video
+    function checkMediaType(mediaType) {
+        if (mediaType === "video") {
+            return `
+                    <iframe
+                    src="${mediaUrl}"
+                    alt="${title}"
+                    class="apod__img"
+                    allow="autoplay; encrypted-media" allowfullscreen/>
+                    </iframe>
+            `;
+        } else {
+            return `
+                <img src="${mediaUrl}"
+                alt="${title}"
+                class="apod__img">
+            `;
+        }
+    }
 
     // Define the HTML for the APOD
     const html = `
             <div class="apod__img-container">
-                <iframe
-                    src="${img}"
-                    alt="${title}"
-                    class="apod__img"
-                    allow="autoplay; encrypted-media" allowfullscreen
-                /></iframe>
-                <div class="apod__bg btn--primary extra-bleed"></div>
+                ${checkMediaType(media)}
             </div>
             <p class="apod__date">${date}</p>
             <h3 class="apod__title">${title}</h3>

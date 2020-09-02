@@ -12,24 +12,15 @@
 }
 
 .apod__img-container {
-    position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
-
-.apod__bg {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    height: 60%;
-    z-index: -1;
-    transform: rotate(-7deg) translateY(-50%);
+    margin-top: 2rem;
+    /* padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
 .apod__img {
-    border: 2px solid white;
-    border-radius: 0.7em;
+    /* border: 2px solid white; */
+    /* border-radius: 0.7em; */
 }
 
 .apod iframe {
@@ -48,5 +39,7 @@
 }
 
 .apod__date {
+    font-size: 0.85rem;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
