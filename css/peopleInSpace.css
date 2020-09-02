@@ -28,16 +28,6 @@
     }
 }
 
-.hero__overlay {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: "";
-}
-
 .astronauts {
     padding-top: 4rem;
     display: flex;

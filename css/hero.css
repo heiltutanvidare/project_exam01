@@ -6,6 +6,25 @@
     align-items: center;
 }
 
+.hero__overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero__underlay {
+    background: url(../img/photos/spaceflight/starbg_bright_tile.jpg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
 .hero--homepage {
     background: url(../img/photos/hero.jpg) bottom center / cover no-repeat;
     justify-content: space-between;
@@ -28,7 +47,7 @@
 }
 
 .hero--spaceflight {
-    background: url(../img/photos/people_in_space/outer_atmos.jpg) no-repeat;
+    background: url(../img/photos/spaceflight/outer_atmos.png) no-repeat;
     background-size: cover;
     background-position: bottom -20rem center;
     position: relative;

@@ -1,6 +1,7 @@
 .contact-us {
-    margin-top: 20rem;
+    padding-top: 20rem;
     margin-bottom: 7rem;
+    overflow: hidden;
 }
 
 .contact-us__inner {
@@ -15,6 +16,16 @@
     left: -5rem;
     top: -10rem;
     max-width: 400px;
+    animation: flying 10s ease-in-out alternate infinite;
+}
+
+@keyframes flying {
+    0% {
+        transform: translateX(0) rotate(0);
+    }
+    100% {
+        transform: translateX(3rem) rotate(15deg);
+    }
 }
 
 .contact-us__inner h2,
