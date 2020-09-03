@@ -22,6 +22,30 @@ footer {
     text-decoration: none;
 }
 
+.social__container a {
+    margin-right: 1rem;
+}
+
+footer address {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer address p {
+    margin: 0;
+}
+
+footer address a i {
+    font-size: 0.8em;
+    margin-right: 0.25rem;
+}
+
+footer address a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .footer__newsletter {
     margin: 2rem 0;
 }
