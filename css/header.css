@@ -31,38 +31,54 @@ header.scrolled {
 }
 
 .header__inner__burger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     cursor: pointer;
     z-index: 1;
+    position: relative;
+    height: 1rem;
+    width: 1.5rem;
+}
+
+.header__inner__burger.open {
+    justify-content: center;
 }
 
 .burger-line {
-    width: 1.25rem;
+    width: 1.5rem;
     height: 2px;
-    margin-bottom: 4px;
     background-color: var(--clr-white);
-    transition: all 0.25s ease-in-out;
+    position: absolute;
+    right: 0;
 }
 
-.header__inner__burger.open .burger-line:nth-of-type(2) {
+.burger-line--top {
+    top: 0;
+    transition: all var(--speed-fast);
+}
+
+.burger-line--middle {
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.125s linear, right var(--speed-fast);
+}
+
+.burger-line--bottom {
+    bottom: 0;
+    transition: all var(--speed-fast);
+}
+
+.header__inner__burger.open .burger-line--middle {
+    right: 5rem;
     opacity: 0;
 }
 
-.header__inner__burger.open .burger-line:nth-of-type(1) {
-    position: relative;
-    top: 37%;
-    transform: rotate(45deg);
-    margin: 0;
+.header__inner__burger.open .burger-line--top {
+    transform: rotate(-45deg);
+    top: 44%;
 }
 
-.header__inner__burger.open .burger-line:nth-of-type(3) {
-    position: relative;
-    bottom: 37%;
-    transform: rotate(-45deg);
-    margin: 0;
+.header__inner__burger.open .burger-line--bottom {
+    transform: rotate(45deg);
+    bottom: 44%;
 }
 
 .header__inner nav {
@@ -70,16 +86,15 @@ header.scrolled {
     position: absolute;
     top: 0;
     right: -100%;
-
-    bottom: 0;
     width: 100vw;
     height: 100vh;
-    /* overflow: hidden; */
-    transition: all 0.25s ease-in-out;
+    opacity: 0;
+    transition: right 0.25s ease-out, opacity 0.25s linear;
 }
 
 .header__inner nav.open {
     right: 0;
+    opacity: 1;
 }
 
 .header__inner nav ul {
