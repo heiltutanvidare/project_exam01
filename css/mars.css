@@ -1,14 +1,19 @@
 /* Mars */
-
-.mars__intro {
-    width: 80%;
-    text-align: center;
-    max-width: 50rem;
+.img__overlay--container {
+    position: relative;
 }
 
-.mars__intro img {
-    border: 2px solid var(--clr-white);
-    margin: 2rem auto;
+.img__overlay--container .hero__overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), black);
+}
+
+.img__overlay--container img {
+    margin-top: 1px;
+}
+
+.hero--mars p {
+    padding: 2rem;
+    text-align: center;
 }
 
 /* Mars Weather */
@@ -75,10 +80,6 @@
 /* Mission overview */
 .mission {
     position: relative;
-}
-
-.mission img {
-    margin-bottom: 2rem;
 }
 
 .mission h3 {

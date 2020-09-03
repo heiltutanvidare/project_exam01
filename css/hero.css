@@ -65,9 +65,8 @@
     background-size: 160%;
     background-position: top center;
     position: relative;
-    justify-content: center;
-    padding-top: 8rem;
-    padding-bottom: 0;
+    justify-content: flex-end;
+    padding: 8rem 0 0 0;
 }
 
 .hero--launches {
