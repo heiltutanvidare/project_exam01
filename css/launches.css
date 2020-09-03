@@ -18,6 +18,24 @@ Launches
     margin-top: 2rem;
 }
 
+.tba__text {
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--clr-dark-grey);
+    animation: tba_pulse 1s linear alternate infinite;
+}
+
+@keyframes tba_pulse {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 .error__message {
     color: var(--clr-danger);
     font-weight: 700;
@@ -34,10 +52,36 @@ Launches
 .launch {
     padding: 2rem 0;
     border-bottom: 1px solid var(--clr-dark-grey);
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-gap: 2rem;
 }
 
 .launch:first-of-type {
     padding-top: 0;
+}
+
+.launch__date-box {
+    border: 1px solid var(--clr-white);
+    padding: 1rem;
+    align-self: flex-start;
+    margin-top: 0.5rem;
+}
+
+.launch__day,
+.launch__month {
+    margin: 0;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+}
+
+.launch__day {
+    font-size: 1.75rem;
+}
+
+.launch__month {
+    font-size: 0.85rem;
 }
 
 .launch h3 {

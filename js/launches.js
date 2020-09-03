@@ -47,7 +47,19 @@ function displayLaunches(launches) {
 
     for (let i = 0; i < launches.length; i++) {
         const flightNo = launches[i].flight_number;
-        const date = new Date(launches[i].date_utc).toDateString();
+        const day = new Date(launches[i].date_utc)
+            .toLocaleDateString(undefined, {
+                day: "2-digit",
+            })
+            .slice(0, -1);
+        const month = new Date(launches[i].date_utc).toLocaleDateString(
+            undefined,
+            {
+                month: "short",
+            }
+        );
+        // const date = dateString.getDate();
+        // const month = dateString.getMonth();
         const launchName = launches[i].name;
         let description = launches[i].details;
         let redditLink = launches[i].links.reddit.campaign;
@@ -70,13 +82,18 @@ function displayLaunches(launches) {
 
         html += `
             <div class="launch">
-                <p class="launch__details">#${flightNo} | ${date}</p>
-                <h3 class="launch__name">${launchName}</h3>
-                <p class="launch__description">${checkDescription(
-                    description
-                )}</p>
-                
-                ${checkLink(redditLink)}
+                <div class="launch__date-box">
+                    <p class="launch__day">${day}</p>
+                    <p class="launch__month">${month}</p>
+                </div>
+                <div class="launch__details-box">
+                    <p class="launch__details">#${flightNo}</p>
+                    <h3 class="launch__name">${launchName}</h3>
+                    <p class="launch__description">${checkDescription(
+                        description
+                    )}</p>
+                    ${checkLink(redditLink)}
+                </div>
             </div>
         `;
     }

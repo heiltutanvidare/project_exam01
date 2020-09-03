@@ -62,7 +62,9 @@ function displayCountdown(nextLaunch) {
         // If the count down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("counter").innerHTML = "LIFT OFF!";
+            document.getElementById(
+                "counter"
+            ).innerHTML = `<p class="tba__text">To Be Announced</p>`;
         }
     }, 1000);
 }
@@ -97,10 +99,12 @@ function displayNextLaunch(nextLaunch) {
     }
 
     html += `
-        <div class="launch">
-            <p class="launch__details">#${flightNo} | ${date}</p>
-            <h3 class="launch__name">${launchName}</h3>
-            <p class="launch__description">${checkDescription(description)}</p>
+        <div class="feature__launch">
+            <p class="feature__launch__details">#${flightNo} | ${date}</p>
+            <h3 class="feature__launch__name">${launchName}</h3>
+            <p class="feature__launch__description">${checkDescription(
+                description
+            )}</p>
             
             ${checkLink(redditLink)}
         </div>
