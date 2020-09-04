@@ -18,11 +18,6 @@
     /* padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
-.apod__img {
-    /* border: 2px solid white; */
-    /* border-radius: 0.7em; */
-}
-
 .apod iframe {
     position: absolute;
     top: 0;
@@ -36,6 +31,10 @@
 .apod__title {
     line-height: 1.2;
     margin: 0 0 0.5rem 0;
+}
+
+.apod__credits {
+    line-height: 1.25;
 }
 
 .apod__date {
