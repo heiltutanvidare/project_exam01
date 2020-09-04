@@ -115,7 +115,7 @@ section {
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 0.25rem;
-    transition: all 0.25s ease-out;
+    transition: all 0.125s linear;
 }
 
 .btn--primary {
@@ -124,8 +124,10 @@ section {
     padding: 1em 2em;
 }
 
-.btn--primary:hover {
+.btn--primary:hover,
+.btn--primary:focus {
     background-color: var(--clr-green);
+    opacity: 1;
 }
 
 .btn--secondary {
@@ -134,7 +136,8 @@ section {
     padding: 1rem;
 }
 
-.btn--secondary:hover {
+.btn--secondary:hover,
+.btn--secondary:focus {
     padding-bottom: 0.5rem;
 }
 
