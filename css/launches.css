@@ -82,6 +82,16 @@ Upcomming launches page
 }
 
 @media screen and (min-width: 45em) {
+    .feature__launches__grid {
+        margin-bottom: 3rem;
+    }
+
+    .feature__launches__grid h2 {
+        padding-right: 4rem;
+        border-right: 1px solid var(--clr-space-grey);
+    }
+
+    .feature__launches__grid,
     .launches__grid {
         display: grid;
         grid-template-columns: min-content auto;

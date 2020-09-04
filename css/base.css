@@ -311,7 +311,7 @@ Feature cards
 }
 
 .feature__card--solarsystem {
-    border: 2.5px solid var(--clr-uranus);
+    border: 1.5px solid var(--clr-uranus);
 }
 
 .feature__card__icon {

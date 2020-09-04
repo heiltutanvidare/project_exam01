@@ -107,6 +107,9 @@ function displayNextLaunch(nextLaunch) {
             )}</p>
             
             ${checkLink(redditLink)}
+            <a href="launches.html" class="btn btn--primary">
+                See all launches
+            </a>
         </div>
     `;
 
