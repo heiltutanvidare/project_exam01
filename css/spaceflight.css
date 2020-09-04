@@ -72,10 +72,14 @@
 }
 
 /* About spaceflight */
-
-.about {
+.about__topics {
+    margin-top: 4rem;
     display: grid;
     grid-gap: 2rem;
+}
+
+.about__topic {
+    text-align: center;
 }
 
 .about__topic i {
@@ -123,5 +127,9 @@
     .number__container {
         align-items: center;
         margin-left: 40%;
+    }
+    .about__topics {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        grid-gap: 4rem;
     }
 }

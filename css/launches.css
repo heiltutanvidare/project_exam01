@@ -26,19 +26,6 @@ Upcomming launches page
     margin-top: 2rem;
 }
 
-.error__message {
-    color: var(--clr-danger);
-    font-weight: 700;
-    animation: blink 1s infinite;
-    opacity: 0;
-}
-
-@keyframes blink {
-    to {
-        opacity: 1;
-    }
-}
-
 .launch {
     padding: 2rem 0;
     border-bottom: 1px solid var(--clr-dark-grey);
@@ -92,4 +79,20 @@ Upcomming launches page
 .launch__link:hover {
     color: var(--clr-white);
     opacity: 0.5;
+}
+
+@media screen and (min-width: 45em) {
+    .launches__grid {
+        display: grid;
+        grid-template-columns: min-content auto;
+        grid-gap: 4rem;
+        position: relative;
+    }
+
+    .launches__grid h2 {
+        margin-top: 0.85rem;
+        position: sticky;
+        top: 5rem;
+        align-self: start;
+    }
 }

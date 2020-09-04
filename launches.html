@@ -65,7 +65,7 @@
                 <div class="hero__overlay--short"></div>
                 <div class="max-width">
                     <h1><span>Liftoff!</span></h1>
-                    <p>
+                    <p class="blurb">
                         Upcomming launches overview, updated with the latest
                         information as it becomes available.
                     </p>
@@ -73,10 +73,12 @@
             </div>
             <!-- Upcomming launches from API -->
             <section class="launches max-width">
-                <h2>Upcomming launches</h2>
                 <div class="loader"></div>
                 <div class="launches-error-container"></div>
-                <div class="launches-container"></div>
+                <div class="launches__grid">
+                    <h2>Upcomming launches</h2>
+                    <div class="launches-container"></div>
+                </div>
             </section>
 
             <!-- We are sending more-->
@@ -87,7 +89,7 @@
                 />
                 <div class="max-width">
                     <h2>There and back again</h2>
-                    <p>
+                    <p class="blurb">
                         We are working on a next generation of fully reusable
                         launch vehicles that will be the most powerful ever
                         built, capable of carrying humans to Mars and other
@@ -121,13 +123,6 @@
             </div>
             <div class="decorativeLine"></div>
             <div class="main-footer max-width">
-                <a href="index.html">
-                    <img
-                        src="img/graphics/logo_white.svg"
-                        alt="SpaceX logo"
-                        class="footer__logo"
-                    />
-                </a>
                 <ul class="footer__links">
                     <a href="launches.html"><li>Next launches</li></a>
                     <a href="spaceflight.html"><li>About us</li></a>

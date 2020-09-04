@@ -54,6 +54,20 @@ iframe {
 Utility classes
 ***************/
 
+.error__message {
+    color: var(--clr-danger);
+    font-weight: 700;
+    animation: blink 1s infinite;
+    opacity: 0;
+    text-align: center;
+}
+
+@keyframes blink {
+    to {
+        opacity: 1;
+    }
+}
+
 .chevron {
     max-width: 1rem;
 }
@@ -157,7 +171,8 @@ blockquote {
 blockquote p {
     font-size: 0.9rem;
     font-style: italic;
-    margin-bottom: 0.5rem;
+    max-width: 48ch;
+    margin: 0 auto 0.5rem;
 }
 
 cite {
@@ -211,8 +226,20 @@ About section
     text-align: center;
 }
 
+.about * {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .about img {
     margin-bottom: 2rem;
+    margin: 0;
+}
+
+.about p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 48ch;
 }
 
 .about a {
@@ -220,16 +247,32 @@ About section
     margin-bottom: 3rem;
 }
 
+.about h2 {
+    margin-top: 2rem;
+}
+
 /************** 
 Mars weather feature
 ***************/
 .red-planet {
     margin: 8rem 0 8rem 0;
-    overflow-x: hidden;
+    text-align: center;
 }
 
-.red-planet img {
+.mars--mobile {
     margin-bottom: -7rem;
+}
+
+.mars--dekstop {
+    display: none;
+}
+
+.red-planet__text {
+    padding: 4rem;
+}
+
+.red-planet__text p {
+    margin: 0 auto 1rem auto;
 }
 
 .weather__date {
@@ -303,9 +346,38 @@ Media queries
 ***************/
 
 @media screen and (min-width: 45em) {
+    /* Base styles */
     html {
         font-size: var(--fs-desktop);
     }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 1.25;
+    }
+
+    h2 {
+        font-size: 3rem;
+        line-height: 1.25;
+        max-width: 15ch;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p.blurb {
+        font-size: 1.275rem;
+        max-width: 48ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about h2 {
+        margin-top: 6rem;
+    }
+
+    /* Feature cards */
     .feature__cards {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -317,5 +389,51 @@ Media queries
 
     .feature__card__icon {
         margin: 2rem 0 -2rem 0;
+    }
+
+    /* Mars feature */
+    .red-planet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        align-items: center;
+        justify-items: end;
+        overflow: hidden;
+    }
+
+    .mars--mobile {
+        display: none;
+    }
+
+    .mars--dekstop {
+        display: block;
+        max-height: 150vh;
+        object-fit: contain;
+        object-position: right;
+    }
+
+    .red-planet__text {
+        text-align: left;
+        padding: 0 2rem 0 4rem;
+    }
+
+    .red-planet__text p {
+        margin: 0 0 1rem 0;
+    }
+
+    .weather__date {
+        margin-top: 1rem;
+    }
+
+    .weather__heading {
+        margin: 0 0 0.125rem 0;
+        line-height: 1;
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--clr-white);
+    }
+
+    .weather-container a {
+        margin-top: 1rem;
     }
 }

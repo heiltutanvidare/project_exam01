@@ -2,11 +2,6 @@ footer {
     margin-top: 7rem;
 }
 
-.footer__logo {
-    width: 50%;
-    margin-bottom: 2rem;
-}
-
 .footer__links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
