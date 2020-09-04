@@ -140,6 +140,7 @@
 
             <!-- The red planet -->
             <section class="red-planet">
+                <div class="column__padding"></div>
                 <img
                     src="img/photos/mars_north_pole.jpg"
                     alt="Mars, the red planet"
@@ -220,16 +221,19 @@
 
             <!-- Contatct us form -->
             <section class="contact-us">
-                <div class="contact-us__inner max-width">
+                <div class="contact-us__img-container">
                     <img
                         src="img/photos/people_in_space/astronaut.png"
                         alt="An astronaut saying helo"
                     />
-                    <h2>Say hi!</h2>
-                    <p class="contact__blurb">
-                        Please do no hesitate <span>to contact us</span>
-                    </p>
-
+                </div>
+                <div class="contact-us__inner">
+                    <div class="contact-us__header">
+                        <h2>Say hi!</h2>
+                        <p class="contact__blurb">
+                            Please do no hesitate <span>to contact us</span>
+                        </p>
+                    </div>
                     <form action="post" class="contact__form">
                         <div class="form__field">
                             <label for="firstName">First name</label>
@@ -271,18 +275,17 @@
                                 required
                             />
                         </div>
-                        <div class="form__field">
+                        <div class="form__field form__field--message">
                             <label for="msg">Message</label>
                             <textarea
                                 name="msg"
                                 id="msg"
-                                cols="30"
-                                rows="10"
+                                rows="5"
                                 placeholder="Enter your message"
                                 required
                             ></textarea>
                         </div>
-                        <div class="form__field">
+                        <div class="form__field form__field__submit">
                             <input
                                 type="submit"
                                 value="Send message"

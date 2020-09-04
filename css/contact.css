@@ -1,60 +1,58 @@
 .contact-us {
-    padding-top: 20rem;
-    margin-bottom: 7rem;
-    overflow: hidden;
+    margin: -10rem auto 5rem auto;
+    max-width: 1600px;
+    /* background-color: var(--clr-space-grey); */
+    display: grid;
 }
 
 .contact-us__inner {
-    background-color: var(--clr-space-grey);
-    color: var(--clr-dark-grey);
-    padding: 10rem 0 2rem 0;
-    position: relative;
+    color: var(--clr-space-grey);
+    padding: 2rem;
+    /* outline: 1px solid red; */
 }
 
-.contact-us__inner img {
-    position: absolute;
+.contact-us__header {
+    text-align: right;
+    margin-bottom: 2rem;
+}
+
+.contact-us__header h2 {
+    max-width: none;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact__blurb {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.contact-us__img-container {
+    position: relative;
+    /* outline: 1px solid yellow; */
+}
+
+.contact-us__img-container img {
+    position: relative;
+    bottom: -10rem;
     left: -5rem;
-    top: -10rem;
-    max-width: 400px;
+    max-width: 225px;
     animation: flying 10s ease-in-out alternate infinite;
 }
 
 @keyframes flying {
-    0% {
-        transform: translateX(0) rotate(0);
-    }
     100% {
-        transform: translateX(3rem) rotate(15deg);
+        transform: rotate(-7deg) translateX(6rem);
     }
-}
-
-.contact-us__inner h2,
-.contact__blurb {
-    text-align: right;
-    max-width: 70%;
-    margin-left: auto;
-}
-
-.contact-us__inner h2 {
-    font-size: 3rem;
-    color: var(--clr-green);
-}
-
-.contact__blurb {
-    color: var(--clr-dark-grey);
-    font-size: 1rem;
 }
 
 .contact__blurb span {
     display: block;
 }
 
-.contact-us form {
-    margin-top: 2rem;
-}
-
-.form__field {
-    margin-bottom: 1rem;
+.contact__form {
+    display: grid;
+    grid-gap: 1rem;
 }
 
 label {
@@ -80,4 +78,42 @@ textarea::placeholder {
 
 .contact--submit {
     color: var(--clr-white);
+}
+
+@media screen and (min-width: 45em) {
+    .contact__blurb span {
+        display: inline;
+    }
+
+    .contact-us {
+        margin: 10rem auto;
+        grid-template-columns: 2fr 2fr;
+        align-items: center;
+    }
+
+    .contact-us__img-container {
+        margin-right: -4rem;
+    }
+
+    .contact-us__img-container img {
+        max-width: none;
+        top: 0;
+        left: -7rem;
+    }
+
+    .contact-us__inner {
+        padding: 20rem 2rem;
+    }
+
+    .contact-us__header {
+        text-align: left;
+    }
+
+    .contact__form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form__field--message {
+        grid-column: 1 / -1;
+    }
 }

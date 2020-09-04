@@ -54,6 +54,10 @@ iframe {
 Utility classes
 ***************/
 
+.column__padding {
+    display: none;
+}
+
 .error__message {
     color: var(--clr-danger);
     font-weight: 700;
@@ -394,8 +398,8 @@ Media queries
     /* Mars feature */
     .red-planet {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 2rem;
+        grid-template-columns: 10vw auto 1fr;
+        grid-template-columns: auto 1fr;
         align-items: center;
         justify-items: end;
         overflow: hidden;
@@ -415,6 +419,7 @@ Media queries
     .red-planet__text {
         text-align: left;
         padding: 0 2rem 0 4rem;
+        max-width: 55ch;
     }
 
     .red-planet__text p {
@@ -435,5 +440,15 @@ Media queries
 
     .weather-container a {
         margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 80em) {
+    .column__padding {
+        display: block;
+    }
+
+    .red-planet {
+        grid-template-columns: 10vw auto 1fr;
     }
 }
