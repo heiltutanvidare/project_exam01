@@ -216,6 +216,24 @@
                 </div>
             </section>
 
+            <!-- Astronomy Picture of the Day -->
+            <section class="apod">
+                <div class="apod__intro max-width">
+                    <h2>
+                        <span>Astronomy picture</span> <span>of the day</span>
+                    </h2>
+                    <p class="apod__blurb">
+                        Each day a different image or photograph of our
+                        fascinating universe is featured, along with a brief
+                        explanation written by a professional astronomer.
+                    </p>
+                    <div class="apod-loader">Loading APOD…</div>
+                    <div class="apod-error-container"></div>
+                </div>
+
+                <div class="apod__container max-width"></div>
+            </section>
+
             <!-- Contatct us form -->
             <section class="contact-us">
                 <div class="contact-us__img-container">
@@ -293,24 +311,6 @@
                     </form>
                 </div>
             </section>
-
-            <!-- Astronomy Picture of the Day -->
-            <section class="apod">
-                <div class="apod__intro max-width">
-                    <h2>
-                        <span>Astronomy picture</span> <span>of the day</span>
-                    </h2>
-                    <p class="apod__blurb">
-                        Each day a different image or photograph of our
-                        fascinating universe is featured, along with a brief
-                        explanation written by a professional astronomer.
-                    </p>
-                    <div class="apod-loader">Loading APOD…</div>
-                    <div class="apod-error-container"></div>
-                </div>
-
-                <div class="apod__container max-width"></div>
-            </section>
         </main>
 
         <!-- Footer -->
@@ -332,82 +332,93 @@
                 </section>
                 <div class="spacer-line--end"></div>
             </div>
-            <div class="decorativeLine"></div>
-            <div class="main-footer max-width">
-                <ul class="footer__links">
-                    <a href="launches.html"><li>Next launches</li></a>
-                    <a href="spaceflight.html"><li>About us</li></a>
-                    <a href="mars.html"><li>Mars weather</li></a>
-                    <a href="astronauts.html"><li>People in space</li></a>
-                    <a href="solarsystem.html"><li>The solar system</li></a>
-                    <li class="social__container">
-                        <a href="https://twitter.com/spacex"
-                            ><i class="fab fa-twitter"></i
-                        ></a>
-                        <a href="https://www.youtube.com/spacex"
-                            ><i class="fab fa-youtube"></i
-                        ></a>
-                        <a href="https://www.instagram.com/spacex/"
-                            ><i class="fab fa-instagram"></i
-                        ></a>
-                        <a href="https://www.linkedin.com/company/spacex/"
-                            ><i class="fab fa-linkedin"></i
-                        ></a>
-                    </li>
-                </ul>
 
-                <address>
-                    <div>
-                        <p>SpaceX Inc.</p>
-                        <p>401 Rocket Road</p>
-                        <p>Astroville</p>
-                    </div>
-                    <div>
-                        <p>
-                            <a href="tel:999 999 444 999"
-                                ><i class="fas fa-phone-alt"></i>999 999 444
-                                999</a
-                            >
-                        </p>
-                        <p>
-                            <a href="mailto:contact@spacex.com"
-                                ><i class="fas fa-envelope"></i
-                                >contact@spacex.com</a
-                            >
-                        </p>
-                        <p>
-                            <a href="https://www.spacex.com"
-                                ><i class="fas fa-globe"></i>www.spacex.com</a
-                            >
-                        </p>
-                    </div>
-                </address>
+            <div class="main-footer">
+                <div class="footer__field">
+                    <h4>Our pages</h4>
+                    <ul class="footer__links">
+                        <a href="launches.html"><li>Next launches</li></a>
+                        <a href="spaceflight.html"><li>About us</li></a>
+                        <a href="mars.html"><li>Mars weather</li></a>
+                        <a href="astronauts.html"><li>People in space</li></a>
+                        <a href="solarsystem.html"><li>The solar system</li></a>
+                        <li class="social__container">
+                            <a href="https://twitter.com/spacex"
+                                ><i class="fab fa-twitter"></i
+                            ></a>
+                            <a href="https://www.youtube.com/spacex"
+                                ><i class="fab fa-youtube"></i
+                            ></a>
+                            <a href="https://www.instagram.com/spacex/"
+                                ><i class="fab fa-instagram"></i
+                            ></a>
+                            <a href="https://www.linkedin.com/company/spacex/"
+                                ><i class="fab fa-linkedin"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
 
-                <form action="post" class="footer__newsletter">
-                    <label for="newsletter">Newsletter</label>
-                    <input
-                        type="email"
-                        name="newsletterEmail"
-                        id="newsletterEmail"
-                        placeholder="Enter your email address"
-                        required
-                    />
-                    <input
-                        class="btn btn--primary"
-                        type="submit"
-                        value="Sign up"
-                    />
-                </form>
+                <div class="footer__field">
+                    <h4>SpaceX</h4>
+                    <address>
+                        <div>
+                            <p>SpaceX Inc.</p>
+                            <p>401 Rocket Road</p>
+                            <p>Astroville</p>
+                        </div>
+                        <div>
+                            <p>
+                                <a href="tel:999 999 444 999"
+                                    ><i class="fas fa-phone-alt"></i>999 999 444
+                                    999</a
+                                >
+                            </p>
+                            <p>
+                                <a href="mailto:contact@spacex.com"
+                                    ><i class="fas fa-envelope"></i
+                                    >contact@spacex.com</a
+                                >
+                            </p>
+                            <p>
+                                <a href="https://www.spacex.com"
+                                    ><i class="fas fa-globe"></i
+                                    >www.spacex.com</a
+                                >
+                            </p>
+                        </div>
+                    </address>
+                </div>
 
-                <div class="decorativeLine"></div>
-                <p class="footer__acknowledge">
-                    This site has been designed and developed by student Vidar
-                    Håland as the submission for his first year exam. Images and
-                    content have been collected from different sources such as
-                    SpaceX.com, Nasa.gov, Unsplash.com and Pixabay.com. Dynamic
-                    content from several APIs.
-                </p>
+                <div class="footer__field">
+                    <h4>Newsletter</h4>
+                    <form action="post" class="footer__newsletter">
+                        <div class="footer__newsletter__field">
+                            <input
+                                type="email"
+                                name="newsletterEmail"
+                                id="newsletterEmail"
+                                placeholder="Enter your email address"
+                                required
+                            />
+                            <input
+                                class="btn btn--primary"
+                                type="submit"
+                                value="Sign up"
+                                id="newsletterSubmit"
+                            />
+                        </div>
+                    </form>
+                </div>
             </div>
+
+            <p class="footer__acknowledge">
+                This site has been designed and developed by student Vidar
+                Håland as the submission for his first year exam. Images and
+                content have been collected from different sources such as
+                SpaceX.com, Nasa.gov, Unsplash.com and Pixabay.com. Dynamic
+                content from several APIs.
+            </p>
         </footer>
 
         <!-- Javascript below this line -->

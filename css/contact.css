@@ -86,7 +86,7 @@ textarea::placeholder {
     }
 
     .contact-us {
-        margin: 10rem auto;
+        margin: 0rem auto;
         grid-template-columns: 2fr 2fr;
         align-items: center;
     }
