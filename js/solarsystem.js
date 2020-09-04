@@ -15,7 +15,7 @@ function displayPlanets(planets) {
         const yearLength = planets[i].year_length;
 
         html += `
-                <div class="planet">
+                <div class="planet" style="background-image: url(img/photos/solar_system/${img})">
                     <div class="planet__top">
                         <div class="planet__heading">
                             <p class="planet__number">${number}</p>
@@ -25,7 +25,7 @@ function displayPlanets(planets) {
                         <p class="planet__description">${description}</p>
                     </div>
             
-                    <div class="planet__bottom" style="background-image: url(img/photos/solar_system/${img})">
+                    <div class="planet__bottom">
                         <div class="planet__facts">
                             <div class="planet__fact">
                                 <p class="planet__fact__type">Planet type</p>
