@@ -86,13 +86,13 @@ textarea::placeholder {
     }
 
     .contact-us {
-        margin: 0rem auto;
-        grid-template-columns: 2fr 2fr;
+        margin: calc(6vw + 1rem) auto;
+        grid-template-columns: 1fr 2fr;
         align-items: center;
     }
 
     .contact-us__img-container {
-        margin-right: -4rem;
+        margin-right: -4vw;
     }
 
     .contact-us__img-container img {
@@ -102,7 +102,9 @@ textarea::placeholder {
     }
 
     .contact-us__inner {
-        padding: 20rem 2rem;
+        padding: 2rem 2rem 2rem 4rem;
+        max-width: 750px;
+        z-index: 1;
     }
 
     .contact-us__header {
