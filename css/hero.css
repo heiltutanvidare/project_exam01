@@ -37,9 +37,9 @@
 }
 
 .hero--solarsystem {
-    background: url(../img/photos/solar_system/sun_hero.png) no-repeat;
+    background: url(../img/photos/solar_system/sun_hero.jpg) no-repeat;
     background-size: cover;
-    background-position-x: center;
+    background-position: top -15rem center;
     justify-content: flex-end;
     padding-bottom: 9rem;
 }
@@ -94,5 +94,14 @@
 @media screen and (min-width: 45em) {
     .hero--mars {
         background-size: contain;
+    }
+}
+
+@media screen and (min-width: 90em) {
+    .hero--solarsystem {
+        background-size: 100%;
+        background-position-x: center;
+        justify-content: flex-end;
+        padding-bottom: 9rem;
     }
 }
