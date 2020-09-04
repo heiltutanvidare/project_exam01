@@ -248,9 +248,9 @@ Mars weather feature
     margin-top: 1rem;
 }
 
-/* 
+/************** 
 Feature cards
-*/
+***************/
 .feature__cards {
     display: grid;
     grid-gap: 3rem;
@@ -287,10 +287,6 @@ Feature cards
     padding: 2rem 2rem 3rem 2rem;
 }
 
-.feature__card__title {
-    /* margin-top: 2rem; */
-}
-
 .feature__card__blurb {
     margin-bottom: 2rem;
 }
@@ -309,5 +305,17 @@ Media queries
 @media screen and (min-width: 45em) {
     html {
         font-size: var(--fs-desktop);
+    }
+    .feature__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature__card {
+        display: grid;
+        place-items: center;
+    }
+
+    .feature__card__icon {
+        margin: 2rem 0 -2rem 0;
     }
 }
