@@ -25,13 +25,7 @@ function displayPlanets(planets) {
                         <p class="planet__description">${description}</p>
                     </div>
             
-                    <img
-                        src="img/photos/solar_system/${img}"
-                        alt="${planetName} – ${tagline}"
-                        class="planet__img"
-                    />
-            
-                    <div class="planet__bottom">
+                    <div class="planet__bottom" style="background-image: url(img/photos/solar_system/${img})">
                         <div class="planet__facts">
                             <div class="planet__fact">
                                 <p class="planet__fact__type">Planet type</p>
