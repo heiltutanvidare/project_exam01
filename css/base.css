@@ -248,6 +248,53 @@ Mars weather feature
     margin-top: 1rem;
 }
 
+/* 
+Feature cards
+*/
+.feature__cards {
+    display: grid;
+    grid-gap: 3rem;
+    margin-top: 10rem;
+}
+
+.feature__card {
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.feature__card--astronauts {
+    background-color: var(--clr-green-dark);
+    border: 2.5px solid var(--clr-green-semi);
+}
+
+.feature__card--solarsystem {
+    border: 2.5px solid var(--clr-uranus);
+}
+
+.feature__card__icon {
+    font-size: 6rem;
+    color: var(--clr-white);
+    margin: -1rem 0 0 0;
+}
+
+.feature__card__img {
+    margin: 1.5rem 0 -1rem 0;
+    position: relative;
+    z-index: -1;
+}
+
+.feature__card__text {
+    padding: 2rem 2rem 3rem 2rem;
+}
+
+.feature__card__title {
+    /* margin-top: 2rem; */
+}
+
+.feature__card__blurb {
+    margin-bottom: 2rem;
+}
+
 /************** 
 Solar system homepage feature
 ***************/
