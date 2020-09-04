@@ -43,3 +43,45 @@
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
+
+@media screen and (min-width: 45em) {
+    .apod {
+        margin: 12rem 0;
+    }
+
+    .apod__intro {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .apod__intro * {
+        max-width: 68ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .apod__text {
+        padding-top: 4rem;
+        display: grid;
+        grid-template-columns: min-content auto;
+        grid-gap: 2rem;
+        position: relative;
+    }
+
+    .apod__title-container {
+        position: sticky;
+        top: 5rem;
+        align-self: start;
+        text-align: right;
+    }
+
+    .apod__date {
+        margin-top: 0.125rem;
+        margin-bottom: 1rem;
+    }
+
+    .apod__caption {
+        border-left: 1px solid var(--clr-white);
+        padding-left: 2rem;
+    }
+}

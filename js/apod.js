@@ -33,6 +33,7 @@ function displayAPOD(apod) {
     const date = new Date(apod.date).toDateString();
     const caption = apod.explanation;
     const media = apod.media_type;
+    const copyright = apod.copyright;
 
     // This functions sets the propper HTML type depending
     // on if the mediatype for the day is an image or a video
@@ -60,10 +61,15 @@ function displayAPOD(apod) {
             <div class="apod__img-container">
                 ${checkMediaType(media)}
             </div>
-            <p class="apod__date">${date}</p>
-            <h3 class="apod__title">${title}</h3>
-            <p class="apod__caption">${caption}</p>
+            <div class="apod__text">
+                <div class="apod__title-container">
+                <p class="apod__date">${date}</p>
+                <h3 class="apod__title">${title}</h3>
+                <p class="apod__credits">&copy; ${copyright}</p>
+                </div>
+                <p class="apod__caption">${caption}</p>
             </div>
+
     `;
 
     // Apply the HTML to the container
