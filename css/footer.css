@@ -66,3 +66,11 @@ footer address a {
         font-size: 0.75rem;
     }
 }
+
+@media screen and (min-width: 45em) {
+    footer address {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+}
