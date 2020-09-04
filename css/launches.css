@@ -10,7 +10,10 @@ Next launch featured on homepage
 }
 
 .feature__launches {
+    border-top: 1px solid var(--clr-white);
+    border-bottom: 1px solid var(--clr-white);
     padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 /************** 
@@ -82,6 +85,11 @@ Upcomming launches page
 }
 
 @media screen and (min-width: 45em) {
+    .feature__launches {
+        padding-top: 7rem;
+        padding-bottom: 4rem;
+    }
+
     .feature__launches__grid {
         margin-bottom: 3rem;
     }
