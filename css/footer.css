@@ -64,3 +64,10 @@ footer address a {
     font-size: 0.75rem;
     color: var(--clr-dark-grey);
 }
+
+/* Extra small phone sizes*/
+@media screen and (max-width: 374px) {
+    footer address p {
+        font-size: 0.75rem;
+    }
+}
