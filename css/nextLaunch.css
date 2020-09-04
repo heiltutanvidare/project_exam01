@@ -56,3 +56,21 @@ Next launch
     font-size: 1.42rem;
     font-weight: 900;
 }
+
+.tba__text {
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--clr-grey);
+    animation: tba_pulse 1s linear alternate infinite;
+}
+
+@keyframes tba_pulse {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}

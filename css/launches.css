@@ -1,5 +1,5 @@
 /************** 
-Launches
+Next launch featured on homepage
 ***************/
 .hero--launches p {
     margin-top: 1rem;
@@ -8,32 +8,22 @@ Launches
     color: var(--clr-white);
     z-index: 2;
 }
+
+.feature__launches {
+    padding-top: 4rem;
+}
+
+/************** 
+Upcomming launches page
+***************/
+
 .launches {
     margin-top: 5rem;
-    /* border-bottom: 1px solid var(--clr-dark-grey); */
     padding-bottom: 4rem;
 }
 
 .launches a {
     margin-top: 2rem;
-}
-
-.tba__text {
-    padding: 1rem 1.5rem;
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--clr-dark-grey);
-    animation: tba_pulse 1s linear alternate infinite;
-}
-
-@keyframes tba_pulse {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
 }
 
 .error__message {
