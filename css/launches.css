@@ -89,6 +89,7 @@ Upcomming launches page
     .feature__launches__grid h2 {
         padding-right: 4rem;
         border-right: 1px solid var(--clr-space-grey);
+        margin: 0;
     }
 
     .feature__launches__grid,
