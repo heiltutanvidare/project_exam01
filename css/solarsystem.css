@@ -12,7 +12,18 @@
 
 .swipe__indicator {
     padding: 0 2rem;
-    transform: translateY(calc(8vh + 1rem));
+}
+
+.swipe__indicator i {
+    font-size: 1.25rem;
+    margin-left: 0.5rem;
+    animation: swipe 0.75s ease-in-out alternate infinite;
+}
+
+@keyframes swipe {
+    100% {
+        transform: translateX(6px) rotate(12deg);
+    }
 }
 
 /*
@@ -20,7 +31,6 @@ Planets
 */
 
 .planets {
-    height: 100vh;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     display: flex;
@@ -31,18 +41,29 @@ Planets
 
 .planet {
     padding: 0 2rem;
-    max-height: 85vh;
     min-width: 100vw;
+    height: 80vh;
+    max-height: 550px;
     scroll-snap-align: center;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    overflow: hidden;
+}
+
+.planet__text {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    z-index: 20;
     display: flex;
     flex-direction: column;
-    position: relative;
-    background-position: bottom -4rem center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    /* overflow: hidden; */
-    /* border-bottom: 1px solid var(--clr-dark-grey); */
-    /* outline: 1px solid cyan; */
+    justify-content: space-between;
+}
+
+.planet__image {
+    grid-row: 2 / -1;
+    grid-column: 1 / -1;
+    transform: translateY(2.25rem);
 }
 
 .planet__top {
@@ -92,7 +113,7 @@ Planets
 .planet__tagline {
     font-weight: 200;
     font-size: 0.9rem;
-    margin: 0 0 0.25rem 0;
+    margin: 0 0 0.55rem 0;
     line-height: 1;
     color: var(--clr-white);
     margin-left: 4rem;
@@ -111,12 +132,12 @@ Planets
 }
 
 .planet__facts {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black 35%, black);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
     display: grid;
     grid-gap: 0.5rem;
     grid-template-columns: repeat(2, 1fr);
     font-size: 0.9rem;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
 }
 
 /* .planet__fact {
@@ -152,9 +173,13 @@ Planets
 }
 
 @media screen and (max-width: 350px) {
-    .swipe__indicator {
-        padding: 0 2rem;
-        transform: translateY(calc(1vh + 1rem));
+    .planet__top {
+        padding-top: 0.1rem;
+    }
+
+    .planet__image {
+        max-width: 250px;
+        margin: 0 auto;
     }
 
     .planet__description {
