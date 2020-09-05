@@ -62,7 +62,7 @@
     .apod__text {
         padding-top: 4rem;
         display: grid;
-        grid-template-columns: min-content auto;
+        grid-template-columns: minmax(10rem, 1fr) auto;
         grid-gap: 2rem;
         position: relative;
     }
