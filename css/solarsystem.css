@@ -34,13 +34,13 @@ Planets
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     display: flex;
-    /* align-items: flex-end; */
     position: relative;
     margin-bottom: 4rem;
 }
 
 .planet {
     padding: 0 2rem;
+    width: 100vw;
     min-width: 100vw;
     height: 80vh;
     max-height: 550px;
@@ -54,7 +54,7 @@ Planets
 .planet__text {
     grid-row: 1 / -1;
     grid-column: 1 / -1;
-    z-index: 20;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -64,10 +64,11 @@ Planets
     grid-row: 2 / -1;
     grid-column: 1 / -1;
     transform: translateY(2.25rem);
+    max-width: 320px;
+    margin: 0 auto;
 }
 
 .planet__top {
-    /* outline: 1px solid pink; */
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -76,7 +77,6 @@ Planets
 
 .planet__bottom {
     flex: 1;
-    /* outline: 1px solid yellow; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -134,15 +134,11 @@ Planets
 .planet__facts {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
     display: grid;
-    grid-gap: 0.5rem;
+    grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
     font-size: 0.9rem;
     padding: 2rem 0;
 }
-
-/* .planet__fact {
-    margin-bottom: 1rem;
-} */
 
 .planet__fact p {
     color: var(--clr-white);
@@ -188,69 +184,71 @@ Planets
     }
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 36em) {
     .swipe__indicator {
         display: none;
     }
 
     .planets {
-        display: block;
         overflow: hidden;
         scroll-snap-type: none;
-        height: auto;
-        max-width: 65em;
-        margin: 0 auto;
+        display: block;
+        margin: 9rem auto;
+        max-width: 90em;
     }
 
     .planet {
+        width: auto;
+        min-width: unset;
         padding: 0 2rem;
-        height: 100vh;
-        width: 100%;
-        min-width: 0;
-        /* min-height: 1000px; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-position: right -25rem center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        /* overflow: hidden; */
-        /* border-bottom: 1px solid var(--clr-dark-grey); */
-        position: relative;
+        min-height: 720px;
+        height: auto;
+        max-height: none;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+        overflow: visible;
+        /* outline: 1px solid yellow; */
     }
 
-    .planet:nth-of-type(6) {
-        background-position: right -30rem top 10rem;
+    .planet__text {
+        grid-row: 1 / -1;
+        grid-column: 1 / 2;
+        z-index: 1;
+        display: block;
+        align-self: center;
+        /* outline: 1px solid cyan; */
+        padding-left: 4vw;
     }
 
-    .planet::after {
-        position: absolute;
-        content: "";
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 20rem;
-        background: linear-gradient(to right, rgba(0, 0, 0, 0), black);
+    .planet__facts {
+        padding: 2rem 0 0 0;
     }
 
-    .planet__top,
-    .planet__bottom {
-        max-width: 25rem;
-    }
-
-    .planet__bottom {
-        margin-top: 2rem;
-        justify-content: flex-start;
+    .planet__image {
+        grid-row: 1 / -1;
+        grid-column: 2 / -1;
+        transform: translateY(0);
+        /* max-height: 100vh; */
+        object-fit: contain;
+        /* outline: 1px solid white; */
+        max-width: unset;
     }
 }
 
-@media screen and (min-width: 45em) {
-    .planet__top,
-    .planet__bottom {
-        margin-left: calc(5vw + 1rem);
+@media screen and (min-width: 55em) {
+    .planet {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media screen and (min-width: 90em) {
+    .planet {
+        grid-template-columns: 1fr 3fr;
     }
 
-    .planet {
-        background-position: right -26rem center;
+    .planet__text {
+        padding-left: 0;
     }
 }
