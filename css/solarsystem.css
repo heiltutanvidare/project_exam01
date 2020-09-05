@@ -168,6 +168,7 @@ Planets
     margin-bottom: 2rem;
 }
 
+/* Adjustments for smallest phones */
 @media screen and (max-width: 350px) {
     .planet__top {
         padding-top: 0.1rem;
@@ -184,6 +185,7 @@ Planets
     }
 }
 
+/* Adjustments for larger screens */
 @media screen and (min-width: 36em) {
     .swipe__indicator {
         display: none;
@@ -207,6 +209,7 @@ Planets
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
+        grid-template-areas: "a b";
         align-items: stretch;
         overflow: visible;
         /* outline: 1px solid yellow; */
