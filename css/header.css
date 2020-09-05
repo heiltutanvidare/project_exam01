@@ -113,3 +113,46 @@ header.scrolled {
     padding: 2rem;
     font-size: 1.5rem;
 }
+
+.header__inner nav ul li a.active__page,
+.header__inner nav ul li:hover a,
+.header__inner nav ul li:focus a {
+    color: var(--clr-green-light);
+}
+
+/************** 
+Media queries
+***************/
+
+@media screen and (min-width: 53em) {
+    .header__inner__burger {
+        display: none;
+    }
+    .header__inner nav {
+        background: none;
+        position: unset;
+        width: auto;
+        height: auto;
+        opacity: 1;
+    }
+    .header__inner nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__inner nav ul li a {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: unset;
+        padding: 0.25rem;
+        font-size: 0.85rem;
+    }
+    .header__inner nav ul li {
+        margin-right: 1rem;
+    }
+    .header__inner nav ul li:last-of-type {
+        margin-right: 0;
+    }
+}
