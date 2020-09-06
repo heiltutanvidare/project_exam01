@@ -13,6 +13,7 @@
     --clr-white: #fff;
     --clr-uranus: #c9f3f6;
     --maxWidth: 960px;
+    --maxWidth--extra: 1280px;
     --fs-mobile: 14px;
     --fs-desktop: 16px;
     --speed-fast: 0.125s cubic-bezier(0.9, 0.5, 0.63, 1.48);

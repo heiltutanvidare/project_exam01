@@ -68,7 +68,7 @@
 
         <main>
             <!-- Hero section with countdown to next launch -->
-            <div class="hero hero--launches">
+            <!-- <div class="hero hero--launches">
                 <div class="hero__overlay--short"></div>
                 <div class="max-width">
                     <h1><span>Liftoff!</span></h1>
@@ -77,22 +77,41 @@
                         information as it becomes available.
                     </p>
                 </div>
-            </div>
+            </div> -->
             <!-- Upcomming launches from API -->
             <section class="launches max-width">
-                <div class="loader"></div>
-                <div class="launches-error-container"></div>
                 <div class="launches__grid">
-                    <h2>Upcomming launches</h2>
+                    <div class="launches__grid__title-container">
+                        <h2>Upcoming launches</h2>
+                        <p>
+                            Upcoming launches overview, updated with the latest
+                            information as it becomes available.
+                        </p>
+                        <img
+                            src="img/photos/launches/rockets_landing.jpg"
+                            alt="Reusable rockets landing on the landing pad"
+                        />
+                        <div class="toggle-container">
+                            <label for="pet-select">Filter launches:</label>
+                            <select name="launches" id="launchesSelect">
+                                <option value="/upcoming">Upcoming</option>
+                                <option value="/past">Past</option>
+                                <option value="/">All</option>
+                            </select>
+                        </div>
+                        <div class="loader"></div>
+                        <div class="launches-error-container"></div>
+                    </div>
                     <div class="launches-container"></div>
                 </div>
             </section>
 
             <!-- We are sending more-->
-            <section class="about">
+            <section class="about max-width">
                 <img
-                    src="img/photos/launches/rockets_landing.jpg"
+                    src="img/photos/launches/liftoff.jpg"
                     alt="Reusable rockets landing on the landing pad"
+                    alt="SpaceX launch of the Starlink mission"
                 />
                 <div class="max-width">
                     <h2>There and back again</h2>

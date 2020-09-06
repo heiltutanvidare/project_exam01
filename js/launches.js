@@ -1,30 +1,30 @@
+// Filter launches function
+// Selecting the input HTML element
+const filter = document.querySelector("#launchesSelect");
+
+// Set the initial sorting value – It is passed to the fetch function later
+let selectedFilter = filter.value;
+
+console.log(selectedFilter);
+
+// When user changes sorting method, update the sorting value and rund the fetch function
+filter.addEventListener("change", function () {
+    console.log("Changed");
+    selectedFilter = filter.value;
+    console.log(selectedFilter);
+    fetchLaunches(selectedFilter);
+});
+
 // Fetch the upcomming launches
 // and display as HTML on next launches page
-
-const url = "https://api.spacexdata.com/v4/launches/upcoming";
 const errorContainer = document.querySelector(".launches-error-container");
 const loader = document.querySelector(".loader");
-const title = document.querySelector("h1");
-
-// Count down to liftoff in title
-
-title.innerText = "3…";
-
-setTimeout(() => {
-    title.innerText = "2…";
-}, 1000);
-
-setTimeout(() => {
-    title.innerText = "1…";
-}, 2000);
-
-setTimeout(() => {
-    title.innerText = "Liftoff!";
-}, 3000);
 
 // Fetch upcomming SpaceX launches
-async function fetchLaunches() {
+async function fetchLaunches(filter) {
     try {
+        loader.display = "block";
+        const url = "https://api.spacexdata.com/v4/launches" + filter;
         const response = await fetch(url);
         const launches = await response.json();
         displayLaunches(launches);
@@ -39,10 +39,15 @@ async function fetchLaunches() {
     }
 }
 
-fetchLaunches();
+fetchLaunches(selectedFilter);
 
 function displayLaunches(launches) {
     const container = document.querySelector(".launches-container");
+
+    // Remove the loader
+    loader.style.display = "none";
+
+    // declare variable for HTML to be used to display launches
     let html = "";
 
     for (let i = 0; i < launches.length; i++) {

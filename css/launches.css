@@ -21,12 +21,16 @@ Upcomming launches page
 ***************/
 
 .launches {
-    margin-top: 5rem;
+    margin-top: 6rem;
     padding-bottom: 4rem;
 }
 
 .launches a {
     margin-top: 2rem;
+}
+
+.launches__grid__title-container img {
+    margin-bottom: 3rem;
 }
 
 .launch {
@@ -70,6 +74,7 @@ Upcomming launches page
 
 .launch__description {
     margin-bottom: 0;
+    max-width: 48ch;
 }
 
 .launch__link {
@@ -84,7 +89,23 @@ Upcomming launches page
     opacity: 0.5;
 }
 
+/* 
+Toggle inputs
+*/
+
+.toggle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--clr-dark-grey);
+    margin-bottom: 1rem;
+}
+
 @media screen and (min-width: 45em) {
+    .launches {
+        margin-top: 8rem;
+    }
     .feature__launches {
         padding-top: 7rem;
         padding-bottom: 4rem;
@@ -98,20 +119,21 @@ Upcomming launches page
         padding-right: 4rem;
         border-right: 1px solid var(--clr-space-grey);
         margin: 0;
+        text-align: right;
     }
 
     .feature__launches__grid,
     .launches__grid {
         display: grid;
-        grid-template-columns: min-content auto;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 4rem;
         position: relative;
     }
 
-    .launches__grid h2 {
+    .launches__grid__title-container {
         margin-top: 0.85rem;
         position: sticky;
-        top: 5rem;
+        top: 8rem;
         align-self: start;
     }
 }
