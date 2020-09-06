@@ -273,7 +273,7 @@ Mars weather feature
 }
 
 .red-planet__text {
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .red-planet__text p {
@@ -308,6 +308,7 @@ Feature cards
     text-align: center;
     display: grid;
     place-items: center;
+    padding: 3rem;
 }
 
 .feature__card--astronauts {
@@ -319,17 +320,14 @@ Feature cards
 }
 
 .feature__card__icon {
-    font-size: 6rem;
+    font-size: 5rem;
     color: var(--clr-white);
+    margin-bottom: 1rem;
 }
 
 .feature__card__img {
-    /* margin: 1.5rem 0 -1rem 0; */
-    position: relative;
-}
-
-.feature__card__text {
-    padding: 2rem;
+    max-height: 75px;
+    margin-bottom: 1rem;
 }
 
 .feature__card__blurb {
@@ -382,15 +380,14 @@ Media queries
     /* Feature cards */
     .feature__cards {
         grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+        max-width: 960px;
+        margin: 10rem auto 10rem auto;
     }
 
     .feature__card {
         display: grid;
         place-items: center;
-    }
-
-    .feature__card__icon {
-        margin: 2rem 0 -2rem 0;
     }
 
     /* Mars feature */
