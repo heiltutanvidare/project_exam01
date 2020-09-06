@@ -50,6 +50,8 @@
     background-position: bottom -20rem center;
     position: relative;
     padding-top: 8rem;
+    max-height: 720px;
+    min-height: unset;
 }
 
 .hero--spaceflight {

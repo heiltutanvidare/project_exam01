@@ -48,10 +48,10 @@
     margin: 0;
     font-size: 0.85rem;
     line-height: 1.4;
-    color: var(--clr-white);
 }
 
 .astronaut__name {
+    color: var(--clr-white);
     font-size: 1rem;
     font-weight: 900;
 }
@@ -78,5 +78,9 @@
 @media screen and (min-width: 45em) {
     .astronaut p {
         font-size: 1.25rem;
+    }
+
+    .astronaut {
+        margin: 4rem 2rem;
     }
 }
