@@ -18,4 +18,10 @@
     --speed-fast: 0.125s cubic-bezier(0.9, 0.5, 0.63, 1.48);
     --speed-medius: 0.4s cubic-bezier(0.9, 0.5, 0.63, 1.48);
     --speed-slow: 1s cubic-bezier(0.9, 0.5, 0.63, 1.48);
+
+    /* Colors from hero image */
+    --clr-space-blue: #4c5573;
+    --clr-moon-blue: #8d93a6;
+    --clr-space-green: #293d47;
+    --clr-rocket-flame: #f9d289;
 }

@@ -64,6 +64,8 @@
     text-align: center;
     padding: 0 2rem;
     color: var(--clr-white);
+    margin: 4rem auto;
+    max-width: 48ch;
 }
 
 .spaceflight__blurb span {
@@ -74,6 +76,7 @@
 /* About spaceflight */
 .about__topics {
     margin-top: 4rem;
+    margin-bottom: 5rem;
     display: grid;
     grid-gap: 2rem;
 }
@@ -129,14 +132,26 @@
         right: 4.2rem;
     }
 
+    .about__topics {
+        margin-bottom: 11rem;
+    }
+
     .about__numbers {
         height: 100vh;
         background-position: bottom;
     }
 
+    .number__item .number {
+        font-size: 5.45rem;
+    }
+
+    .number__description {
+        font-size: 1.25rem;
+    }
+
     .number__container {
         align-items: center;
-        margin-left: 40%;
+        margin-left: 35%;
     }
     .about__topics {
         grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));

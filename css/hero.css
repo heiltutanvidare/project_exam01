@@ -58,6 +58,10 @@
     background-position: bottom -20rem center;
     position: relative;
     padding-top: 8rem;
+    justify-content: center;
+}
+
+.hero--spaceflight__inner {
 }
 
 .hero--mars {

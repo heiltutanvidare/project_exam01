@@ -203,7 +203,8 @@ h1 {
     text-transform: uppercase;
 }
 
-h1 span {
+h1 span,
+h2 span {
     display: block;
 }
 
@@ -300,38 +301,35 @@ Feature cards
 ***************/
 .feature__cards {
     display: grid;
-    grid-gap: 3rem;
     margin-top: 10rem;
 }
 
 .feature__card {
-    border-radius: 1rem;
     text-align: center;
+    display: grid;
+    place-items: center;
 }
 
 .feature__card--astronauts {
-    background-color: var(--clr-green-dark);
-    border: 2.5px solid var(--clr-green-semi);
+    background-color: #222831;
 }
 
 .feature__card--solarsystem {
-    border: 1.5px solid var(--clr-uranus);
+    background-color: #191919;
 }
 
 .feature__card__icon {
     font-size: 6rem;
     color: var(--clr-white);
-    margin: -1rem 0 0 0;
 }
 
 .feature__card__img {
-    margin: 1.5rem 0 -1rem 0;
+    /* margin: 1.5rem 0 -1rem 0; */
     position: relative;
-    z-index: -1;
 }
 
 .feature__card__text {
-    padding: 2rem 2rem 3rem 2rem;
+    padding: 2rem;
 }
 
 .feature__card__blurb {
@@ -361,18 +359,18 @@ Media queries
     }
 
     h2 {
-        font-size: 2.85rem;
+        font-size: 2.25rem;
         line-height: 1.25;
-        max-width: 15ch;
+        /* max-width: 15ch; */
     }
 
     h3 {
-        font-size: 2rem;
+        font-size: 1.45rem;
     }
 
     p.blurb {
         font-size: 1.275rem;
-        max-width: 48ch;
+        /* max-width: 48ch; */
         margin-left: auto;
         margin-right: auto;
     }
