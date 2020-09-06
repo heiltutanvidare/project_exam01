@@ -56,6 +56,17 @@ function displayAPOD(apod) {
         }
     }
 
+    // Check to see if copyright credits are available
+    function checkCredits(copyright) {
+        if (copyright) {
+            return `
+                <p class="apod__credits">&copy; ${copyright}</p>
+            `;
+        } else {
+            return "";
+        }
+    }
+
     // Define the HTML for the APOD
     const html = `
             <div class="apod__img-container">
@@ -65,7 +76,7 @@ function displayAPOD(apod) {
                 <div class="apod__title-container">
                 <p class="apod__date">${date}</p>
                 <h3 class="apod__title">${title}</h3>
-                <p class="apod__credits">&copy; ${copyright}</p>
+                ${checkCredits(copyright)}
                 </div>
                 <p class="apod__caption">${caption}</p>
             </div>
