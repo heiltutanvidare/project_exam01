@@ -60,19 +60,6 @@
     }
 }
 
-.spaceflight__blurb {
-    text-align: center;
-    padding: 0 2rem;
-    color: var(--clr-white);
-    margin: 4rem auto;
-    max-width: 48ch;
-}
-
-.spaceflight__blurb span {
-    font-weight: 900;
-    text-transform: uppercase;
-}
-
 /* About spaceflight */
 .about__topics {
     margin-top: 4rem;
