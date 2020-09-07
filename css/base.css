@@ -325,14 +325,11 @@ Feature cards
     display: grid;
     place-items: center;
     padding: 3rem;
+    border-top: 1px solid #464646;
 }
 
-.feature__card--astronauts {
-    background-color: #222831;
-}
-
-.feature__card--solarsystem {
-    background-color: #191919;
+.feature__card:last-of-type {
+    border-bottom: 1px solid #464646;
 }
 
 .feature__card__icon {
@@ -396,7 +393,6 @@ Media queries
     /* Feature cards */
     .feature__cards {
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 2rem;
         max-width: 960px;
         margin: 10rem auto 10rem auto;
     }
@@ -404,6 +400,7 @@ Media queries
     .feature__card {
         display: grid;
         place-items: center;
+        border: 1px solid #464646;
     }
 
     /* Mars feature */
@@ -459,6 +456,10 @@ Media queries
 }
 
 @media screen and (min-width: 80em) {
+    .max-width {
+        max-width: var(--maxWidth--extra);
+    }
+
     .column__padding {
         display: block;
     }
