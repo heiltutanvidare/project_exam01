@@ -463,8 +463,4 @@ Media queries
     .column__padding {
         display: block;
     }
-
-    .red-planet {
-        grid-template-columns: 10vw auto 1fr;
-    }
 }
