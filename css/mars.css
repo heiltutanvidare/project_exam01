@@ -9,7 +9,7 @@
 }
 
 .img__overlay--container .hero__overlay {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0), black);
+    background: linear-gradient(to top, rgba(12, 12, 12, 0), var(--clr-black));
 }
 
 .img__overlay--container img {
