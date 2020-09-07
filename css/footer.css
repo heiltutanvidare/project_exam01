@@ -13,6 +13,7 @@
 #clouds_front,
 #clouds_rear {
     animation: cloudMove ease-in-out alternate infinite;
+    transform: translateX(-2rem);
 }
 
 #clouds_front {
@@ -24,9 +25,6 @@
 }
 
 @keyframes cloudMove {
-    0% {
-        transform: translateX(-2rem);
-    }
     100% {
         transform: translateX(2rem);
     }
@@ -183,6 +181,10 @@ footer address a {
 }
 
 @media screen and (min-width: 75em) {
+    .clouds-container {
+        margin-top: 12rem;
+    }
+
     .main-footer {
         display: grid;
         grid-template-columns: max-content max-content 1fr;
