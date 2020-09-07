@@ -7,7 +7,11 @@
 
 .hero__overlay,
 .hero__overlay--short {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+    background: linear-gradient(
+        to bottom,
+        var(--clr-black--trans),
+        var(--clr-black)
+    );
     position: absolute;
     top: 0;
     right: 0;
@@ -46,9 +50,9 @@
 }
 
 .hero--peopleInSpace {
-    background: url(../img/photos/people_in_space/outer_atmos.jpg) no-repeat;
+    background: url(../img/photos/spaceflight/outer_atmos.png) no-repeat;
     background-size: cover;
-    background-position: bottom -20rem center;
+    background-position: top center;
     position: relative;
     padding-top: 8rem;
     max-height: 720px;

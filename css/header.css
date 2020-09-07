@@ -11,7 +11,7 @@ header {
 }
 
 header.scrolled {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(20, 20, 20, 0.75);
 }
 
 .header__inner {

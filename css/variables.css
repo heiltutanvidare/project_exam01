@@ -9,7 +9,8 @@
     --clr-green-dark: #000f0d;
     --clr-green-semi: #00302b;
     --clr-sand: #d0a270;
-    --clr-black: #000;
+    --clr-black: rgb(20, 20, 20);
+    --clr-black--trans: rgba(20, 20, 20, 0);
     --clr-white: #fff;
     --clr-uranus: #c9f3f6;
     --maxWidth: 960px;
