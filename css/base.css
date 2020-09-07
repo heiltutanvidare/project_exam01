@@ -338,9 +338,80 @@ Feature cards
     margin-bottom: 1rem;
 }
 
-.feature__card__img {
-    max-height: 75px;
+.fa-rocket {
+    animation: rocketLaunch 1s ease-in-out alternate infinite;
+    transform: rotate(-45deg);
+}
+
+@keyframes rocketLaunch {
+    100% {
+        transform: translate(0, -0.5rem) rotate(-45deg);
+    }
+}
+
+.feature__card svg {
+    max-height: 90px;
     margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+#wave1,
+#wave2 {
+    animation: wavePulse 1s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes wavePulse {
+    0% {
+        transform: scale(1) translate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.25) translate(2.75rem, -2.75rem);
+        opacity: 0;
+    }
+}
+
+#head {
+    animation: headBob 0.75s ease-in-out alternate infinite;
+    transform-origin: center;
+}
+
+@keyframes headBob {
+    0% {
+        transform: rotate(-6deg);
+    }
+    100% {
+        transform: rotate(6deg);
+    }
+}
+
+#planet03,
+#planet02,
+#planet01 {
+    animation: planetRotate linear infinite;
+    transform-origin: center;
+}
+
+#planet01 {
+    animation-duration: 20s;
+}
+
+#planet02 {
+    animation-duration: 15s;
+}
+
+#planet03 {
+    animation-duration: 10s;
+}
+
+@keyframes planetRotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .feature__card__blurb {
