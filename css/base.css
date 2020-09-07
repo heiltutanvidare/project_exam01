@@ -201,7 +201,7 @@ cite {
     text-transform: uppercase;
     font-weight: 900;
     font-style: normal;
-    color: var(--clr-white);
+    color: inherit;
 }
 
 /************** 
