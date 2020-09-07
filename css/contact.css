@@ -1,5 +1,5 @@
 .contact-us {
-    margin: -10rem auto 5rem auto;
+    margin: -5rem auto 5rem auto;
     max-width: 1600px;
     /* background-color: var(--clr-space-grey); */
     display: grid;
@@ -88,7 +88,7 @@ textarea::placeholder {
     }
 
     .contact-us {
-        margin: calc(6vw + 1rem) auto;
+        margin: calc(12vw + 1rem) auto;
         grid-template-columns: 1fr 2fr;
         align-items: center;
     }

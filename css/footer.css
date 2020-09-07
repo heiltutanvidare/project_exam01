@@ -20,7 +20,7 @@
 }
 
 #clouds_rear {
-    animation-duration: 8s;
+    animation-duration: 10s;
 }
 
 @keyframes cloudMove {
