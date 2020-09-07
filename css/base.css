@@ -528,6 +528,7 @@ Media queries
 
 @media screen and (min-width: 80em) {
     .max-width {
+        width: 80%;
         max-width: var(--maxWidth--extra);
     }
 
