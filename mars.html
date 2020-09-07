@@ -67,28 +67,34 @@
         </header>
 
         <main>
-            <!-- Hero section -->
-            <div class="hero hero--mars">
-                <h1>
-                    <span>Whats the</span> <span>weather like</span>
-                    <span>on mars?</span>
-                </h1>
-                <p class="blurb">
-                    InSight is taking daily weather measurements (temperature,
-                    wind, pressure) on the surface of Mars at Elysium Planitia,
-                    a flat, smooth plain near Mars’ equator.
-                </p>
-                <div class="img__overlay--container">
-                    <div class="hero__overlay"></div>
-                    <img
-                        src="img/photos/weather_on_mars/insight_top.jpg"
-                        alt="The Mars insigth rover seen from the top"
-                    />
-                </div>
-            </div>
-
             <!-- Mars weather -->
             <section class="mars__weather">
+                <div class="mars__weather__intro">
+                    <div class="mars__weather__intro__text max-width">
+                        <h1>
+                            <span>Whats the</span> <span>weather like</span>
+                            <span>on mars?</span>
+                        </h1>
+                        <p class="mars__blurb">
+                            InSight is taking daily weather measurements
+                            (temperature, wind, pressure) on the surface of Mars
+                            at Elysium Planitia, a flat, smooth plain near Mars’
+                            equator.
+                        </p>
+                    </div>
+                    <!-- <div class="img__overlay--container">
+                        <div class="hero__overlay"></div>
+                        <img
+                            src="img/photos/weather_on_mars/insight_top.jpg"
+                            alt="The Mars insigth rover seen from the top"
+                        />
+                    </div> -->
+                    <img
+                        src="img/photos/weather_on_mars/insight_front.png"
+                        alt="The Mars Insigth rover seen from the side"
+                    />
+                </div>
+
                 <div class="mars__weather--latest">
                     <h2>Latest Weather at Elysium Planitia</h2>
                     <div class="loader"></div>
@@ -211,12 +217,12 @@
             </section>
 
             <!-- Mission overview -->
-            <section class="mission">
+            <section class="mission max-width">
                 <img
-                    src="img/photos/weather_on_mars/insight_front.jpg"
-                    alt="The Mars Insigth rover seen from the side"
+                    src="img/photos/weather_on_mars/insight_top.jpg"
+                    alt="The Mars insigth rover seen from the top"
                 />
-                <div class="max-width mission__overview">
+                <div class="mission__overview">
                     <h2>Insight Mission Overview</h2>
                     <div class="mission__overview__text">
                         <h3>Studying the ‘Inner Space’ of Mars</h3>
@@ -289,15 +295,15 @@
                         </p>
                     </div>
                 </div>
-                <img
-                    src="img/photos/weather_on_mars/mars_surface.jpg"
-                    alt="An artistic render of what the surface on mars could look like"
-                />
             </section>
+            <img
+                src="img/photos/weather_on_mars/mars_surface.jpg"
+                alt="An artistic render of what the surface on mars could look like"
+            />
 
             <!-- We are going there  -->
-            <section class="about max-width">
-                <h2>We are going to Mars to see for ourselves</h2>
+            <section class="about about--mars max-width">
+                <h2>We are going to Mars <span>to see for ourselves</span></h2>
                 <p>
                     We are working on a next generation of fully reusable launch
                     vehicles that will be the most powerful ever built, capable

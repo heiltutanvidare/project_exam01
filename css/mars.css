@@ -1,4 +1,9 @@
 /* Mars */
+.mars__weather__intro {
+    padding-top: 8rem;
+    background: url(../img/photos/starbg.jpg) center / cover no-repeat;
+}
+
 .img__overlay--container {
     position: relative;
 }
@@ -19,6 +24,15 @@
 /* Mars Weather */
 .mars__weather {
     text-align: center;
+}
+
+.mars__weather h1 {
+    margin-bottom: 2rem;
+}
+
+.mars__blurb {
+    max-width: 61ch;
+    margin: 0 auto;
 }
 
 .mars__weather h2 {
@@ -86,15 +100,21 @@
     z-index: -1;
 }
 
+.mission img {
+    margin-bottom: 2rem;
+}
+
 .mission h3 {
     margin: 1.5rem 0 0.5rem 0;
 }
 
+.about--mars {
+    margin-top: 0;
+}
+
 @media screen and (min-width: 45em) {
-    .hero--mars {
-        height: 100vh;
-        min-height: 1500px;
-        margin-bottom: 8rem;
+    .mars__weather__intro {
+        padding-top: 15rem;
     }
 
     .mars__weather--rest {

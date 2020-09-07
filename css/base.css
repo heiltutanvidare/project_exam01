@@ -233,7 +233,7 @@ About section
 ***************/
 
 .about {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     width: 100%;
     overflow-x: hidden;
     text-align: center;
@@ -246,7 +246,6 @@ About section
 
 .about img {
     margin-bottom: 3rem;
-    margin: 0;
 }
 
 .about p {
@@ -382,7 +381,7 @@ Media queries
     }
 
     .about h2 {
-        margin-top: 6rem;
+        /* margin-top: 6rem; */
     }
 
     /* Feature cards */
@@ -444,6 +443,9 @@ Media queries
     .weather-container a {
         margin-top: 1rem;
     }
+
+    .about img {
+        margin-bottom: 6rem
 }
 
 @media screen and (min-width: 80em) {
