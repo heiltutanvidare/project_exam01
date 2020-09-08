@@ -5,13 +5,9 @@ const filter = document.querySelector("#launchesSelect");
 // Set the initial sorting value – It is passed to the fetch function later
 let selectedFilter = filter.value;
 
-console.log(selectedFilter);
-
 // When user changes sorting method, update the sorting value and rund the fetch function
 filter.addEventListener("change", function () {
-    console.log("Changed");
     selectedFilter = filter.value;
-    console.log(selectedFilter);
     fetchLaunches(selectedFilter);
 });
 
@@ -23,7 +19,6 @@ const loader = document.querySelector(".loader");
 // Fetch upcomming SpaceX launches
 async function fetchLaunches(filter) {
     try {
-        loader.display = "block";
         const url = "https://api.spacexdata.com/v4/launches" + filter;
         const response = await fetch(url);
         const launches = await response.json();
@@ -35,48 +30,46 @@ async function fetchLaunches(filter) {
                 Houston, we have a problem…
             </p>
         `;
-        // loader.style.display = "none";
+        loader.style.display = "none";
     }
 }
 
 fetchLaunches(selectedFilter);
 
 function displayLaunches(launches) {
+    // Select the DOM element to contain the launches
     const container = document.querySelector(".launches-container");
-
-    // Remove the loader
-    loader.style.display = "none";
 
     // declare variable for HTML to be used to display launches
     let html = "";
 
     for (let i = 0; i < launches.length; i++) {
-        const flightNo = launches[i].flight_number;
-        const day = new Date(launches[i].date_utc)
-            .toLocaleDateString(undefined, {
-                day: "2-digit",
-            })
-            .slice(0, -1);
-        const month = new Date(launches[i].date_utc).toLocaleDateString(
-            undefined,
-            {
-                month: "short",
-            }
-        );
-        // const date = dateString.getDate();
-        // const month = dateString.getMonth();
+        // Get the name of the launch
         const launchName = launches[i].name;
-        let description = launches[i].details;
-        let redditLink = launches[i].links.reddit.campaign;
 
+        // Get the flight number of the launch
+        const flightNo = launches[i].flight_number;
+
+        // Extract the day, month and year of the launches
+        const date = new Date(launches[i].date_utc);
+        const day = date
+            .toLocaleDateString(undefined, { day: "2-digit" })
+            .slice(0, -1);
+        const month = date.toLocaleDateString(undefined, { month: "short" });
+        const year = date.toLocaleDateString(undefined, { year: "numeric" });
+
+        // Check to see if a Reddit link is available and return propper HTML
+        let redditLink = launches[i].links.reddit.campaign;
         function checkLink(link) {
             if (link) {
-                return `<a href="${redditLink}" class="launch__link">Reddit thread</a>`;
+                return `<a href="${redditLink}" target="_blank" class="launch__link">Reddit thread</a>`;
             } else {
                 return "";
             }
         }
 
+        // Check to see if a description is available, and return default text if not
+        let description = launches[i].details;
         function checkDescription(link) {
             if (link) {
                 return description;
@@ -85,11 +78,13 @@ function displayLaunches(launches) {
             }
         }
 
+        // Set the HTML of each launch
         html += `
             <div class="launch">
                 <div class="launch__date-box">
                     <p class="launch__day">${day}</p>
                     <p class="launch__month">${month}</p>
+                    <p class="launch__year">${year}</p>
                 </div>
                 <div class="launch__details-box">
                     <p class="launch__details">#${flightNo}</p>
@@ -103,7 +98,9 @@ function displayLaunches(launches) {
         `;
     }
 
+    // Remove the loader
     loader.style.display = "none";
 
+    // Apply the HTML to the contianer
     container.innerHTML = html;
 }

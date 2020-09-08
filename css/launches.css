@@ -48,9 +48,10 @@ Upcomming launches page
 
 .launch__date-box {
     border: 1px solid var(--clr-white);
-    padding: 1rem;
+    padding: 1rem 1rem 0.75rem 1rem;
     align-self: flex-start;
     margin-top: 0.5rem;
+    text-align: center;
 }
 
 .launch__day,
@@ -67,6 +68,12 @@ Upcomming launches page
 
 .launch__month {
     font-size: 0.85rem;
+}
+
+.launch__year {
+    font-size: 0.85rem;
+    margin: 0.25rem 0 0 0;
+    opacity: 0.75;
 }
 
 .launch h3 {
