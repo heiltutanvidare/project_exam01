@@ -2,6 +2,32 @@
     background: black;
 }
 
+.hero--solarsystem--inner {
+    display: grid;
+    grid-gap: 1rem;
+    place-items: center;
+    width: 100%;
+    padding: 7rem 0 4rem 0;
+}
+
+.solarsystem__illustration {
+    max-width: 25rem;
+    margin: 1rem;
+    width: 50%;
+    fill: var(--clr-cream);
+    overflow: visible;
+}
+
+.chevron {
+    animation: chevronBounce 1s ease-in-out alternate infinite;
+}
+
+@keyframes chevronBounce {
+    100% {
+        transform: translateY(1rem);
+    }
+}
+
 .swipe__indicator {
     padding: 0 2rem;
 }
@@ -220,6 +246,10 @@ Planets
 }
 
 @media screen and (min-width: 55em) {
+    .hero--solarsystem--inner {
+        display: grid;
+        grid-gap: 3rem;
+    }
     .planet {
         grid-template-columns: 1fr 2fr;
     }

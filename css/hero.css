@@ -42,10 +42,7 @@
 }
 
 .hero--solarsystem {
-    background: url(../img/photos/solar_system/sun_hero.jpg) no-repeat;
-    background-size: cover;
-    background-position: top -15rem center;
-    justify-content: flex-end;
+    justify-content: center;
     padding-bottom: 9rem;
 }
 
