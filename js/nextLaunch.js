@@ -5,7 +5,7 @@ async function fetchNextLaunch() {
         const response = await fetch(url);
         const nextLaunch = await response.json();
         displayCountdown(nextLaunch);
-        displayNextLaunch(nextLaunch);
+        // displayNextLaunch(nextLaunch);
     } catch (error) {
         console.error(error);
     }

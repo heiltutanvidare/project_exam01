@@ -34,7 +34,7 @@ async function fetchWeather() {
 }
 
 // Calling the function to fetch the weather
-fetchWeather();
+// fetchWeather();
 
 // Function to display the weather in the DOM
 function displayWeather(json) {
