@@ -116,7 +116,7 @@ footer address a {
 .footer__acknowledge {
     font-size: 0.75rem;
     color: var(--clr-dark-grey);
-    max-width: 49em;
+    max-width: 64em;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
