@@ -1,5 +1,5 @@
 .contact-us {
-    margin: -5rem auto 5rem auto;
+    margin: -2rem auto 5rem auto;
     max-width: 1600px;
     /* background-color: var(--clr-space-grey); */
     display: grid;
@@ -12,13 +12,13 @@
 }
 
 .contact-us__header {
-    text-align: right;
+    /* text-align: right; */
     margin-bottom: 2rem;
 }
 
 .contact-us__header h2 {
     max-width: none;
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
@@ -34,9 +34,9 @@
 
 .contact-us__img-container img {
     position: relative;
-    bottom: -10rem;
-    left: -5rem;
-    max-width: 225px;
+    bottom: -1.5rem;
+    left: -2rem;
+    max-width: 200px;
     animation: flying 10s ease-in-out alternate infinite;
 }
 

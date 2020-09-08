@@ -169,6 +169,88 @@
                     successfully land back on Earth and refly again.
                 </p>
             </section>
+
+            <!-- Contatct us form -->
+            <section class="contact-us">
+                <div class="contact-us__img-container">
+                    <img
+                        src="img/photos/spaceflight/astronaut.png"
+                        alt="An astronaut saying helo"
+                    />
+                </div>
+                <div class="contact-us__inner">
+                    <div class="contact-us__header">
+                        <h2>Float over and say hi!</h2>
+                        <p class="contact__blurb">
+                            Do you have any questions? Or maybe you want to join
+                            our award winning team?
+                        </p>
+                        <p class="contact__blurb">
+                            Fill inn the form below and let's get in touch!
+                        </p>
+                    </div>
+                    <form action="post" class="contact__form">
+                        <div class="form__field">
+                            <label for="firstName">First name</label>
+                            <input
+                                type="text"
+                                name="firstName"
+                                id="firstName"
+                                placeholder="Enter your first name"
+                                required
+                            />
+                        </div>
+                        <div class="form__field">
+                            <label for="lastName">Last name</label>
+                            <input
+                                type="text"
+                                name="lastName"
+                                id="lastName"
+                                placeholder="Enter your last name"
+                                required
+                            />
+                        </div>
+                        <div class="form__field">
+                            <label for="email">Email address</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Enter your email address"
+                                required
+                            />
+                        </div>
+                        <div class="form__field">
+                            <label for="email">Phone number</label>
+                            <input
+                                type="tel"
+                                name="phone"
+                                id="phone"
+                                placeholder="Enter your phone number"
+                                required
+                            />
+                        </div>
+                        <div class="form__field form__field--message">
+                            <label for="msg">Message</label>
+                            <textarea
+                                name="msg"
+                                id="msg"
+                                rows="5"
+                                placeholder="Enter your message"
+                                required
+                            ></textarea>
+                        </div>
+                        <div class="form__field form__field__submit">
+                            <input
+                                type="submit"
+                                value="Send message"
+                                class="btn btn--primary contact--submit"
+                                id="scrollToContact"
+                            />
+                        </div>
+                    </form>
+                </div>
+            </section>
         </main>
 
         <!-- Footer -->
