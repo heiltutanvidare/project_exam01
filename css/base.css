@@ -43,6 +43,7 @@ p.blurb {
 
 p.blurb span {
     font-weight: 700;
+    display: block;
 }
 
 .temp {
@@ -469,10 +470,6 @@ Media queries
         max-width: 48ch;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .about h2 {
-        /* margin-top: 6rem; */
     }
 
     /* Feature cards */

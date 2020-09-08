@@ -48,7 +48,7 @@
 .mars__weather--latest {
     border-bottom: 1px solid var(--clr-white);
     margin-bottom: 2rem;
-    padding: 4rem 0;
+    /* padding: 4rem 0; */
 }
 
 .mars__weather--latest .mars__weather__date,
