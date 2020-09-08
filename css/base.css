@@ -24,7 +24,9 @@ body {
 }
 
 a {
+    color: inherit;
     transition: opacity 0.25s linear;
+    text-decoration: none;
 }
 
 a:hover,
