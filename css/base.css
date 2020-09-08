@@ -343,13 +343,23 @@ Feature cards
 }
 
 .fa-rocket {
-    animation: rocketLaunch 1s ease-in-out alternate infinite;
-    transform: rotate(-45deg);
+    animation: rocketLaunch 1s ease-in-out alternate infinite,
+        rocketShake 0.2s linear infinite;
+    transform: translateY(0.5rem) rotate(-45deg);
 }
 
 @keyframes rocketLaunch {
     100% {
-        transform: translate(0, -0.5rem) rotate(-45deg);
+        transform: translateY(-0.25rem) rotate(-45deg);
+    }
+}
+
+@keyframes rocketShake {
+    0% {
+        margin-left: -1px;
+    }
+    100% {
+        margin-left: 1px;
     }
 }
 
