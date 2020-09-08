@@ -247,6 +247,7 @@ Planets
 
 @media screen and (min-width: 55em) {
     .hero--solarsystem--inner {
+        margin-top: 4rem;
         display: grid;
         grid-gap: 3rem;
     }

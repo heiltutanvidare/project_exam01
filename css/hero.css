@@ -43,7 +43,7 @@
 
 .hero--solarsystem {
     justify-content: center;
-    padding-bottom: 9rem;
+    /* padding-bottom: 9rem; */
 }
 
 .hero--peopleInSpace {
@@ -103,14 +103,5 @@
 @media screen and (min-width: 45em) {
     .hero--mars {
         background-size: contain;
-    }
-}
-
-@media screen and (min-width: 90em) {
-    .hero--solarsystem {
-        background-size: 100%;
-        background-position-x: center;
-        justify-content: flex-end;
-        padding-bottom: 9rem;
     }
 }
