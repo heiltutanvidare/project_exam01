@@ -180,6 +180,10 @@ section {
     margin-left: 1rem;
 }
 
+input[type="submit"] {
+    cursor: pointer;
+}
+
 /************** 
 Quotes
 ***************/
