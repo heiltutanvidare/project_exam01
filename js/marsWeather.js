@@ -15,7 +15,6 @@ async function fetchWeather() {
     try {
         const response = await fetch(url);
         const json = await response.json();
-        console.log(json);
         displayWeather(json);
 
         // Cathing any errors and displaying error message
@@ -34,28 +33,17 @@ async function fetchWeather() {
     }
 }
 
-// Select the DOM element to contain the rest of the weather days
-const restWeatherContainer = document.querySelector(".mars__weather--latest");
-
-// Function to display the 6 other days
-function displayRestWeather(json) {
-    console.dir(json);
-}
-
-// Calling the function to fetch the weather
-fetchWeather();
-
-// Function to display the latest weather in the DOM
+// Function to display the following 6 days in the DOM
 function displayWeather(json) {
     // Get all sols from the API response
     const sols = json.sol_keys;
 
+    console.log(json);
     // Declare the HTML variable
     let html = "";
 
     sols.forEach((sol) => {
         let weather = json[sol];
-        console.log(weather);
 
         // Get the corresponding earth date
         const earthDate = new Date(weather.First_UTC).toLocaleDateString(
@@ -82,23 +70,28 @@ function displayWeather(json) {
 
         // Create the html for displaying the weather data
         html += `
-                <p class="weather__date">Sol ${sol} | ${earthDate}</p>
-                <p class="weather__heading">Air Temperature</p>
-                <p class="weather__details">
-                    Low: ${minTemp}&deg; C | High: ${maxTemp}&deg; C
-                </p>
-                <p class="weather__heading">Wind speed</p>
-                <p class="weather__details">Min: ${maxWind} m/s | Max: ${maxWind} m/s</p>
+                <div class="mars__weather__entry">
+                    <p class="mars__weather__date">Sol ${sol} | ${earthDate}</p>
+                    <p class="mars__weather__heading">Air Temperature</p>
+                    <p class="mars__weather__details">
+                        Low: ${minTemp}&deg; C | High: ${maxTemp}&deg; C
+                    </p>
+                    <p class="mars__weather__heading">Wind speed</p>
+                    <p class="mars__weather__details">Min: ${maxWind} m/s | Max: ${maxWind} m/s</p>
+                </div>
         `;
     });
 
     // get the container to display the weather
-    const container = document.querySelector(".latest__container");
+    const container = document.querySelector(".mars__weather__container");
 
     // Apply the HTML to the container
     container.innerHTML = html;
 
     // Remove the loader
-    const loader = document.querySelector(".mars__weather--latest .loader");
+    const loader = document.querySelector(".mars__weather__display .loader");
     loader.style.display = "none";
 }
+
+// Calling the function to fetch the weather
+fetchWeather();

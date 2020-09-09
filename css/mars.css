@@ -16,11 +16,6 @@
     margin-top: 1px;
 }
 
-.hero--mars p {
-    padding: 2rem;
-    text-align: center;
-}
-
 /* Mars Weather */
 .mars__weather {
     text-align: center;
@@ -28,11 +23,6 @@
 
 .mars__weather h1 {
     margin-bottom: 2rem;
-}
-
-.mars__blurb {
-    max-width: 61ch;
-    margin: 0 auto;
 }
 
 .mars__weather h2 {
@@ -45,27 +35,22 @@
     color: var(--clr-cream);
 }
 
-.mars__weather--latest {
+.mars__weather__entry:first-of-type {
     border-bottom: 1px solid var(--clr-white);
     margin-bottom: 2rem;
     padding-bottom: 1rem;
 }
 
-.mars__weather--latest .mars__weather__date,
-.mars__weather--latest .mars__weather__details {
-    font-size: 1.5rem;
-    font-weight: 100;
-}
-
-.mars__weather--latest .mars__weather__details span {
-    font-size: 1.15rem;
+.mars__weather__date,
+.mars__weather__details {
+    font-size: 1rem;
 }
 
 .mars__weather__details span {
     font-weight: 700;
 }
 
-.mars__weather--latest .mars__weather__details {
+.mars__weather__details {
     margin: 0;
 }
 
@@ -73,24 +58,13 @@
     margin-bottom: 2rem;
 }
 
-/* Rest of days */
-
-.mars__weather--rest {
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-}
-
 .mars__weather__entry {
     margin-bottom: 2rem;
 }
 
-.mars__weather__entry .mars__weather__date {
-    font-size: 1.15rem;
-}
-
-.mars__weather__entry p {
-    margin: 0;
+.mars__weather__heading {
+    font-weight: 700;
+    margin: 1rem 0 0 0;
 }
 
 /* Mission overview */
@@ -117,14 +91,14 @@
         padding-top: 15rem;
     }
 
-    .mars__weather--rest {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
+    .mars__weather__container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
     }
 
-    .mars__weather__entry {
-        margin: 1rem;
+    .mars__weather__entry:first-of-type {
+        grid-column: 1 / -1;
+        place-items: center;
     }
 
     .mission__overview {
