@@ -1,6 +1,9 @@
+// The base utr used http and not https, causing the browser to block it.
+// A cors-enabled URL will fix this
 const baseUrl = "http://api.open-notify.org/astros.json";
 const corsEnabled = "https://noroffcors.herokuapp.com/";
 const url = corsEnabled + baseUrl;
+
 const loader = document.querySelector(".loader");
 const errorContainer = document.querySelector(
     ".peopleInSpace__error__container"
@@ -22,7 +25,7 @@ async function fetchAstronauts() {
     }
 }
 
-// call the Astronaus
+// call the function to fetch astronaus
 fetchAstronauts();
 
 function displayAstronauts(json) {
