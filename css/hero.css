@@ -37,7 +37,7 @@
 .hero--homepage {
     background: url(../img/photos/hero.jpg) center / cover no-repeat;
     justify-content: space-between;
-    padding: 11rem 1rem 9rem 1rem;
+    padding: 8rem 1rem;
     position: relative;
 }
 
@@ -101,6 +101,10 @@
 }
 
 @media screen and (min-width: 45em) {
+    .hero--homepage {
+        padding: calc(10vh + 3rem) 2rem 8rem 2rem;
+    }
+
     .hero--mars {
         background-size: contain;
     }

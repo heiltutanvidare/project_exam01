@@ -188,6 +188,13 @@ input[type="submit"] {
 }
 
 /************** 
+Site intro
+***************/
+.site__intro p {
+    padding: 1rem;
+}
+
+/************** 
 Quotes
 ***************/
 
