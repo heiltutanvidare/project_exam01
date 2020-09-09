@@ -14,16 +14,16 @@
 }
 
 .numberOfPeople {
-    font-size: 4.7rem;
+    font-size: 6.7rem;
     font-weight: 900;
     color: var(--clr-green-light);
     margin: 0;
     line-height: 1;
 }
 
-@supports (-webkit-text-stroke: 1px var(--clr-green-light)) {
+@supports (-webkit-text-stroke: 3px var(--clr-green-light)) {
     .numberOfPeople {
-        -webkit-text-stroke: 1px var(--clr-green-light);
+        -webkit-text-stroke: 3px var(--clr-green-light);
         -webkit-text-fill-color: transparent;
     }
 }
@@ -82,5 +82,9 @@
 
     .astronaut {
         margin: 4rem 2rem;
+    }
+
+    .numberOfPeople {
+        font-size: 8rem;
     }
 }
