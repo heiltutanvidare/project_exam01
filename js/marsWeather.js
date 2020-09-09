@@ -15,6 +15,7 @@ async function fetchWeather() {
     try {
         const response = await fetch(url);
         const json = await response.json();
+        console.log(json);
         displayWeather(json);
 
         // Cathing any errors and displaying error message
@@ -33,10 +34,18 @@ async function fetchWeather() {
     }
 }
 
-// Calling the function to fetch the weather
-// fetchWeather();
+// Select the DOM element to contain the rest of the weather days
+const restWeatherContainer = document.querySelector(".mars__weather--latest");
 
-// Function to display the weather in the DOM
+// Function to display the 6 other days
+function displayRestWeather(json) {
+    console.dir(json);
+}
+
+// Calling the function to fetch the weather
+fetchWeather();
+
+// Function to display the latest weather in the DOM
 function displayWeather(json) {
     console.dir(json);
 
@@ -82,17 +91,16 @@ function displayWeather(json) {
                 </p>
                 <p class="weather__heading">Wind speed</p>
                 <p class="weather__details">Min: ${maxWind} m/s | Max: ${maxWind} m/s</p>
-                <a href="#" class="btn btn--primary">Mars weather</a>
         `;
     });
 
     // get the container to display the weather
-    const container = document.querySelector(".weather-container");
+    const container = document.querySelector(".latest__container");
 
     // Apply the HTML to the container
     container.innerHTML = html;
 
     // Remove the loader
-    const loader = document.querySelector(".weather-loader");
+    const loader = document.querySelector(".mars__weather--latest .loader");
     loader.style.display = "none";
 }
