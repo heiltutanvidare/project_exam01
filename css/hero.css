@@ -66,9 +66,6 @@
     justify-content: center;
 }
 
-.hero--spaceflight__inner {
-}
-
 .hero--mars {
     background: url(../img/photos/weather_on_mars/mars_south_pole.jpg) no-repeat;
     background-size: 150%;
