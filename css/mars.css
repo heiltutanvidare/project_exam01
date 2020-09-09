@@ -35,7 +35,12 @@
     color: var(--clr-cream);
 }
 
-.mars__weather__entry:first-of-type {
+.mars__weather__container {
+    display: grid;
+}
+
+.mars__weather__entry:last-of-type {
+    grid-row: 1;
     border-bottom: 1px solid var(--clr-white);
     margin-bottom: 2rem;
     padding-bottom: 2rem;
@@ -132,13 +137,11 @@
     }
 
     .mars__weather__container {
-        display: grid;
         grid-template-columns: repeat(6, 1fr);
     }
 
-    .mars__weather__entry:first-of-type {
+    .mars__weather__entry:last-of-type {
         grid-column: 1 / -1;
-        place-items: center;
     }
 
     .mission__overview {
