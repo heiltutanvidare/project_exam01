@@ -47,8 +47,6 @@ fetchWeather();
 
 // Function to display the latest weather in the DOM
 function displayWeather(json) {
-    console.dir(json);
-
     // Get all sols from the API response
     const sols = json.sol_keys;
 
