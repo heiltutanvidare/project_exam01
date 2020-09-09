@@ -68,6 +68,10 @@ function displayWeather(json) {
         const maxWind = roundValues(weather.HWS.mx);
         const minWind = roundValues(weather.HWS.mn);
 
+        // Get the wind direction
+        const windDirection = weather.WD.most_common.compass_degrees;
+        const compassHeading = weather.WD.most_common.compass_point;
+
         // Create the html for displaying the weather data
         html += `
                 <div class="mars__weather__entry">
@@ -78,6 +82,12 @@ function displayWeather(json) {
                     </p>
                     <p class="mars__weather__heading">Wind speed</p>
                     <p class="mars__weather__details">Min: ${maxWind} m/s | Max: ${maxWind} m/s</p>
+                    <p class="mars__weather__heading">Wind direction</p>
+                    <div class="compass">
+                    <div class="arrow" style="transform: rotate(${windDirection}deg)"></div>
+                    </div>
+                    <p class="mars__weather__details">${windDirection}&deg; ${compassHeading}</p>
+
                 </div>
         `;
     });

@@ -38,7 +38,7 @@
 .mars__weather__entry:first-of-type {
     border-bottom: 1px solid var(--clr-white);
     margin-bottom: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .mars__weather__date,
@@ -65,6 +65,46 @@
 .mars__weather__heading {
     font-weight: 700;
     margin: 1rem 0 0 0;
+}
+
+/* Compass */
+.compass {
+    display: block;
+    position: relative;
+    background-color: var(--clr-dark-grey);
+    height: 3rem;
+    width: 3rem;
+    margin: 0.5rem auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    height: 1rem;
+    transform: rotate(0);
+    transform-origin: center;
+    width: 4px;
+    background-color: var(--clr-green-light);
+    position: relative;
+}
+
+.arrow::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(25%);
+    width: 0.5rem;
+    height: 0.5rem;
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid var(--clr-green-light);
+    border-left: 0.5rem solid transparent;
+}
+
+.circle  {
 }
 
 /* Mission overview */
