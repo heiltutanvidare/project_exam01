@@ -196,6 +196,10 @@ Site intro
 ***************/
 .site__intro p {
     padding: 1rem;
+    animation: fadeUp 0.5s ease-in-out forwards;
+    opacity: 0;
+    transform: translateY(15px);
+    animation-delay: 0.5s;
 }
 
 /************** 
