@@ -245,16 +245,18 @@
                 </div>
                 <div class="contact-us__inner">
                     <div class="contact-us__header">
-                        <h2>Float over and say hi!</h2>
+                        <h2>Float on over <span>and say hi!</span></h2>
                         <p class="contact__blurb">
                             Do you have any questions? Or maybe you want to join
-                            our award winning team?
-                        </p>
-                        <p class="contact__blurb">
-                            Fill inn the form below and let's get in touch!
+                            our award winning team? Fill inn the form below and
+                            let's get in touch!
                         </p>
                     </div>
-                    <form action="post" class="contact__form">
+                    <form
+                        action="post"
+                        class="contact__form"
+                        id="contact__form"
+                    >
                         <div class="form__field">
                             <label for="firstName">First name</label>
                             <input
@@ -262,8 +264,10 @@
                                 name="firstName"
                                 id="firstName"
                                 placeholder="Enter your first name"
-                                required
                             />
+                            <p class="form__error" id="firstNameError">
+                                Please enter a name
+                            </p>
                         </div>
                         <div class="form__field">
                             <label for="lastName">Last name</label>
@@ -272,28 +276,34 @@
                                 name="lastName"
                                 id="lastName"
                                 placeholder="Enter your last name"
-                                required
                             />
+                            <p class="form__error" id="lastNameError">
+                                Please enter a name
+                            </p>
                         </div>
                         <div class="form__field">
                             <label for="email">Email address</label>
                             <input
-                                type="email"
+                                type="text"
                                 name="email"
                                 id="email"
                                 placeholder="Enter your email address"
-                                required
                             />
+                            <p class="form__error" id="emailError">
+                                Invalid email address
+                            </p>
                         </div>
                         <div class="form__field">
-                            <label for="email">Phone number</label>
+                            <label for="phone">Phone number</label>
                             <input
                                 type="tel"
                                 name="phone"
                                 id="phone"
                                 placeholder="Enter your phone number"
-                                required
                             />
+                            <p class="form__error" id="phoneError">
+                                Invalid phone number
+                            </p>
                         </div>
                         <div class="form__field form__field--message">
                             <label for="msg">Message</label>
@@ -302,8 +312,10 @@
                                 id="msg"
                                 rows="5"
                                 placeholder="Enter your message"
-                                required
                             ></textarea>
+                            <p class="form__error" id="msgError">
+                                Please write something
+                            </p>
                         </div>
                         <div class="form__field form__field__submit">
                             <input
@@ -314,6 +326,13 @@
                             />
                         </div>
                     </form>
+                    <div class="submitMsg">
+                        <p class="submitMsg__title">Liftoff!</p>
+                        <p>
+                            Thank you. Your message has been sent and we will
+                            get back to you shortly.
+                        </p>
+                    </div>
                 </div>
             </section>
         </main>
@@ -444,5 +463,6 @@
         <!-- Javascript below this line -->
         <script src="js/headerScroll.js"></script>
         <script src="js/hamburger.js"></script>
+        <script src="js/contactForm.js"></script>
     </body>
 </html>

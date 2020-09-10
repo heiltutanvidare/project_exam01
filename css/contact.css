@@ -105,7 +105,7 @@ textarea::placeholder {
 
 .submitMsg {
     background-color: var(--clr-green);
-    padding: 1rem;
+    padding: 2rem 1.25rem;
     margin-top: 1.75rem;
     text-align: center;
     opacity: 0;
