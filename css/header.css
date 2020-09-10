@@ -11,7 +11,7 @@ header {
 }
 
 header.scrolled {
-    background-color: rgba(12, 12, 12, 0.75);
+    background-color: rgba(12, 12, 12);
 }
 
 .header__inner {
@@ -127,6 +127,17 @@ Media queries
 ***************/
 
 @media screen and (min-width: 53em) {
+    .header__inner {
+        padding: 3rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
     .header__inner__burger {
         display: none;
     }
