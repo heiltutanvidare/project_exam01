@@ -124,7 +124,7 @@ textarea::placeholder {
 
 .submitMsg__title {
     font-size: 1.125rem;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 @media screen and (min-width: 30em) {
