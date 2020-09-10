@@ -55,6 +55,20 @@
     grid-gap: 1rem;
 }
 
+.label__msg--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__error {
+    padding-top: 0.25rem;
+    font-size: 0.85rem;
+    margin: 0;
+    color: var(--clr-red);
+    display: none;
+}
+
 label {
     display: block;
     margin-bottom: 0.3rem;
@@ -73,6 +87,13 @@ textarea {
     color: inherit;
 }
 
+input[type="text"].invalid,
+input[type="email"].invalid,
+input[type="tel"].invalid,
+textarea.invalid {
+    border: 1px solid var(--clr-red);
+}
+
 input::placeholder,
 textarea::placeholder {
     font-size: 0.85rem;
@@ -80,6 +101,30 @@ textarea::placeholder {
 
 .contact--submit {
     color: var(--clr-white);
+}
+
+.submitMsg {
+    background-color: var(--clr-green);
+    padding: 1rem;
+    margin-top: 1.75rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all var(--speed-medium);
+}
+
+.submitMsg.sent {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.submitMsg p {
+    margin: 0;
+}
+
+.submitMsg__title {
+    font-size: 1.125rem;
+    font-weight: 900;
 }
 
 @media screen and (min-width: 30em) {
@@ -91,6 +136,7 @@ textarea::placeholder {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1rem;
+        align-content: start;
     }
 
     .contact-us__header h2 {

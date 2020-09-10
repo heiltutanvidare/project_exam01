@@ -1,6 +1,6 @@
 :root {
     --clr-danger: #ff8800;
-    --clr-red: #850000;
+    --clr-red: #c00000;
     --clr-cream: #f0efe0;
     --clr-space-grey: #bdbdbd;
     --clr-dark-grey: #272626;
@@ -19,7 +19,7 @@
     --fs-mobile: 14px;
     --fs-desktop: 16px;
     --speed-fast: 0.125s cubic-bezier(0.9, 0.5, 0.63, 1.48);
-    --speed-medius: 0.4s cubic-bezier(0.9, 0.5, 0.63, 1.48);
+    --speed-medium: 0.4s cubic-bezier(0.9, 0.5, 0.63, 1.48);
     --speed-slow: 1s cubic-bezier(0.9, 0.5, 0.63, 1.48);
 
     /* Colors from hero image */
