@@ -82,6 +82,32 @@ textarea::placeholder {
     color: var(--clr-white);
 }
 
+@media screen and (min-width: 30em) {
+    .contact-us {
+        margin-top: 7rem;
+    }
+
+    .contact-us__header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .contact-us__header h2 {
+        font-size: 2rem;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    .contact__form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form__field--message {
+        grid-column: 1 / -1;
+    }
+}
+
 @media screen and (min-width: 55em) {
     .contact__blurb span {
         display: inline;
@@ -111,19 +137,12 @@ textarea::placeholder {
 
     .contact-us__header {
         text-align: left;
+        display: block;
     }
 
     .contact-us__header h2 {
-        font-size: 3.5rem;
+        font-size: 3rem;
         line-height: 1.1;
         margin-bottom: 1.75rem;
-    }
-
-    .contact__form {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .form__field--message {
-        grid-column: 1 / -1;
     }
 }
