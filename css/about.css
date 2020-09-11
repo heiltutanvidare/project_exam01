@@ -126,7 +126,6 @@
 
 .history {
     margin-top: 5rem;
-    margin-bottom: 5rem;
 }
 
 .moon {
@@ -136,7 +135,7 @@
 }
 
 .moon__img {
-    margin-top: -30%;
+    margin-top: -10%;
     margin-bottom: -40%;
 }
 
@@ -175,7 +174,6 @@
 
     .history {
         margin-top: 9rem;
-        margin-bottom: 14rem;
     }
 }
 
