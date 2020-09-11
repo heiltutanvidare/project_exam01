@@ -70,6 +70,8 @@
 
 .about__topic {
     text-align: center;
+    margin: 0 auto;
+    max-width: 48ch;
 }
 
 .about__topic i {
@@ -159,7 +161,7 @@
     }
 
     .about__topics {
-        margin-top: 11rem;
+        margin-top: 7rem;
         margin-bottom: 16rem;
     }
 
@@ -171,14 +173,16 @@
         font-size: 1.25rem;
     }
 
-    .about__topics {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 4rem;
-    }
-
     .history {
         margin-top: 9rem;
         margin-bottom: 14rem;
+    }
+}
+
+@media screen and (min-width: 50em) {
+    .about__topics {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 4rem;
     }
 }
 
