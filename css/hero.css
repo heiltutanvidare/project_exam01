@@ -38,7 +38,7 @@
 }
 
 .hero__underlay {
-    background: url(../img/photos/spaceflight/starbg_bright_tile.jpg);
+    background: url(../img/photos/about/starbg_bright_tile.jpg);
     position: absolute;
     top: 0;
     right: 0;
@@ -60,7 +60,7 @@
 }
 
 .hero--peopleInSpace {
-    background: url(../img/photos/spaceflight/outer_atmos.png) no-repeat;
+    background: url(../img/photos/about/outer_atmos.png) no-repeat;
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -71,7 +71,7 @@
 }
 
 .hero--spaceflight {
-    background: url(../img/photos/spaceflight/outer_atmos.png) no-repeat;
+    background: url(../img/photos/about/outer_atmos.png) no-repeat;
     background-size: cover;
     background-position: bottom -20rem center;
     position: relative;

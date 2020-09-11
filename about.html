@@ -171,11 +171,37 @@
 
             <section class="moon">
                 <div class="hero__overlay--toTop"></div>
-                <img
-                    src="img/photos/spaceflight/moon.jpg"
+                <!-- <img
+                    src="img/photos/about/moon.jpg"
                     alt="The moon"
                     class="moon__img"
-                />
+                /> -->
+                <picture class="moon__img">
+                    <source
+                        media="(max-width: 639px)"
+                        srcset="img/photos/about/moon_480w.jpg"
+                    />
+                    <source
+                        media="(max-width: 719px)"
+                        srcset="img/photos/about/moon_640w.jpg"
+                    />
+                    <source
+                        media="(max-width: 959px)"
+                        srcset="img/photos/about/moon_720w.jpg"
+                    />
+                    <source
+                        media="(max-width: 1499px)"
+                        srcset="img/photos/about/moon_960w.jpg"
+                    />
+                    <source
+                        media="(min-width: 1500px)"
+                        srcset="img/photos/about/moon_1500w.jpg"
+                    />
+                    <img
+                        src="img/photos/about/moon_960w.jpg"
+                        alt="Our own beautiful moon"
+                    />
+                </picture>
                 <div class="moon__text max-width--read">
                     <h2>The Moon</h2>
                     <h3>Returning humans to lunar missions</h3>
@@ -239,7 +265,7 @@
             <section class="contact-us">
                 <div class="contact-us__img-container">
                     <img
-                        src="img/photos/spaceflight/astronaut.png"
+                        src="img/photos/about/astronaut.png"
                         alt="An astronaut saying helo"
                     />
                 </div>
