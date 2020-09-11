@@ -112,7 +112,7 @@
 
 @media screen and (min-width: 45em) {
     .hero--homepage {
-        padding: calc(10vh + 4rem) 2rem 8rem 2rem;
+        padding: calc(10vh + 8rem) 2rem 8rem 2rem;
     }
 
     .hero--mars {
