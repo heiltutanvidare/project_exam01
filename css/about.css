@@ -79,21 +79,35 @@
 
 /* Spaceflight numbers */
 .about__numbers {
-    padding: 7rem 0;
     margin-top: 6rem;
     margin-bottom: 6rem;
+    position: relative;
+}
+
+.numbers__bg {
     background: url(../img/photos/about/rocket_launch.jpg) center / cover
         no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 .number__container {
-    display: grid;
-    grid-gap: 2rem;
-    margin-left: 10%;
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+    max-width: 700px;
+}
+
+.number__item {
+    margin-bottom: 4rem;
+}
+
+.number__item--spacer {
+    height: 100vh;
+    margin-bottom: 0;
 }
 
 .number__item .number {
@@ -140,13 +154,13 @@
         right: 4.2rem;
     }
 
-    .about__topics {
-        margin-bottom: 11rem;
+    .hero--spaceflight__inner .blurb {
+        margin-top: 2rem;
     }
 
-    .about__numbers {
-        height: 100vh;
-        background-position: bottom;
+    .about__topics {
+        margin-top: 11rem;
+        margin-bottom: 16rem;
     }
 
     .number__item .number {
@@ -157,10 +171,6 @@
         font-size: 1.25rem;
     }
 
-    .number__container {
-        align-items: center;
-        margin-left: 35%;
-    }
     .about__topics {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 4rem;
@@ -168,7 +178,7 @@
 
     .history {
         margin-top: 9rem;
-        margin-bottom: 9rem;
+        margin-bottom: 14rem;
     }
 }
 
