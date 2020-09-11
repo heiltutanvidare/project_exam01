@@ -113,9 +113,9 @@
 }
 
 .number__item .number {
-    font-weight: 900;
     font-size: 4.45rem;
     line-height: 1;
+    font-family: nasalization, sans-serif;
     margin: 0;
     color: var(--clr-white);
 }
