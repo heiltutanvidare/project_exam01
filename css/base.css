@@ -219,6 +219,7 @@ blockquote p {
 }
 
 cite {
+    font-family: nasalization, sans-serif;
     display: block;
     text-transform: uppercase;
     font-weight: 900;
