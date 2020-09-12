@@ -37,21 +37,27 @@ function displayAPOD(apod) {
 
     // This functions sets the propper HTML type depending
     // on if the mediatype for the day is an image or a video
+    // If its an iframe, the container gets propper aspect
+    // ratio styling via the class "hasIframe"
     function checkMediaType(mediaType) {
         if (mediaType === "video") {
             return `
+                <div class="apod__img-container hasIframe">
                     <iframe
                     src="${mediaUrl}"
                     alt="${title}"
                     class="apod__img"
                     allow="autoplay; encrypted-media" allowfullscreen/>
                     </iframe>
+                </div>
             `;
         } else {
             return `
-                <img src="${mediaUrl}"
-                alt="${title}"
-                class="apod__img">
+                <div class="apod__img-container">
+                    <img src="${mediaUrl}"
+                    alt="${title}"
+                    class="apod__img">
+                </div>
             `;
         }
     }
@@ -69,9 +75,7 @@ function displayAPOD(apod) {
 
     // Define the HTML for the APOD
     const html = `
-            <div class="apod__img-container">
-                ${checkMediaType(media)}
-            </div>
+            ${checkMediaType(media)}
             <div class="apod__text">
                 <div class="apod__title-container">
                 <p class="apod__date">${date}</p>

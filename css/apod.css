@@ -12,10 +12,14 @@
 }
 
 .apod__img-container {
-    /* overflow: hidden; */
+    overflow: hidden;
     width: 100%;
     margin-top: 2rem;
-    /* padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.hasIframe {
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625)*/
+    position: relative;
 }
 
 .apod iframe {
@@ -26,6 +30,8 @@
     right: 0;
     width: 100%;
     height: 100%;
+    outline: none;
+    border: none;
 }
 
 .apod__title {
