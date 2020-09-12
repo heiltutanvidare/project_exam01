@@ -66,11 +66,11 @@ function validateForm() {
 
     // If all fields are valid, display success message
     if (
-        (firstNameValid === true) &
-        (lastNameValid === true) &
-        (emailValid === true) &
-        (phoneValid === true) &
-        (msgValid === true)
+        firstNameValid === true &&
+        lastNameValid === true &&
+        emailValid === true &&
+        phoneValid === true &&
+        msgValid === true
     ) {
         submitMsg.classList.add("sent");
     }
