@@ -74,8 +74,7 @@ function displayWeather(json) {
             ? roundValues(weather.HWS.mn)
             : "No reading";
 
-        // Get the wind direction
-
+        // Get the wind direction if there are readings available
         const windDirection = weather.WD.most_common
             ? weather.WD.most_common.compass_degrees
             : "No reading";
