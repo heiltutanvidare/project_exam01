@@ -67,12 +67,21 @@ function displayWeather(json) {
         const minTemp = roundValues(weather.AT.mn);
 
         // Get the wind speed
-        const maxWind = roundValues(weather.HWS.mx);
-        const minWind = roundValues(weather.HWS.mn);
+        const maxWind = weather.HWS
+            ? roundValues(weather.HWS.mx)
+            : "No reading";
+        const minWind = weather.HWS
+            ? roundValues(weather.HWS.mn)
+            : "No reading";
 
         // Get the wind direction
-        const windDirection = weather.WD.most_common.compass_degrees;
-        const compassHeading = weather.WD.most_common.compass_point;
+
+        const windDirection = weather.WD.most_common
+            ? weather.WD.most_common.compass_degrees
+            : "No reading";
+        const compassHeading = weather.WD.most_common
+            ? weather.WD.most_common.compass_point
+            : "No reading";
 
         // Create the html for displaying the weather data
         html += `
