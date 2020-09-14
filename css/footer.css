@@ -80,6 +80,7 @@ footer .spacer-line--end {
 }
 
 footer address {
+    color: var(--clr-dark-grey);
     display: grid;
     grid-template-columns: max-content max-content;
     grid-gap: 2rem;
@@ -87,6 +88,7 @@ footer address {
 
 footer address p {
     margin: 0;
+    color: var(--clr-dark-grey);
 }
 
 footer address a i {
@@ -95,7 +97,6 @@ footer address a i {
 }
 
 footer address a {
-    color: inherit;
     text-decoration: none;
 }
 
