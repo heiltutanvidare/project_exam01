@@ -45,6 +45,8 @@ function displayWeather(json) {
     sols.forEach((sol) => {
         let weather = json[sol];
 
+        console.log(weather);
+
         // Get the corresponding earth date
         const earthDate = new Date(weather.First_UTC).toLocaleDateString(
             undefined,

@@ -1,7 +1,7 @@
 // The base utr used http and not https, causing the browser to block it.
 // A cors-enabled URL will fix this
 const baseUrl = "http://api.open-notify.org/astros.json";
-const corsEnabled = "https://noroffcors.herokuapp.com/";
+const corsEnabled = "https://cors-anywhere.herokuapp.com/";
 const url = corsEnabled + baseUrl;
 
 const loader = document.querySelector(".loader");
