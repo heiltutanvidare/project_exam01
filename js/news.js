@@ -33,6 +33,8 @@ async function getNews() {
     }
 }
 
+// Runb the function to get the news from
+// the API each time the page loads
 getNews();
 
 // Function to display the news with a numberOfNews
