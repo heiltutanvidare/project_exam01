@@ -28,7 +28,7 @@ async function getNews() {
         );
         errorContainer.innerHTML = `
         <p class="error__message">
-            Houston, we have a problem…
+            An error occurred <br>while loading the news
         </p>`;
     }
 }
@@ -51,35 +51,22 @@ function displayNews(news, numberOfNews) {
         const day = date
             .toLocaleDateString(undefined, { day: "2-digit" })
             .slice(0, -1);
-        const month = date.toLocaleDateString(undefined, { month: "short" });
+        const month = date.toLocaleDateString(undefined, { month: "long" });
+        const year = date.toLocaleDateString(undefined, { year: "numeric" });
         const site = news[i].news_site_long;
         const title = news[i].title;
         const url = news[i].url;
-        const tags = news[i].tags;
-        let tagHTML = "";
-
-        // Adding a small html tag to each article tag
-        tags.forEach((tag) => {
-            tagHTML += `
-            <small class="tag">${tag}</small>
-            `;
-        });
 
         // Seting the HTML of each article card
         html += `
         <article class="news__card">
-            <div class="news__card__date">
-                <p><span>${day}</span> <span>${month}</span></p>
-            </div>
             <img src="${img}" alt="${title}" class="news__img"></img>
             <div class="news__card__text">
-                <small class="news__card__site">Source: <span>${site}</span> </small>
+            <small class="news__card__date-field">${day}. ${month} ${year}</small>
                 <a class="news__card__title" href="${url}" target="_blank">
                     <h3>${title}</h3>
                 </a>
-                <div class="tags">
-                    ${tagHTML}
-                </div>
+                <small class="news__card__site">Source: <span>${site}</span> </small>
             </div>
         </article>
         `;
