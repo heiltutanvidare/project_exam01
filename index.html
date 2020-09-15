@@ -290,11 +290,37 @@
 
             <!-- Quote from Elon Musk -->
             <section class="quote__elon">
-                <img
+                <picture class="about__img">
+                    <source
+                        media="(max-width: 639px)"
+                        srcset="img/photos/starship_480w.png"
+                    />
+                    <source
+                        media="(max-width: 719px)"
+                        srcset="img/photos/starship_640w.png"
+                    />
+                    <source
+                        media="(max-width: 959px)"
+                        srcset="img/photos/starship_720w.png"
+                    />
+                    <source
+                        media="(max-width: 1499px)"
+                        srcset="img/photos/starship_960w.png"
+                    />
+                    <source
+                        media="(min-width: 1500px)"
+                        srcset="img/photos/starship_1500w.png"
+                    />
+                    <img
+                        src="img/photos/starship_960w.png"
+                        alt="SpaceX’s Starship spacecraft and Super Heavy rocket (collectively referred to as Starship)."
+                    />
+                </picture>
+                <!-- <img
                     class="about__img"
                     src="img/photos/starship.png"
                     alt="SpaceX’s Starship spacecraft and Super Heavy rocket (collectively referred to as Starship)."
-                />
+                /> -->
                 <blockquote class="max-width">
                     <p>
                         You want to wake up in the morning and think the future
