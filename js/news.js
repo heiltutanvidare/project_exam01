@@ -1,8 +1,11 @@
 // API url
 const url = "https://spaceflightnewsapi.net/api/v1/articles";
 
-// Globad vaiable to store the result
+// Global vaiable to store the result
 let news;
+
+// Global media query size
+var mediaQuery = window.matchMedia("(max-width: 720px)");
 
 // Function to fetch the news
 async function getNews() {
@@ -10,7 +13,14 @@ async function getNews() {
         const response = await fetch(url);
         const json = await response.json();
         news = json.docs;
-        displayNews(news, 3);
+
+        // Set a media query to only fetch 3 news entries on small
+        // screen sizes and all entries on larger sizes
+        if (mediaQuery.matches) {
+            displayNews(news, 3);
+        } else {
+            displayNews(news, 10);
+        }
     } catch (error) {
         console.error(error);
         const errorContainer = document.querySelector(
@@ -89,4 +99,14 @@ const btn = document.querySelector("#loadMoreNews");
 btn.addEventListener("click", function () {
     displayNews(news, 8);
     btn.style.display = "none";
+});
+
+// If the window is resized, check the size and call the
+// news API to display more entries on larger screen sizes
+window.addEventListener("resize", function () {
+    if (mediaQuery.matches) {
+        displayNews(news, 3);
+    } else {
+        displayNews(news, 10);
+    }
 });
