@@ -84,9 +84,9 @@ function displayNews(news, numberOfNews) {
 }
 
 // Button to run the display nes function with
-// a larger number of entries (9 in this case)
+// a larger number of entries (8 in this case)
 const btn = document.querySelector("#loadMoreNews");
 btn.addEventListener("click", function () {
-    displayNews(news, 9);
+    displayNews(news, 8);
     btn.style.display = "none";
 });
