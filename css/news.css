@@ -145,11 +145,11 @@
 
     .news__card:hover ~ .news__card,
     .news__card:focus-within ~ .news__card {
-        transform: translateX(170px);
+        transform: translateX(150px);
     }
 
     .news__card:not(:first-child) {
-        margin-left: -170px;
+        margin-left: -140px;
     }
 
     .news__card__date {

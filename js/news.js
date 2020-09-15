@@ -101,8 +101,8 @@ btn.addEventListener("click", function () {
     btn.style.display = "none";
 });
 
-// If the window is resized, check the size and call the
-// news API to display more entries on larger screen sizes
+// If the window is resized, check the size and display
+// all results from the news API on larger screen sizes
 window.addEventListener("resize", function () {
     if (mediaQuery.matches) {
         displayNews(news, 3);
