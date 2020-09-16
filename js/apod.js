@@ -25,8 +25,6 @@ async function fetchAPOD() {
 fetchAPOD();
 
 function displayAPOD(apod) {
-    console.log(apod);
-
     // Get the image elements from the API result
     const mediaUrl = apod.url;
     const title = apod.title;

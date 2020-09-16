@@ -1,16 +1,16 @@
-@import url("variables.css");
+@import url("about.css");
+@import url("apod.css");
+@import url("contact.css");
+@import url("footer.css");
 @import url("header.css");
 @import url("hero.css");
-@import url("nextLaunch.css");
-@import url("news.css");
-@import url("contact.css");
-@import url("apod.css");
-@import url("footer.css");
-@import url("solarsystem.css");
-@import url("peopleInSpace.css");
-@import url("about.css");
-@import url("mars.css");
 @import url("launches.css");
+@import url("news.css");
+@import url("nextLaunch.css");
+@import url("mars.css");
+@import url("peopleInSpace.css");
+@import url("solarsystem.css");
+@import url("variables.css");
 
 html {
     font-size: var(--fs-mobile);
@@ -92,6 +92,7 @@ Utility classes
 section {
     margin-bottom: 4rem;
 }
+
 .max-width,
 .max-width--extra,
 .max-width--read {
@@ -111,10 +112,6 @@ section {
 
 .max-width--read {
     max-width: var(--maxWidth--read);
-}
-
-.overflow-hidden {
-    overflow: hidden;
 }
 
 .extra-bleed {
@@ -171,17 +168,6 @@ section {
 .btn--primary:focus {
     background-color: var(--clr-green);
     opacity: 1;
-}
-
-.btn--secondary {
-    border-bottom: 2px solid var(--clr-sand);
-    color: var(--clr-sand);
-    padding: 1rem;
-}
-
-.btn--secondary:hover,
-.btn--secondary:focus {
-    padding-bottom: 0.5rem;
 }
 
 .btn + .btn {
@@ -267,11 +253,10 @@ h3 {
 }
 
 /************** 
-About section
+Homepage about section
 ***************/
 
 .about {
-    /* margin-top: 5rem; */
     width: 100%;
     overflow-x: hidden;
     text-align: center;
@@ -299,46 +284,6 @@ About section
 
 .about h2 {
     margin-top: 2rem;
-}
-
-/************** 
-Mars weather feature
-***************/
-.red-planet {
-    margin: 8rem 0 8rem 0;
-    text-align: center;
-}
-
-.mars--mobile {
-    margin-bottom: -7rem;
-}
-
-.mars--dekstop {
-    display: none;
-}
-
-.red-planet__text {
-    padding: 2rem;
-}
-
-.red-planet__text p {
-    margin: 0 auto 1rem auto;
-}
-
-.weather__date {
-    margin-top: 1rem;
-}
-
-.weather__heading {
-    margin: 0 0 0.125rem 0;
-    line-height: 1;
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: var(--clr-white);
-}
-
-.weather-container a {
-    margin-top: 1rem;
 }
 
 /************** 
@@ -528,53 +473,6 @@ Media queries
         display: grid;
         place-items: center;
         border: 1px solid #464646;
-    }
-
-    /* Mars feature */
-    .red-planet {
-        display: grid;
-        grid-template-columns: 10vw auto 1fr;
-        grid-template-columns: auto 1fr;
-        align-items: center;
-        justify-items: end;
-        overflow: hidden;
-    }
-
-    .mars--mobile {
-        display: none;
-    }
-
-    .mars--dekstop {
-        display: block;
-        max-height: 150vh;
-        object-fit: contain;
-        object-position: right;
-    }
-
-    .red-planet__text {
-        text-align: left;
-        padding: 0 2rem 0 4rem;
-        max-width: 55ch;
-    }
-
-    .red-planet__text p {
-        margin: 0 0 1rem 0;
-    }
-
-    .weather__date {
-        margin-top: 1rem;
-    }
-
-    .weather__heading {
-        margin: 0 0 0.125rem 0;
-        line-height: 1;
-        font-size: 1.15rem;
-        font-weight: 700;
-        color: var(--clr-white);
-    }
-
-    .weather-container a {
-        margin-top: 1rem;
     }
 
     .about img {

@@ -38,14 +38,11 @@ function displayWeather(json) {
     // Get all sols from the API response
     const sols = json.sol_keys;
 
-    console.log(json);
     // Declare the HTML variable
     let html = "";
 
     sols.forEach((sol) => {
         let weather = json[sol];
-
-        console.log(weather);
 
         // Get the corresponding earth date
         const earthDate = new Date(weather.First_UTC).toLocaleDateString(

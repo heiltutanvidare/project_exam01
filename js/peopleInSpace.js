@@ -16,7 +16,7 @@ async function fetchAstronauts() {
         displayAstronauts(json);
         loader.style.display = "none";
     } catch (error) {
-        console.log(error);
+        console.error(error);
         errorContainer.innerHTML = `
         <p class="error__message">
             Houston, we have a problem…
