@@ -458,10 +458,31 @@ Feature cards
 }
 
 /************** 
-Solar system homepage feature
+Scrollbar custom styles
 ***************/
-.meet-neighbors {
-    overflow: hidden;
+
+.news__container::-webkit-scrollbar,
+.planets::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.news__container::-webkit-scrollbar-thumb,
+.planets::-webkit-scrollbar-thumb {
+    background: var(--clr-dark-grey);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+        inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.news__container::-webkit-scrollbar-track,
+.planets::-webkit-scrollbar-track {
+    background: linear-gradient(
+        90deg,
+        #1c2921,
+        #201c29 1px,
+        #17141d 0,
+        #17141d
+    );
 }
 
 /************** 

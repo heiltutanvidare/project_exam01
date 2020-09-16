@@ -4,23 +4,13 @@ const url = "https://spaceflightnewsapi.net/api/v1/articles";
 // Global vaiable to store the result
 let news;
 
-// Global media query size
-var mediaQuery = window.matchMedia("(max-width: 720px)");
-
 // Function to fetch the news
 async function getNews() {
     try {
         const response = await fetch(url);
         const json = await response.json();
         news = json.docs;
-
-        // Set a media query to only fetch 3 news entries on small
-        // screen sizes and all entries on larger sizes
-        if (mediaQuery.matches) {
-            displayNews(news, 3);
-        } else {
-            displayNews(news, 10);
-        }
+        displayNews(news);
     } catch (error) {
         console.error(error);
         const errorContainer = document.querySelector(
@@ -39,7 +29,7 @@ getNews();
 
 // Function to display the news with a numberOfNews
 // variable controlling how many is displayed
-function displayNews(news, numberOfNews) {
+function displayNews(news) {
     // Select the DOM element to contain the launches
     const container = document.querySelector(".news__container");
 
@@ -47,7 +37,7 @@ function displayNews(news, numberOfNews) {
     let html = "";
 
     // Looping over the results
-    for (let i = 0; i < numberOfNews; i++) {
+    for (let i = 0; i < news.length; i++) {
         const img = news[i].featured_image;
         const date = new Date(news[i].published_date);
         const day = date
@@ -62,7 +52,7 @@ function displayNews(news, numberOfNews) {
         // Seting the HTML of each article card
         html += `
         <article class="news__card">
-            <img src="${img}" alt="${title}" class="news__img"></img>
+            <img src="${img}" alt="${title}" class="news__card__img"></img>
             <div class="news__card__text">
             <small class="news__card__date-field">${day}. ${month} ${year}</small>
                 <a class="news__card__title" href="${url}" target="_blank">
@@ -81,21 +71,3 @@ function displayNews(news, numberOfNews) {
         loader.style.display = "none";
     }
 }
-
-// Button to run the display nes function with
-// a larger number of entries (8 in this case)
-const btn = document.querySelector("#loadMoreNews");
-btn.addEventListener("click", function () {
-    displayNews(news, 8);
-    btn.style.display = "none";
-});
-
-// If the window is resized, check the size and display
-// all results from the news API on larger screen sizes
-window.addEventListener("resize", function () {
-    if (mediaQuery.matches) {
-        displayNews(news, 3);
-    } else {
-        displayNews(news, 10);
-    }
-});
