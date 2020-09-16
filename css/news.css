@@ -113,3 +113,12 @@
         height: 220px;
     }
 }
+
+@media screen and (min-width: 80em) {
+    .news {
+        padding: 0 2rem;
+    }
+    .news__container {
+        max-width: var(--maxWidth--extra);
+    }
+}
