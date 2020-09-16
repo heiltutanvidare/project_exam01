@@ -1,3 +1,4 @@
+@import url("variables.css");
 @import url("about.css");
 @import url("apod.css");
 @import url("contact.css");
@@ -10,7 +11,6 @@
 @import url("mars.css");
 @import url("peopleInSpace.css");
 @import url("solarsystem.css");
-@import url("variables.css");
 
 html {
     font-size: var(--fs-mobile);
