@@ -1,4 +1,5 @@
 :root {
+    /* Colors */
     --clr-danger: #ff8800;
     --clr-red: #c00000;
     --clr-cream: #f0efe0;
@@ -8,23 +9,21 @@
     --clr-green-light: #00c4ad;
     --clr-green-dark: #000f0d;
     --clr-green-semi: #00302b;
-    --clr-sand: #d0a270;
     --clr-black: rgb(12, 12, 12);
     --clr-black--trans: rgba(12, 12, 12, 0);
     --clr-white: #fff;
-    --clr-uranus: #c9f3f6;
+
+    /* Max-width settings */
     --maxWidth: 960px;
     --maxWidth--extra: 1280px;
     --maxWidth--read: 75ch;
+
+    /* Font sizes */
     --fs-mobile: 14px;
     --fs-desktop: 16px;
+
+    /* Transition speeds and timing funcitons */
     --speed-fast: 0.125s cubic-bezier(0.9, 0.5, 0.63, 1.48);
     --speed-medium: 0.4s cubic-bezier(0.9, 0.5, 0.63, 1.48);
     --speed-slow: 1s cubic-bezier(0.9, 0.5, 0.63, 1.48);
-
-    /* Colors from hero image */
-    --clr-space-blue: #4c5573;
-    --clr-moon-blue: #8d93a6;
-    --clr-space-green: #293d47;
-    --clr-rocket-flame: #f9d289;
 }

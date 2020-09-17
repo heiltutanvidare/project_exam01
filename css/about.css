@@ -1,4 +1,6 @@
-/* Spaceflight hero */
+/************** 
+About us page
+***************/
 
 .hero--spaceflight__inner {
     z-index: 1;
@@ -60,7 +62,10 @@
     }
 }
 
-/* About spaceflight */
+/************** 
+About topics
+***************/
+
 .about__topics {
     margin-top: 4rem;
     margin-bottom: 5rem;
@@ -79,7 +84,10 @@
     margin-bottom: 1rem;
 }
 
-/* Spaceflight numbers */
+/************** 
+Number info
+***************/
+
 .about__numbers {
     margin-top: 6rem;
     margin-bottom: 6rem;
@@ -128,12 +136,17 @@
     margin-top: 5rem;
 }
 
-/* Falcon 9 section */
+/************** 
+Falcon 9 section
+***************/
+
 .falcon__img {
     margin-bottom: 2rem;
 }
 
-/* Moon section */
+/************** 
+Moon section
+***************/
 
 .moon {
     margin-top: 4rem;
@@ -150,6 +163,10 @@
     position: relative;
     z-index: 1;
 }
+
+/************** 
+Media queries
+***************/
 
 @media screen and (min-width: 45em) {
     .spaceflight__title-container h1 {

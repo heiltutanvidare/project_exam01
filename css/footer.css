@@ -1,3 +1,7 @@
+/************** 
+Footer
+***************/
+
 .clouds-container {
     margin-top: 4rem;
     width: 100vw;
@@ -100,10 +104,6 @@ footer address a {
     text-decoration: none;
 }
 
-.footer__newsletter {
-    /* margin: 2rem 0; */
-}
-
 .footer__newsletter label {
     font-weight: 700;
 }
@@ -124,7 +124,9 @@ footer address a {
     text-align: center;
 }
 
-/* Extra small phone sizes*/
+/************** 
+Media queries
+***************/
 @media screen and (max-width: 374px) {
     footer address p {
         font-size: 0.75rem;
@@ -146,10 +148,6 @@ footer address a {
         margin: 1rem;
         flex-grow: 1;
         flex-shrink: 0;
-    }
-
-    .footer__links {
-        /* grid-template-columns: repeat(3, 1fr); */
     }
 
     .footer__newsletter {

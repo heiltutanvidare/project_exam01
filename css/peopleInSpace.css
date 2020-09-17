@@ -1,3 +1,7 @@
+/************** 
+People in space
+***************/
+
 .peopleInSpace-container {
     margin-top: 2rem;
     text-align: center;
@@ -74,6 +78,10 @@
         transform: rotate(360deg);
     }
 }
+
+/************** 
+Media queries
+***************/
 
 @media screen and (min-width: 45em) {
     .astronaut p {

@@ -1,3 +1,7 @@
+/************** 
+News feature
+***************/
+
 .news {
     margin-top: 2rem;
     padding-left: 2rem;
@@ -83,6 +87,10 @@
 .news__card__site span {
     font-weight: 700;
 }
+
+/************** 
+Media queries
+***************/
 
 @media screen and (min-width: 45em) {
     .news {

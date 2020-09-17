@@ -1,6 +1,7 @@
 /************** 
 Next launch featured on homepage
 ***************/
+
 .hero--launches p {
     margin-top: 1rem;
     position: relative;
@@ -97,9 +98,9 @@ Upcomming launches page
     opacity: 0.5;
 }
 
-/* 
-Toggle inputs
-*/
+/************** 
+Filter launches inputs
+***************/
 
 .toggle-container {
     display: flex;
@@ -109,6 +110,10 @@ Toggle inputs
     border-bottom: 1px solid var(--clr-dark-grey);
     margin-bottom: 1rem;
 }
+
+/************** 
+Media queries
+***************/
 
 @media screen and (min-width: 45em) {
     .launches {

@@ -1,3 +1,7 @@
+/************** 
+Astronomy picture of the day
+***************/
+
 .apod {
     margin: 4rem 0;
     overflow: hidden;
@@ -48,6 +52,10 @@
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
+
+/************** 
+Media queries
+***************/
 
 @media screen and (min-width: 45em) {
     .apod {

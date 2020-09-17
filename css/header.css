@@ -1,6 +1,7 @@
-/*
+/************** 
 Header
-*/
+***************/
+
 header {
     position: fixed;
     z-index: 100;
@@ -141,6 +142,7 @@ Media queries
     .header__inner__burger {
         display: none;
     }
+
     .header__inner nav {
         background: none;
         position: unset;
@@ -148,6 +150,7 @@ Media queries
         height: auto;
         opacity: 1;
     }
+
     .header__inner nav ul {
         height: 100%;
         display: flex;
@@ -155,6 +158,7 @@ Media queries
         justify-content: space-between;
         align-items: center;
     }
+
     .header__inner nav ul li a {
         display: inline-block;
         text-decoration: none;
@@ -162,9 +166,11 @@ Media queries
         padding: 0.25rem;
         font-size: 0.85rem;
     }
+
     .header__inner nav ul li {
         margin-right: 1rem;
     }
+
     .header__inner nav ul li:last-of-type {
         margin-right: 0;
     }

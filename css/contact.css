@@ -1,18 +1,19 @@
+/************** 
+Contact us form
+***************/
+
 .contact-us {
     margin: 5rem auto;
     max-width: 1600px;
-    /* background-color: var(--clr-space-grey); */
     display: grid;
 }
 
 .contact-us__inner {
     color: var(--clr-space-grey);
     padding: 2rem;
-    /* outline: 1px solid red; */
 }
 
 .contact-us__header {
-    /* text-align: right; */
     margin-bottom: 2rem;
 }
 
@@ -29,7 +30,6 @@
 
 .contact-us__img-container {
     position: relative;
-    /* outline: 1px solid yellow; */
 }
 
 .contact-us__img-container img {
@@ -126,6 +126,10 @@ textarea::placeholder {
     font-size: 1.125rem;
     font-weight: 700;
 }
+
+/************** 
+Media queries
+***************/
 
 @media screen and (min-width: 30em) {
     .contact-us {

@@ -1,3 +1,7 @@
+/************** 
+Solar system
+***************/
+
 .solarsystem--blk-bg {
     background: black;
 }
@@ -44,9 +48,9 @@
     }
 }
 
-/*
+/************** 
 Planets
-*/
+***************/
 
 .planets {
     overflow-x: scroll;
@@ -168,12 +172,17 @@ Planets
     font-weight: 700;
 }
 
-/* Other worlds */
+/************** 
+Other worlds
+***************/
 .about__solarsystem {
     margin-top: 8rem;
 }
 
-/* Adjustments for smallest phones */
+/************** 
+Media queries
+***************/
+
 @media screen and (max-width: 350px) {
     .planet__top {
         padding-top: 0.1rem;
@@ -190,7 +199,6 @@ Planets
     }
 }
 
-/* Adjustments for larger screens */
 @media screen and (min-width: 36em) {
     .swipe__indicator {
         display: none;
@@ -217,7 +225,6 @@ Planets
         grid-template-areas: "a b";
         align-items: stretch;
         overflow: visible;
-        /* outline: 1px solid yellow; */
     }
 
     .planet__text {
@@ -226,7 +233,6 @@ Planets
         z-index: 1;
         display: block;
         align-self: center;
-        /* outline: 1px solid cyan; */
         padding-left: 4vw;
     }
 
@@ -238,9 +244,7 @@ Planets
         grid-row: 1 / -1;
         grid-column: 2 / -1;
         transform: translateY(0);
-        /* max-height: 100vh; */
         object-fit: contain;
-        /* outline: 1px solid white; */
         max-width: unset;
     }
 }

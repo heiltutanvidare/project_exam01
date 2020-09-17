@@ -1,4 +1,7 @@
-/* Mars */
+/************** 
+Mars
+***************/
+
 .mars__weather__intro {
     padding-top: 8rem;
     background: url(../img/photos/starbg.jpg) center / cover no-repeat;
@@ -16,7 +19,10 @@
     margin-top: 1px;
 }
 
-/* Mars Weather */
+/************** 
+Mars weather
+***************/
+
 .mars__weather {
     text-align: center;
 }
@@ -78,7 +84,10 @@
     margin: 1rem 0 0 0;
 }
 
-/* Compass */
+/************** 
+Compass
+***************/
+
 .compass {
     display: block;
     position: relative;
@@ -118,7 +127,10 @@
 .circle  {
 }
 
-/* Mission overview */
+/************** 
+Mission overview
+***************/
+
 .mission {
     position: relative;
     margin-bottom: -6rem;
@@ -137,6 +149,10 @@
     margin-top: 0;
 }
 
+/************** 
+Media queries
+***************/
+
 @media screen and (min-width: 45em) {
     .mars__weather__intro {
         padding-top: 15rem;
@@ -144,7 +160,6 @@
 
     .mars__weather__container {
         grid-template-columns: repeat(3, 1fr);
-        /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
     }
 
     .mars__weather__entry:last-of-type {
@@ -169,6 +184,5 @@
 @media screen and (min-width: 100em) {
     .mars__weather__container {
         grid-template-columns: repeat(6, 1fr);
-        /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
     }
 }
