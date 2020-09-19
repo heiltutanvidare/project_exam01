@@ -66,6 +66,7 @@
     padding-top: 8rem;
     max-height: 720px;
     min-height: unset;
+    margin-top: 6rem;
     margin-bottom: 4rem;
 }
 
@@ -116,5 +117,15 @@
 
     .hero--mars {
         background-size: contain;
+    }
+
+    .hero--peopleInSpace {
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (min-width: 75em) {
+    .hero--peopleInSpace {
+        margin-top: 13rem;
     }
 }
