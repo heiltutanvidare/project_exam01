@@ -11,12 +11,12 @@ filter.addEventListener("change", function () {
     fetchLaunches(selectedFilter);
 });
 
-// Fetch the upcomming launches
+// Fetch the upcoming launches
 // and display as HTML on next launches page
 const errorContainer = document.querySelector(".launches-error-container");
 const loader = document.querySelector(".loader");
 
-// Fetch upcomming SpaceX launches
+// Fetch upcoming SpaceX launches
 async function fetchLaunches(filter) {
     try {
         const url = "https://api.spacexdata.com/v4/launches" + filter;

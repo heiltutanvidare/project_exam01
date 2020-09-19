@@ -69,7 +69,7 @@ function displayCountdown(nextLaunch) {
     }, 1000);
 }
 
-// Display the next upcomming launch
+// Display the next upcoming launch
 // in the feature section on the homepage
 
 function displayNextLaunch(nextLaunch) {
