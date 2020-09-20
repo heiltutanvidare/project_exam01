@@ -59,14 +59,13 @@
 }
 
 .hero--peopleInSpace {
-    background: url(../img/photos/about/outer_atmos.png) no-repeat;
+    background: url(../img/photos/starbg.jpg) no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: bottom center;
     position: relative;
-    padding-top: 8rem;
+    padding-top: 10rem;
     max-height: 720px;
     min-height: unset;
-    margin-top: 6rem;
     margin-bottom: 4rem;
 }
 
@@ -120,12 +119,12 @@
     }
 
     .hero--peopleInSpace {
-        margin-top: 10rem;
+        /* margin-top: 10rem; */
     }
 }
 
 @media screen and (min-width: 75em) {
     .hero--peopleInSpace {
-        margin-top: 13rem;
+        /* margin-top: 13rem; */
     }
 }
