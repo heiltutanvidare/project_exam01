@@ -83,7 +83,7 @@ Animated overlay
     height: 100vh;
     width: 100%;
     background-color: var(--clr-black);
-    animation: pilar var(--speed-medium) forwards;
+    animation: pilar var(--speed-slow) forwards;
 }
 
 .overlay__part:nth-child(1) {
