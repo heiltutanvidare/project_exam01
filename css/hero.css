@@ -37,16 +37,6 @@
     margin-bottom: -2px;
 }
 
-.hero__underlay {
-    background: url(../img/photos/about/starbg_bright_tile.jpg);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-}
-
 .hero--homepage {
     background: url(../img/photos/hero.jpg) center / cover no-repeat;
     justify-content: space-between;
@@ -59,20 +49,20 @@
 }
 
 .hero--peopleInSpace {
-    background: url(../img/photos/starbg.jpg) no-repeat;
+    background: url(../img/photos/astronauts/sunrise_atmos.jpg) no-repeat;
     background-size: cover;
-    background-position: bottom center;
+    background-position: top center;
     position: relative;
-    padding-top: 10rem;
-    max-height: 720px;
+    padding-top: 6rem;
     min-height: unset;
     margin-bottom: 4rem;
 }
 
 .hero--spaceflight {
-    background: url(../img/photos/about/outer_atmos.png) no-repeat;
+    /* background: url(../img/photos/about/outer_atmos.png) no-repeat; */
+    background: url(../img/photos/astronauts/sunrise_atmos.jpg) no-repeat;
     background-size: cover;
-    background-position: bottom -20rem center;
+    background-position: top center;
     position: relative;
     padding-top: 8rem;
     justify-content: center;
@@ -119,12 +109,12 @@
     }
 
     .hero--peopleInSpace {
-        /* margin-top: 10rem; */
+        padding-top: 10rem;
     }
 }
 
 @media screen and (min-width: 75em) {
     .hero--peopleInSpace {
-        /* margin-top: 13rem; */
+        padding-top: 16rem;
     }
 }
