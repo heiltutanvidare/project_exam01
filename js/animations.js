@@ -1,5 +1,7 @@
+// Create a GSAP timeline
 const tl = gsap.timeline();
 
+// Fade in the homepage hero and intro info
 tl.from(".hero--homepage", {
     duration: 2,
     scale: 1.5,
@@ -13,6 +15,7 @@ tl.from(".hero--homepage", {
     skewY: 10,
 });
 
+// Fade in cards when scrolled to
 gsap.from(".feature__card", {
     scrollTrigger: {
         trigger: ".feature__card",
