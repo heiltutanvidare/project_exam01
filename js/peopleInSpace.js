@@ -46,9 +46,9 @@ function displayAstronauts(json) {
         // add the new HTML string to the existing HTML string
         html += `<div class="astronaut">
                     <i class="fas fa-user-astronaut"></i>
-                    <p class="astronaut__heading">Astronaut:</p>
+                    <p class="astronaut__heading">Astronaut</p>
                     <p class="astronaut__name">${astronauts[i].name}</p>
-                    <p class="astronaut__craft">On board the ${astronauts[i].craft}</p>
+                    <p class="astronaut__craft">on board the ${astronauts[i].craft}</p>
                 </div>`;
     }
 

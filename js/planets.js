@@ -71,7 +71,7 @@ const planets = [
     },
     {
         number: "05",
-        tagline: "The grandest planet",
+        tagline: "The Grandest Planet",
         name: "Jupiter",
         description:
             "Jupiter is the fifth planet from our Sun and is, by far, the largest planet in the solar system – more than twice as massive as all the other planets combined. Jupiter’s stripes and swirls are actually cold, windy clouds of ammonia and water, floating in an atmosphere of hydrogen and helium. Jupiter’s iconic Great Red Spot is a giant storm bigger than Earth that has raged for hundreds of years.",

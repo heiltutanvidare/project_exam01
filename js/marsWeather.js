@@ -83,7 +83,7 @@ function displayWeather(json) {
         html += `
                 <div class="mars__weather__entry">
                     <p class="mars__weather__date">Sol ${sol} | ${earthDate}</p>
-                    <p class="mars__weather__heading">Air Temperature</p>
+                    <p class="mars__weather__heading">Air temperature</p>
                     <p class="mars__weather__details">
                         Low: ${minTemp}&deg; C | High: ${maxTemp}&deg; C
                     </p>
