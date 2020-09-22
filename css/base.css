@@ -25,6 +25,10 @@ body {
     position: relative;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 a {
     color: inherit;
     transition: opacity 0.25s linear;
