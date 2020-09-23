@@ -172,6 +172,23 @@ Media queries
     #newsletterSubmit {
         flex: 1;
     }
+
+    .newsletter__signup__msg {
+        position: relative;
+    }
+
+    .newsletter__signup__msg p {
+        margin: 0;
+        position: absolute;
+    }
+
+    .newsletter__signup__msg--success {
+        color: var(--clr-green-light);
+    }
+
+    .newsletter__signup__msg--failure {
+        color: var(--clr-red);
+    }
 }
 
 @media screen and (min-width: 49.375em) {
