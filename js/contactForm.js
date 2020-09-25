@@ -36,7 +36,7 @@ function validateForm() {
         firstNameError.style.display = "block";
     }
 
-    if (checkLength(lastName.value, 4)) {
+    if (checkLength(lastName.value, 2)) {
         lastNameError.style.display = "none";
         lastNameValid = true;
     } else {

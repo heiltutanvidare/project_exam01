@@ -57,7 +57,7 @@ Planets
     scroll-snap-type: x mandatory;
     display: flex;
     position: relative;
-    margin-bottom: 4rem;
+    margin-bottom: 1.3rem;
 }
 
 .planet {
