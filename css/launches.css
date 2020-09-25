@@ -1,21 +1,6 @@
-/************** 
-Next launch featured on homepage
-***************/
-
-.hero--launches p {
-    margin-top: 1rem;
-    position: relative;
-    text-align: center;
-    color: var(--clr-white);
-    z-index: 2;
-}
-
-.feature__launches {
-    border-top: 1px solid var(--clr-white);
-    border-bottom: 1px solid var(--clr-white);
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    background-color: #0f0f10;
+.launches__title {
+    margin: 1rem 0;
+    text-align: left;
 }
 
 /************** 
@@ -116,6 +101,11 @@ Media queries
 ***************/
 
 @media screen and (min-width: 45em) {
+    .launches__title {
+        margin: 0 0 2rem 0;
+        text-align: left;
+    }
+
     .launches {
         margin-top: 12rem;
     }
